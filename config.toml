@@ -1,8 +1,8 @@
-baseURL = "https:/salmanalibanani.netlify.app/"
+baseURL = "https://salmanalibanani.netlify.app/"
 languageCode = "en-us"
 title = "Salman Ali Banani"
 theme = "simple-blog"
-copyright = "© 2020 copyright text."
+copyright = "© 2020 Salman Ali Banani."
 paginate = 3
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
