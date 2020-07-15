@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Salman Ali Banani</title>
-    <link>https:///salmanalibanani.netlify.app/categories/</link>
+    <link>https://salmanalibanani.netlify.app/categories/</link>
     <description>Recent content in Categories on Salman Ali Banani</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Salman Ali Banani.</copyright>
     <lastBuildDate>Mon, 18 Mar 2019 07:13:19 +0100</lastBuildDate>
     
-	<atom:link href="https:///salmanalibanani.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://salmanalibanani.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>base16</title>
-      <link>https:///salmanalibanani.netlify.app/categories/base16/</link>
+      <link>https://salmanalibanani.netlify.app/categories/base16/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https:///salmanalibanani.netlify.app/categories/base16/</guid>
+      <guid>https://salmanalibanani.netlify.app/categories/base16/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>https:///salmanalibanani.netlify.app/categories/github/</link>
+      <link>https://salmanalibanani.netlify.app/categories/github/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https:///salmanalibanani.netlify.app/categories/github/</guid>
+      <guid>https://salmanalibanani.netlify.app/categories/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https:///salmanalibanani.netlify.app/categories/hugo/</link>
+      <link>https://salmanalibanani.netlify.app/categories/hugo/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https:///salmanalibanani.netlify.app/categories/hugo/</guid>
+      <guid>https://salmanalibanani.netlify.app/categories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https:///salmanalibanani.netlify.app/categories/markdown/</link>
+      <link>https://salmanalibanani.netlify.app/categories/markdown/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https:///salmanalibanani.netlify.app/categories/markdown/</guid>
+      <guid>https://salmanalibanani.netlify.app/categories/markdown/</guid>
       <description></description>
     </item>
     
