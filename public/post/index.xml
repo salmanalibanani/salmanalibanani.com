@@ -1,34 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Hugo 101</title>
-    <link>https://hugo101.netlify.com/post/</link>
-    <description>Recent content in Posts on Hugo 101</description>
+    <title>Posts on Salman Ali Banani</title>
+    <link>https:///salmanalibanani.netlify.app/post/</link>
+    <description>Recent content in Posts on Salman Ali Banani</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Mar 2019 07:13:19 +0100</lastBuildDate>
+    <copyright>© 2020 copyright text.</copyright>
+    <lastBuildDate>Wed, 15 Jul 2020 15:50:01 +1000</lastBuildDate>
     
-	<atom:link href="https://hugo101.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https:///salmanalibanani.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>My Second Post</title>
+      <link>https:///salmanalibanani.netlify.app/post/my-second-post/</link>
+      <pubDate>Wed, 15 Jul 2020 15:50:01 +1000</pubDate>
+      
+      <guid>https:///salmanalibanani.netlify.app/post/my-second-post/</guid>
+      <description>Let&amp;rsquo;s see if this second post shows up.</description>
+    </item>
+    
+    <item>
       <title>How to convert GitHub Markdown files to a simple website</title>
-      <link>https://hugo101.netlify.com/post/easy-markdown-to-github-pages/</link>
+      <link>https:///salmanalibanani.netlify.app/post/easy-markdown-to-github-pages/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https://hugo101.netlify.com/post/easy-markdown-to-github-pages/</guid>
+      <guid>https:///salmanalibanani.netlify.app/post/easy-markdown-to-github-pages/</guid>
       <description>Easy Markdown to GitHub Pages Introduction This little guide demonstrates how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll.
  You don&amp;rsquo;t need to use the command line or anything other than your browser. It doesn&amp;rsquo;t require any knowledge in Jekyll. It&amp;rsquo;s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files.</description>
     </item>
     
     <item>
       <title>My first post</title>
-      <link>https://hugo101.netlify.com/post/my-first-post/</link>
+      <link>https:///salmanalibanani.netlify.app/post/my-first-post/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https://hugo101.netlify.com/post/my-first-post/</guid>
+      <guid>https:///salmanalibanani.netlify.app/post/my-first-post/</guid>
       <description>Hello there, this is my first post!
-console.log(&#39;hurray&#39;)  </description>
+console.log(&#39;hurray&#39;)</description>
     </item>
     
   </channel>

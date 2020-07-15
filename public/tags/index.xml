@@ -1,49 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo 101</title>
-    <link>https://hugo101.netlify.com/tags/</link>
-    <description>Recent content in Tags on Hugo 101</description>
+    <title>Tags on Salman Ali Banani</title>
+    <link>https:///salmanalibanani.netlify.app/tags/</link>
+    <description>Recent content in Tags on Salman Ali Banani</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>© 2020 copyright text.</copyright>
     <lastBuildDate>Mon, 18 Mar 2019 07:13:19 +0100</lastBuildDate>
     
-	<atom:link href="https://hugo101.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https:///salmanalibanani.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>First Post</title>
-      <link>https://hugo101.netlify.com/tags/first-post/</link>
+      <title>first post</title>
+      <link>https:///salmanalibanani.netlify.app/tags/first-post/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https://hugo101.netlify.com/tags/first-post/</guid>
+      <guid>https:///salmanalibanani.netlify.app/tags/first-post/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Github</title>
-      <link>https://hugo101.netlify.com/tags/github/</link>
+      <title>GitHub</title>
+      <link>https:///salmanalibanani.netlify.app/tags/github/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https://hugo101.netlify.com/tags/github/</guid>
+      <guid>https:///salmanalibanani.netlify.app/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Markdown</title>
-      <link>https://hugo101.netlify.com/tags/markdown/</link>
+      <title>markdown</title>
+      <link>https:///salmanalibanani.netlify.app/tags/markdown/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https://hugo101.netlify.com/tags/markdown/</guid>
+      <guid>https:///salmanalibanani.netlify.app/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Website</title>
-      <link>https://hugo101.netlify.com/tags/website/</link>
+      <title>website</title>
+      <link>https:///salmanalibanani.netlify.app/tags/website/</link>
       <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
       
-      <guid>https://hugo101.netlify.com/tags/website/</guid>
+      <guid>https:///salmanalibanani.netlify.app/tags/website/</guid>
       <description></description>
     </item>
     

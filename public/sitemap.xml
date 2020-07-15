@@ -1,87 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hugo101.netlify.com/post/easy-markdown-to-github-pages/</loc>
+    <loc>https:///salmanalibanani.netlify.app/post/my-second-post/</loc>
+    <lastmod>2020-07-15T15:50:01+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https:///salmanalibanani.netlify.app/post/</loc>
+    <lastmod>2020-07-15T15:50:01+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https:///salmanalibanani.netlify.app/</loc>
+    <lastmod>2020-07-15T15:50:01+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https:///salmanalibanani.netlify.app/categories/base16/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/post/my-first-post/</loc>
+    <loc>https:///salmanalibanani.netlify.app/categories/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/categories/base16/</loc>
+    <loc>https:///salmanalibanani.netlify.app/tags/first-post/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/categories/</loc>
+    <loc>https:///salmanalibanani.netlify.app/tags/github/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/tags/first-post/</loc>
+    <loc>https:///salmanalibanani.netlify.app/categories/github/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/tags/github/</loc>
+    <loc>https:///salmanalibanani.netlify.app/post/easy-markdown-to-github-pages/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/categories/github/</loc>
+    <loc>https:///salmanalibanani.netlify.app/categories/hugo/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/categories/hugo/</loc>
+    <loc>https:///salmanalibanani.netlify.app/tags/markdown/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/</loc>
+    <loc>https:///salmanalibanani.netlify.app/categories/markdown/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/tags/markdown/</loc>
+    <loc>https:///salmanalibanani.netlify.app/post/my-first-post/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/categories/markdown/</loc>
+    <loc>https:///salmanalibanani.netlify.app/tags/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugo101.netlify.com/post/</loc>
+    <loc>https:///salmanalibanani.netlify.app/tags/website/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugo101.netlify.com/tags/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugo101.netlify.com/tags/website/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
