@@ -4,7 +4,6 @@ title = "Salman Ali Banani"
 theme = "simple-blog"
 copyright = "© 2020 copyright text."
 paginate = 3
-languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 
