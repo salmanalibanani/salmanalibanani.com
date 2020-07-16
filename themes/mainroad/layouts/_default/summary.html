@@ -19,6 +19,7 @@
 		<div class="list__meta meta">{{ . }}</div>
 		{{- end }}
 	</header>
+	<p>{{ .PublishDate.Format "January 2, 2006" }}</p>
 	<div class="content list__excerpt post__content clearfix">
 		{{ .Summary }}
 	</div>
