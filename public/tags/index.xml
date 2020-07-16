@@ -7,33 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Salman Ali Banani.</copyright>
-    <lastBuildDate>Mon, 18 Mar 2019 07:13:19 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 15:50:01 +1000</lastBuildDate>
     
 	<atom:link href="https://salmanalibanani.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>first post</title>
-      <link>https://salmanalibanani.netlify.app/tags/first-post/</link>
-      <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
+      <title>Azure</title>
+      <link>https://salmanalibanani.netlify.app/tags/azure/</link>
+      <pubDate>Wed, 15 Jul 2020 15:50:01 +1000</pubDate>
       
-      <guid>https://salmanalibanani.netlify.app/tags/first-post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>https://salmanalibanani.netlify.app/tags/github/</link>
-      <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
-      
-      <guid>https://salmanalibanani.netlify.app/tags/github/</guid>
+      <guid>https://salmanalibanani.netlify.app/tags/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
       <link>https://salmanalibanani.netlify.app/tags/markdown/</link>
-      <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
+      <pubDate>Wed, 15 Jul 2020 15:50:01 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/tags/markdown/</guid>
       <description></description>
@@ -42,7 +33,7 @@
     <item>
       <title>website</title>
       <link>https://salmanalibanani.netlify.app/tags/website/</link>
-      <pubDate>Mon, 18 Mar 2019 07:13:19 +0100</pubDate>
+      <pubDate>Wed, 15 Jul 2020 15:50:01 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/tags/website/</guid>
       <description></description>
