@@ -1,7 +1,8 @@
 ---
 title: "Story Points - A Mathematical Perspective"
 date: 2020-03-28T11:16:15+10:00
-draft: true
+draft: false
+tags: ["Agile", "Scrum"]
 ---
 In sprint planning meetings, The Development Team works to forecast the functionality that will be developed during the Sprint.  This often involves estimating the effort required to complete work on user stories.  Story points are an abstract measure of the effort required to complete a story, and it’s fascinating to me how a set of educated guesses turns out to be a fairly accurate estimate of the effort required to meet sprint goals.  Planning poker or some variant of it makes the whole exercise seem somewhat arbitrary.  But it works well in the end.
 
