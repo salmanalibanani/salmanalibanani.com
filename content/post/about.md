@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2020-02-01T11:16:15+10:00
-draft: true
+draft: false 
 ---
 
 ![Salman Ali Banani](/img/about/salman.jpg)
