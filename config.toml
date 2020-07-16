@@ -15,7 +15,7 @@ enableInlineShortcodes = true
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/post/my-first-post/"
+    url = "/2020/02/01/about/"
     weight = 10
 
     [[menu.main]]
