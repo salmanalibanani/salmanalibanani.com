@@ -4,7 +4,6 @@
 		<header class="post__header">
 			<h1 class="post__title">{{ .Title }}</h1>
 			<br />
-			
 			{{ .PublishDate.Format "January 2, 2006" }}
 			{{- with .Params.lead }}
 			<p class="post__lead">{{ . }}</p>
@@ -21,7 +20,17 @@
 		{{- partial "post_toc.html" . -}}
 		<div class="content post__content clearfix">
 			{{ .Content }}
-		</div>
+        </div>
+        <div class="inner">
+            {{ range (.Site.RegularPages.GroupByDate "2006") }}
+                <h3 class="archive-year">{{ .Key }}</h3>
+                    {{ range (where (where .Pages "Title" "not in" "Archives") "Title" "not in" "About")  }}
+                            {{ .PublishDate.Format "02 Jan" }}
+                            - 
+                            <a href="{{.RelPermalink}}">{{.Title}}</a>
+                    {{ end }}
+            {{ end }}
+        </div>
 		{{- if .Params.tags }}
 		<footer class="post__footer">
 			{{ partial "post_tags.html" . }}
