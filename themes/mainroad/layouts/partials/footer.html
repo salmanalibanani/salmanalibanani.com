@@ -1,8 +1,13 @@
 <footer class="footer">
 	<div class="container footer__container flex">
 		{{ partial "footer_links.html" . }}
+		<div class="footer_links">
+			&copy; {{ now.Format "2006" }} {{ .Site.Params.copyright | default .Site.Title }}.	
+		</div>
 		<div class="footer__copyright">
-			&copy; {{ now.Format "2006" }} {{ .Site.Params.copyright | default .Site.Title }}.
+			<span class="socials"><a href="https://au.linkedin.com/in/salmanalibanani" class="fa fa-linkedin"></a></span>
+			<span class="socials"><a href="https://twitter.com/salmanalibanani" class="fa fa-twitter"></a></span>
+			<span class="socials"><a href="https://github.com/salmanalibanani" class="fa fa-github"></a></span>
 		</div>
 	</div>
 </footer>
