@@ -2,7 +2,7 @@
 title: "Scrum and Empiricism"
 date: 2020-06-26T11:16:15+10:00
 draft: false
-tags: ["Agile", "Scrum"]
+tags: ["Agile", "Scrum", "Philosophy"]
 ---
 “Scrum is founded on empirical process control theory, or empiricism.”
 
