@@ -57,3 +57,6 @@ tag = "tags"
 [Params.widgets.social]
   twitter = "SalmanAliBanani"
   linkedin = "SalmanAliBanani"
+
+[markup]
+  defaultMarkdownHandler = "blackfriday"
