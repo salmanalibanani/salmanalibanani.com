@@ -4,7 +4,6 @@
 		<header class="post__header">
 			<h1 class="post__title">{{ .Title }}</h1>
 			<br />
-			{{ .PublishDate.Format "January 2, 2006" }}
 			{{- with .Params.lead }}
 			<p class="post__lead">{{ . }}</p>
 			{{- end }}

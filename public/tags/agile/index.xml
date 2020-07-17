@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agile on Salman Ali Banani</title>
+    <link>https://salmanalibanani.netlify.app/tags/agile/</link>
+    <description>Recent content in Agile on Salman Ali Banani</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Salman Ali Banani.</copyright>
+    <lastBuildDate>Sat, 28 Mar 2020 11:16:15 +1000</lastBuildDate>
+    
+	<atom:link href="https://salmanalibanani.netlify.app/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Story Points - A Mathematical Perspective</title>
+      <link>https://salmanalibanani.netlify.app/2020/03/28/story-points-a-mathematical-perspective/</link>
+      <pubDate>Sat, 28 Mar 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/03/28/story-points-a-mathematical-perspective/</guid>
+      <description>In sprint planning meetings, The Development Team works to forecast the functionality that will be developed during the Sprint. This often involves estimating the effort required to complete work on user stories. Story points are an abstract measure of the effort required to complete a story, and it’s fascinating to me how a set of educated guesses turns out to be a fairly accurate estimate of the effort required to meet sprint goals.</description>
+    </item>
+    
+  </channel>
+</rss>

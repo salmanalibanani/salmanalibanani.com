@@ -7,18 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Salman Ali Banani.</copyright>
-    <lastBuildDate>Wed, 15 Jul 2020 15:50:01 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2020 16:15:44 +1000</lastBuildDate>
     
 	<atom:link href="https://salmanalibanani.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My Second Post</title>
-      <link>https://salmanalibanani.netlify.app/2020/07/15/my-second-post/</link>
-      <pubDate>Wed, 15 Jul 2020 15:50:01 +1000</pubDate>
+      <title>Archives</title>
+      <link>https://salmanalibanani.netlify.app/2020/07/16/archives/</link>
+      <pubDate>Thu, 16 Jul 2020 16:15:44 +1000</pubDate>
       
-      <guid>https://salmanalibanani.netlify.app/2020/07/15/my-second-post/</guid>
-      <description>Let&amp;rsquo;s see if this second post shows up.</description>
+      <guid>https://salmanalibanani.netlify.app/2020/07/16/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Story Points - A Mathematical Perspective</title>
+      <link>https://salmanalibanani.netlify.app/2020/03/28/story-points-a-mathematical-perspective/</link>
+      <pubDate>Sat, 28 Mar 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/03/28/story-points-a-mathematical-perspective/</guid>
+      <description>In sprint planning meetings, The Development Team works to forecast the functionality that will be developed during the Sprint. This often involves estimating the effort required to complete work on user stories. Story points are an abstract measure of the effort required to complete a story, and it’s fascinating to me how a set of educated guesses turns out to be a fairly accurate estimate of the effort required to meet sprint goals.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://salmanalibanani.netlify.app/2020/02/01/about/</link>
+      <pubDate>Sat, 01 Feb 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/02/01/about/</guid>
+      <description>I am a Senior Consultant at Telstra Purple, one of the top IT consulting firms in Australia. I specialize in web development using ASP.NET MVC, JavaScript, HTML, CSS etc.
+I live in Sydney, Australia with my family.</description>
     </item>
     
   </channel>
