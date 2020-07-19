@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Storing Secrets in Azure Key Vault from Azure Devops Release Pipeline - Salman Ali Banani</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Salman Ali Banani" rel="home">
+			<div class="logo__item logo__text float-left">
+					<div class="logo__title">Salman Ali Banani
+
+					</div>
+
+					
+				</div>
+		</a>
+		<br />
+		
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/2020/02/01/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/2020/07/16/archives/">
+				
+				<span class="menu__text">Archives</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Storing Secrets in Azure Key Vault from Azure Devops Release Pipeline</h1>
+			<br />
+			July 9, 2020
+			
+		</header><div class="content post__content clearfix">
+			
+
+<p><a href="https://docs.microsoft.com/en-us/azure/key-vault/general/" target="_blank">Azure Key Vault</a> is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution. You would also expect that such solution should be easy to integrate with your build/release pipelines. Azure Key Vault turns out to be an obvious option if Azure happens to be your platform of choice.</p>
+
+<p>Let’s say you deploy an Azure Service Bus using a template and want to store the details to access that resource securely in an Azure Key Vault.</p>
+
+<p>Below I will show an example which illustrates a very simple technique to achieve this. This apprach can be applied to any Azure resource that requires secure access credentials.</p>
+
+<p>This technique can be particularly useful during the development, as you design and evolve your system and possibly destroy and re-create resources a few times. Every time that happens, you want to store the connection information in Key Vault so that later stages of pipeline can get the correct keys generated in the earlier stages of the pipeline.</p>
+
+<p><b>Note:</b> I am using the classic version of Azure DevOps Release pipelines for this post. You can read more about feature comparison of the classic and the new YAML based pipelines <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops" target="_blank">here</a>.</p>
+
+<p>We start with a simple release pipeline with a single stage which looks like this:</p>
+
+<p><img src="/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-1.png" alt="New release pipeline" /></p>
+
+<p>It simply deploys a template to create a Service Bus. You can find the complete template <a href="https://github.com/salmanalibanani/AzureKeyVaultTaskDemo" target="_blank">here</a>. The output section of the template.json looks like this:</p>
+
+<pre><code>"outputs": {
+  "NamespaceConnectionString": {
+    "type": "string",
+    "value": "[listkeys(variables('authRuleResourceId'), variables('sbVersion')).primaryConnectionString]"
+  },
+  "SharedAccessPolicyPrimaryKey": {
+    "type": "string",
+    "value": "[listkeys(variables('authRuleResourceId'), variables('sbVersion')).primaryKey]"
+  }
+}</code></pre>
+
+<p>Our objective is to read the output of the template, extract the NamespaceConnectionString from it and store it in an Azure Key Vault.</p>
+
+<h2 id="step-1-store-template-output-in-a-variable">Step 1 – Store template output in a variable</h2>
+
+<p>Modify the ARM template deployment task to store the output of the template in a variable:</p>
+
+<p><img src="/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-2.png" alt="New release pipeline" /></p>
+
+<h2 id="step-2-parse-the-template-output-to-extract-connection-information">Step 2 – Parse the template output to extract connection information</h2>
+
+<p>Add a PowerShell task as shown below. It simply extracts the connection string from the template’s json output.
+<img src="/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-3.png" alt="New release pipeline" /></p>
+
+<p>Here is the PowerShell script for the task above.</p>
+
+<pre><code>$armOutputObj = $env:ServiceBusTemplateOutput | convertfrom-json
+$connectionString = $armOutputObj.namespaceConnectionString.value
+"##vso[task.setvariable variable=ServiceBusConnectionString;]$connectionString</code></pre>
+
+<h2 id="step-3-use-write-secrets-task-to-store-secrets-to-the-key-vault">Step 3 – Use “Write Secrets” task to store secrets to the Key Vault</h2>
+
+<p>Add a task to your release pipeline stage to write secrets to Azure Key Vault. It will look something like this (replace name of your Key Vault here). Note that the secret value is coming from the variable we set in Step 2 above.
+<img src="/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-4.png" alt="New release pipeline" />
+At this stage, if you have setup subscription information, Key Vault Name and other parameters correctly in the above task, and you run the pipeline, you will run into the following error:
+<img src="/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-5.png" alt="New release pipeline" />
+To fix that problem, we need to set permissions on Azure Key Vault. Continue with the following steps.</p>
+
+<h2 id="step-4-find-managed-service-principal">Step 4 – Find Managed Service Principal</h2>
+
+<p>In Azure DevOps, go to Project Settings =&gt; Service connections. Click on the “Manage Service Principal”.
+<img src="/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-6.png" alt="New release pipeline" />
+This opens an Application Blade in a new tab. We are after the “Managed application in local directory” value as shown below. You may want to copy this to clipboard.
+<img src="/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-7.png" alt="New release pipeline" /></p>
+
+<h2 id="step-5-modify-key-vault-access-policies">Step 5 – Modify Key Vault Access Policies</h2>
+
+<p>Head back to your Azure Portal and update Access Policies of the Key Vault as shown below.
+<img src="/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-8.png" alt="New release pipeline" />
+Set the access policy as shown above, and do not forget to hit the Save button on the “Access policies” blade.</p>
+
+<p>At this stage, if you run the release pipeline again, you shouldn’t see the error that we encountered in Step 3 above.</p>
+
+<p>You can now go to the Key Vault and ensure that the new secret was created and verify the value stored. You can read this secret in subsequent stages of your pipeline.
+<img src="/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-9.png" alt="New release pipeline" /></p>
+
+<h2 id="conslusion">Conslusion</h2>
+
+<p>In this post, we demonstrated how to store credentials to access an Azure resource in a Key Vault from a Release pipeline using “Write Secrets” task.</p>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2020/07/10/philosophy-for-software-developers/">Philosophy for Software Developers</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/">Storing Secrets in Azure Key Vault from Azure Devops Release Pipeline</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2020/06/26/scrum-and-empiricism/">Scrum and Empiricism</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2020/05/06/its-not-just-the-bell-curve/">It&#39;s Not Just the Bell Curve</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/agile/" title="Agile">Agile</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/philosophy/" title="Philosophy">Philosophy</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/scrum/" title="Scrum">Scrum</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/software-consulting/" title="Software Consulting">Software Consulting</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer_links">
+			&copy; 2020 Salman Ali Banani.	
+		</div>
+		<div class="footer__copyright">
+			<span class="socials"><a target="_blank" href="https://au.linkedin.com/in/salmanalibanani" class="fa fa-linkedin" style="text-decoration:none;"></a></span>
+			<span class="socials"><a target="_blank" href="https://twitter.com/salmanalibanani" class="fa fa-twitter" style="text-decoration:none;"></a></span>
+			<span class="socials"><a target="_blank" href="https://github.com/salmanalibanani" class="fa fa-github" style="text-decoration:none;"></a></span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

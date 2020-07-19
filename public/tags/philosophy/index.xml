@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philosophy on Salman Ali Banani</title>
+    <link>https://salmanalibanani.netlify.app/tags/philosophy/</link>
+    <description>Recent content in Philosophy on Salman Ali Banani</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Salman Ali Banani.</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 11:16:15 +1000</lastBuildDate>
+    
+	<atom:link href="https://salmanalibanani.netlify.app/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Philosophy for Software Developers</title>
+      <link>https://salmanalibanani.netlify.app/2020/07/10/philosophy-for-software-developers/</link>
+      <pubDate>Fri, 10 Jul 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/07/10/philosophy-for-software-developers/</guid>
+      <description>Software developers should read philosophy.
+These days philosophy is considered pretty much useless. If you look at the website of philosophy department of any university, you’ll see that they desperately try to convince you that studying for a degree in philosophy will give you some marketable skills that will ensure better job prospects. And that desperation in itself is perhaps an indicator of how useless qualifications in philosophy as a field of study have become.</description>
+    </item>
+    
+    <item>
+      <title>Scrum and Empiricism</title>
+      <link>https://salmanalibanani.netlify.app/2020/06/26/scrum-and-empiricism/</link>
+      <pubDate>Fri, 26 Jun 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/06/26/scrum-and-empiricism/</guid>
+      <description>“Scrum is founded on empirical process control theory, or empiricism.”
+What? Empiricism?
+The first time I read this sentence in the Scrum Guide, I was quite impressed. As a self-professed pseudo-philosopher, I had a vague understanding of philosophical questions on which empiricists and rationalists generally disagree with each other. It’s an ongoing argument in the history of human thought. To confuse the matters further, technically you can be a rationalist in one area (say mathematics) and an empiricist in another area of physical sciences.</description>
+    </item>
+    
+  </channel>
+</rss>

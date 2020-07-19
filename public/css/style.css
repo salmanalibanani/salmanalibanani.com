@@ -1146,7 +1146,7 @@ textarea {
 	padding: 10px 25px;
 	font-size: 12px;
 	font-size: .75rem;
-	color: #999;
+	color: #FFFFFF;
 	background: #2a2a2a;
 	border-top: 3px solid #999;
 }
@@ -1171,6 +1171,10 @@ textarea {
 	text-decoration: underline;
 }
 
+.socials {
+	margin-left: 10px;
+	margin-right: 10px;
+}
 /* Media Queries */
 @media screen and (max-width: 1475px) {
 	.container--outer {

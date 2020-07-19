@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Salman Ali Banani.</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 11:16:15 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 11:16:15 +1000</lastBuildDate>
     
 	<atom:link href="https://salmanalibanani.netlify.app/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scrum and Empiricism</title>
+      <link>https://salmanalibanani.netlify.app/2020/06/26/scrum-and-empiricism/</link>
+      <pubDate>Fri, 26 Jun 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/06/26/scrum-and-empiricism/</guid>
+      <description>“Scrum is founded on empirical process control theory, or empiricism.”
+What? Empiricism?
+The first time I read this sentence in the Scrum Guide, I was quite impressed. As a self-professed pseudo-philosopher, I had a vague understanding of philosophical questions on which empiricists and rationalists generally disagree with each other. It’s an ongoing argument in the history of human thought. To confuse the matters further, technically you can be a rationalist in one area (say mathematics) and an empiricist in another area of physical sciences.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s Not Just the Bell Curve</title>
+      <link>https://salmanalibanani.netlify.app/2020/05/06/its-not-just-the-bell-curve/</link>
+      <pubDate>Wed, 06 May 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/05/06/its-not-just-the-bell-curve/</guid>
+      <description>The Bell Curve is our friend. In a recent post, I argued that in Scrum teams the story point estimates work very well because we will inevitably overestimate effort required for certain stories and underestimate effort for others. The net effect is that the overestimates will cancel out the underestimates in the long run.
+But, there is something else that goes on in a Scrum team, that makes our estimates more accurate.</description>
+    </item>
     
     <item>
       <title>Story Points - A Mathematical Perspective</title>

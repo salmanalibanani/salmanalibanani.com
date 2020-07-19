@@ -7,15 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Salman Ali Banani.</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 11:16:15 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2020 11:16:15 +1000</lastBuildDate>
     
 	<atom:link href="https://salmanalibanani.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Philosophy</title>
+      <link>https://salmanalibanani.netlify.app/tags/philosophy/</link>
+      <pubDate>Fri, 10 Jul 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Consulting</title>
+      <link>https://salmanalibanani.netlify.app/tags/software-consulting/</link>
+      <pubDate>Fri, 10 Jul 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/tags/software-consulting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Agile</title>
       <link>https://salmanalibanani.netlify.app/tags/agile/</link>
-      <pubDate>Sat, 28 Mar 2020 11:16:15 +1000</pubDate>
+      <pubDate>Fri, 26 Jun 2020 11:16:15 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/tags/agile/</guid>
       <description></description>
@@ -24,7 +42,7 @@
     <item>
       <title>Scrum</title>
       <link>https://salmanalibanani.netlify.app/tags/scrum/</link>
-      <pubDate>Sat, 28 Mar 2020 11:16:15 +1000</pubDate>
+      <pubDate>Fri, 26 Jun 2020 11:16:15 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/tags/scrum/</guid>
       <description></description>
