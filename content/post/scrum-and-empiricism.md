@@ -26,7 +26,7 @@ Rationalists, on the other hand hold that at least some of our knowledge is deri
 
 And that’s exactly the problem I have with empiricism: exclusivity.  Empiricists don’t leave any chance of any other source of knowledge.  But I do agree that Science totally relies on empiricism.  Being scientific about something means being an empiricist.
 
-And that makes Scrum sort of a scientific enterprise.
+And that makes Scrum a scientific enterprise.
 
 And don’t get me wrong: it’s a good thing.  Scrum is all about inspecting and adapting.  As the Scrum guide tells us, each event in Scrum is a formal opportunity to inspect and adapt something.  If findings of a team are backed by evidence and observation, we have something tangible to talk about.
 
