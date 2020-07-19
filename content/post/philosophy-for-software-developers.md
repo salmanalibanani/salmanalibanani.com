@@ -1,7 +1,7 @@
 ---
 title: "Philosophy for Software Developers"
 date: 2020-07-10T11:16:15+10:00
-draft: false
+draft: true 
 tags: ["Philosophy", "Software Consulting"]
 ---
 
