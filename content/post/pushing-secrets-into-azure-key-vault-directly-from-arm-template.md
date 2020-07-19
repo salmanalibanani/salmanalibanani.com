@@ -2,6 +2,7 @@
 title: "Pushing Secrets Into Azure Key Vault Directly From Arm Template"
 date: 2020-07-14T23:20:56+10:00
 draft: false
+tags: ["Azure", "DevOps", "Key Vault"]
 ---
 <a href="https://docs.microsoft.com/en-us/azure/key-vault/general/" target="_blank">Azure Key Vault</a> is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution.
 
