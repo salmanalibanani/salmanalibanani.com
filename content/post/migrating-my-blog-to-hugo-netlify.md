@@ -2,6 +2,7 @@
 title: "Migrating My Blog to Hugo/Netlify"
 date: 2020-07-20T16:29:09+10:00
 draft: false 
+tags: ["Blogging"]
 ---
 Don't get me wrong.  Wordpress is great.  
 
@@ -11,7 +12,7 @@ But I soon realised that it was a bit of an overkill for what I was doing.  I wa
 
 I looked around for alternatives, and finally settled for the zero-cost combo of <a href="https://www.netlify.com/" target="_blank">Netlify</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>.
 
-I love the workflow.  I do my posts in VSCode, preview the posts locally, push changes to my Github repo.  Netlify builds and deploys the whole thing in seconds.
+I love the workflow.  I do my posts in VSCode, preview the posts locally, and push changes to my Github repo.  Netlify builds and deploys the whole thing in seconds.
 
 There were a few steps involved in migration.  The theme that I am using needed some tweaks.  Not the most awesome theme in the world, and I'll probably change it soon, but it works for now.  I also wanted to retain the url schemes of my site on Wordpress.com.  All the tweaks and content migration took me a couple of hours.  DONE!
 
