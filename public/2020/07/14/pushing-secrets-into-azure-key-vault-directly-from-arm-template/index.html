@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Scrum and Empiricism - Salman Ali Banani</title>
+	<title>Pushing Secrets Into Azure Key Vault Directly From Arm Template - Salman Ali Banani</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -65,42 +65,49 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Scrum and Empiricism</h1>
+			<h1 class="post__title">Pushing Secrets Into Azure Key Vault Directly From Arm Template</h1>
 			<br />
-			June 26, 2020
+			July 14, 2020
 			
 		</header><div class="content post__content clearfix">
-			<p>“Scrum is founded on empirical process control theory, or empiricism.”</p>
+			
 
-<p>What?  Empiricism?</p>
+<p><a href="https://docs.microsoft.com/en-us/azure/key-vault/general/" target="_blank">Azure Key Vault</a> is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution.</p>
 
-<p>The first time I read this sentence in the <a target="_blank" href="https://www.scrumguides.org/scrum-guide.html">Scrum Guide</a>, I was quite impressed.  As a self-professed pseudo-philosopher, I had a vague understanding of philosophical questions on which empiricists and rationalists generally disagree with each other.  It’s an ongoing argument in the history of human thought.  To confuse the matters further, technically you can be a rationalist in one area (say mathematics) and an empiricist in another area of physical sciences.  But the dispute generally holds true.</p>
+<p>In a previos <a href="/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/" target="_blank">post</a>, I  showed a simple technique to store the access credentials of a resource (e.g. a Service Bus) in an Azure Key Vault. In that post, I used “Write Secrets” task in an Azure Release pipeline to store the credentials.</p>
 
-<p>The fact that Scrum takes inspiration from empiricism tells us something important about it.</p>
+<p>Below I show a somewhat different way to do this and keep the pipeline simple by writing the secret directly from ARM template that creates the resource (i.e. Service Bus) in previous step.</p>
 
-<p>The question underlying the philosophical debate mentioned above is this:  How can we gain knowledge?  What is the ultimate source of our knowledge?</p>
+<p>Have a look at <a href="https://github.com/salmanalibanani/AzureKeyVaultFromTemplate" target="_blank">this</a> repository for an example of this approach. I have used a YAML based pipeline to deploy various resources (Resource Group, Key Vault, Service Bus), and our objective is to store the Servie Bus endpoint information in the Key Vault (which is created one step before the Service Bus in the pipeline). The important bit here is last part of the template that deploys Service Bus.
+<pre><code>{
+    &ldquo;type&rdquo;: &ldquo;Microsoft.KeyVault/vaults/secrets&rdquo;,
+    &ldquo;name&rdquo;: &ldquo;[concat(parameters(&lsquo;keyVaultName&rsquo;), &lsquo;/ServiceBusConnectionString&rsquo;)]&ldquo;,
+    &ldquo;apiVersion&rdquo;: &ldquo;2019-09-01&rdquo;,
+    &ldquo;dependsOn&rdquo;: [
+        &ldquo;[parameters(&lsquo;serviceBusNamespaceName&rsquo;)]&rdquo;
+    ],
+    &ldquo;location&rdquo;: &ldquo;[parameters(&lsquo;location&rsquo;)]&ldquo;,
+    &ldquo;properties&rdquo;: {
+        &ldquo;value&rdquo;: &ldquo;[listkeys(variables(&lsquo;authRuleResourceId&rsquo;), variables(&lsquo;sbVersion&rsquo;)).primaryConnectionString]&rdquo;
+    }
+}</code></pre></p>
 
-<p>How would you answer that question?</p>
+<p>This creates a new secret “ServiceBusConnectionString” in the Key Vault whose name is provided as a parameter to the template.</p>
 
-<p>If you think your primary source of knowledge is your sense perception, then I congratulate you for being a child of a Scientific age that relies heavily on empiricism to learn about the world.  The <a target="_blank" href="https://www.khanacademy.org/science/biology/intro-to-biology/science-of-biology/a/the-science-of-biology">Scientific Method</a>, (if there really is such a thing) relies on sense perception.  I would argue that in modern societies the need for “evidence” to make any claims to knowledge is so pervasive that we can’t imagine any other possibility.  The rationalist positions would sound silly at first, unless we think very carefully about rationalists’ view of how knowledge is achieved.</p>
+<p>Note that to make this sample work, you will have to do a few things:</p>
 
-<p>An empiricist would believe that all our knowledge is derived from our senses.  We don’t have any innate knowledge.  Now this has worked well for Science in the last 500 years or so.  Scientists like reproducibility of their results.  In fact, recently there was a story published on <a href="http://www.bbc.com/news/science-environment-39054778" target="blank">BBC</a> about a “reproducibility crisis” in the scientific world.</p>
+<ol>
+<li>Define pipeline variables <strong>azureResourceManagerConnectionName</strong>, and <strong>SubscriptionId</strong> that I have used in my YAML pipeline definition.</li>
+<li>Set objectId in accessPolicies in the parameters file for the template that deploys Key Vault. This objectId is supposed to be the id of the user in your Azure Active Direct tenant who will have access to this Key Vault. You will notice that in the <strong>keysPermission</strong> variable in our template, we have given list permissions to this user. You can use the <strong>Get-AzureRmADUser</strong> in Azure Cloud Shell to find an Id of a user that you want to give access to this Key Vault.</li>
+</ol>
 
-<p>“Replication is supposed to be a hallmark of scientific integrity”, the above article tells us.</p>
+<p><img src="/img/pushing-secrets-into-azure-key-vault-directly-from-arm-template/objectid.png" alt="New release pipeline" /></p>
 
-<p>Rationalists, on the other hand hold that at least some of our knowledge is derived from reason alone.  There is a wide range of opinions among rationalists regarding the relative importance of reason for acquisition of knowledge.  Plato is probably one of the earliest philosophers showing rationalist tendencies.  His whole idea of eternal Forms and doctrine of knowledge by recollection have strong smells of rationalism as it was developed subsequently.  I guess what unites rationalists is their refusal to treat sense data as the only foundation for knowledge acquisition.</p>
+<p>This approach clearly makes the pipeline simpler, with no need to inject a script to parse template outputs to extract the secret (Service Bus endpoint in this case).</p>
 
-<p>And that’s exactly the problem I have with empiricism: exclusivity.  Empiricists don’t leave any chance of any other source of knowledge.  But I do agree that Science totally relies on empiricism.  Being scientific about something means being an empiricist.</p>
+<h2 id="conclusion">Conclusion</h2>
 
-<p>And that makes Scrum a scientific enterprise.</p>
-
-<p>And don’t get me wrong: it’s a good thing.  Scrum is all about inspecting and adapting.  As the Scrum guide tells us, each event in Scrum is a formal opportunity to inspect and adapt something.  If findings of a team are backed by evidence and observation, we have something tangible to talk about.</p>
-
-<p>If, for example, we observe that not having an automated CI/CD setup adversely affects team performance, and if it is an observation that is shared among multiple team members, we can then do something about it.</p>
-
-<p>Empiricism makes it possible to have a conversation.  It takes away opinions that can’t be substantiated with evidence.</p>
-
-<p>In my opinion, that is a huge contributor to the success of Scrum as a framework.</p>
+<p>In this post we learned how to store credentials to access an Azure resource directly from an ARM template that deploys that resource, without parsing template output and using the “Writing Secrets” task in a Release pipeline.</p>
 
 		</div>
 		<footer class="post__footer">
@@ -109,13 +116,13 @@
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/agile/" rel="tag">Agile</a>
+			<a class="tags__link btn" href="/tags/azure/" rel="tag">Azure</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/scrum/" rel="tag">Scrum</a>
+			<a class="tags__link btn" href="/tags/devops/" rel="tag">DevOps</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/philosophy/" rel="tag">Philosophy</a>
+			<a class="tags__link btn" href="/tags/key-vault/" rel="tag">Key Vault</a>
 		</li>
 	</ul>
 </div>

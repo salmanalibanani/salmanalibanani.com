@@ -22,13 +22,13 @@
     </item>
     
     <item>
-      <title>Philosophy for Software Developers</title>
-      <link>https://salmanalibanani.netlify.app/2020/07/10/philosophy-for-software-developers/</link>
-      <pubDate>Fri, 10 Jul 2020 11:16:15 +1000</pubDate>
+      <title>Pushing Secrets Into Azure Key Vault Directly From Arm Template</title>
+      <link>https://salmanalibanani.netlify.app/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/</link>
+      <pubDate>Tue, 14 Jul 2020 23:20:56 +1000</pubDate>
       
-      <guid>https://salmanalibanani.netlify.app/2020/07/10/philosophy-for-software-developers/</guid>
-      <description>Software developers should read philosophy.
-These days philosophy is considered pretty much useless. If you look at the website of philosophy department of any university, you’ll see that they desperately try to convince you that studying for a degree in philosophy will give you some marketable skills that will ensure better job prospects. And that desperation in itself is perhaps an indicator of how useless qualifications in philosophy as a field of study have become.</description>
+      <guid>https://salmanalibanani.netlify.app/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/</guid>
+      <description>Azure Key Vault is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution.
+In a previos post, I showed a simple technique to store the access credentials of a resource (e.</description>
     </item>
     
     <item>
