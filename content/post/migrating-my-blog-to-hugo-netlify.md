@@ -12,11 +12,11 @@ But I soon realised that it was a bit of an overkill for what I was doing.  I wa
 
 I looked around for alternatives, and finally settled for the zero-cost combo of <a href="https://www.netlify.com/" target="_blank">Netlify</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>.
 
-I love the workflow.  I do my posts in VSCode, preview the posts locally, and push changes to my Github repo.  Netlify builds and deploys the whole thing in seconds.
+I love the workflow.  I write my posts in VSCode, preview them locally using Hugo's built-in server, and push changes to my Github repo.  Netlify builds and deploys the whole thing in seconds.
 
-There were a few steps involved in migration.  The theme that I am using needed some tweaks.  Not the most awesome theme in the world, and I'll probably change it soon, but it works for now.  I also wanted to retain the url schemes of my site on Wordpress.com.  All the tweaks and content migration took me a couple of hours.  DONE!
+There were a few steps involved in migration from Wordpress.  The Hugo theme that I am using needed some tweaks.  It's not the most elegant theme in the world though, and I'll probably change it soon, but it works for now.  I also wanted to retain the url schemes of my site on Wordpress.com.  All the tweaks and content migration took me a couple of hours.  DONE!
 
-Hugo obviously offers much more than what I am currently using and will probably need.  I will keep exploring, and right now I am loving the blazing fast speed.
+Hugo obviously offers much more than what I am currently using.  I will keep exploring, and right now I am loving the new workflow and the blazing fast speed.
 
 
 
