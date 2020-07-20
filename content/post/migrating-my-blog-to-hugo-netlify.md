@@ -12,7 +12,7 @@ But I soon realised that it was a bit of an overkill for what I was doing.  I wa
 
 I looked around for alternatives, and finally settled for the zero-cost combo of <a href="https://www.netlify.com/" target="_blank">Netlify</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>.
 
-I love the workflow.  I write my posts in VSCode, preview them locally using Hugo's built-in server, and push changes to my Github repo.  Netlify builds and deploys the whole thing in seconds.
+I love the workflow.  I write my posts in VSCode, preview them locally using Hugo's built-in server, and push changes to my Github repo.  Netlify builds and deploys the whole thing in seconds.  You get 300 build minutes and 100GB bandwidth per-month from Netlify.  I don't think I'll ever need more than that.
 
 There were a few steps involved in migration from Wordpress.  The Hugo theme that I am using needed some tweaks.  It's not the most elegant theme in the world though, and I'll probably change it soon, but it works for now.  I also wanted to retain the url schemes of my site on Wordpress.com.  All the tweaks and content migration took me a couple of hours.  DONE!
 
