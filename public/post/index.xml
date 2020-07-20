@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Salman Ali Banani.</copyright>
-    <lastBuildDate>Thu, 16 Jul 2020 16:15:44 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 16:29:09 +1000</lastBuildDate>
     
 	<atom:link href="https://salmanalibanani.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Migrating My Blog to Hugo/Netlify</title>
+      <link>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo/netlify/</link>
+      <pubDate>Mon, 20 Jul 2020 16:29:09 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo/netlify/</guid>
+      <description>Don&amp;rsquo;t get me wrong. Wordpress is great.
+When I started to take blogging seriously a few months ago, I decided to keep things as simple as possible. I think that Wordpress.com was a good choice at that time. I could focus on content, and not worry too much about anything else. The nice HTML editor allowed me to do pretty much everything I wanted to do, and I am not ashamed of uisng an HTML editor!</description>
+    </item>
     
     <item>
       <title>Archives</title>
@@ -29,6 +39,19 @@
       <guid>https://salmanalibanani.netlify.app/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/</guid>
       <description>Azure Key Vault is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution.
 In a previos post, I showed a simple technique to store the access credentials of a resource (e.</description>
+    </item>
+    
+    <item>
+      <title>Philosophy for Software Developers</title>
+      <link>https://salmanalibanani.netlify.app/2020/07/10/philosophy-for-software-developers/</link>
+      <pubDate>Fri, 10 Jul 2020 11:16:15 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/07/10/philosophy-for-software-developers/</guid>
+      <description>Science is what we know and Philosophy is what we don&amp;rsquo;t know.
+(Bertrand Russell)
+ Software developers should have some familiarity with the ultimate philosophical questions that have been asked over the last 2000 years, and how great thinkers and writers of the past have tried to answer those questions.
+My own interest in philosophy began many years ago, when I came across this quote by Russell:
+ I think nobody should be certain of anything.</description>
     </item>
     
     <item>

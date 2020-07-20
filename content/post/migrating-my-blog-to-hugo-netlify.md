@@ -5,7 +5,7 @@ draft: false
 ---
 Don't get me wrong.  Wordpress is great.  
 
-When I started to take blogging seriously a few months ago, I decided to keep things as simple as possible.  I think that Wordpress.com was a good choice at that time.  I could focus on content, and not worry too much about anything else.  The nice HTML editor allowed me to do pretty much everything I wanted to do, and I am not ashamed uisng an HTML editor!  
+When I started to take blogging seriously a few months ago, I decided to keep things as simple as possible.  I think that Wordpress.com was a good choice at that time.  I could focus on content, and not worry too much about anything else.  The nice HTML editor allowed me to do pretty much everything I wanted to do, and I am not ashamed of uisng an HTML editor!  
 
 But I soon realised that it was a bit of an overkill for what I was doing.  I was paying for the premium features and hardly using any of those.
 

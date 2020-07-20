@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://salmanalibanani.netlify.app/2020/07/16/archives/</loc>
-    <lastmod>2020-07-16T16:15:44+10:00</lastmod>
+    <loc>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo/netlify/</loc>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://salmanalibanani.netlify.app/post/</loc>
-    <lastmod>2020-07-16T16:15:44+10:00</lastmod>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://salmanalibanani.netlify.app/</loc>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/2020/07/16/archives/</loc>
     <lastmod>2020-07-16T16:15:44+10:00</lastmod>
   </url>
   
@@ -43,17 +48,27 @@
   </url>
   
   <url>
+    <loc>https://salmanalibanani.netlify.app/tags/philosophy/</loc>
+    <lastmod>2020-07-10T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/2020/07/10/philosophy-for-software-developers/</loc>
+    <lastmod>2020-07-10T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/tags/software-consulting/</loc>
+    <lastmod>2020-07-10T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://salmanalibanani.netlify.app/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/</loc>
     <lastmod>2020-07-09T00:32:31+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://salmanalibanani.netlify.app/tags/agile/</loc>
-    <lastmod>2020-06-26T11:16:15+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salmanalibanani.netlify.app/tags/philosophy/</loc>
     <lastmod>2020-06-26T11:16:15+10:00</lastmod>
   </url>
   
