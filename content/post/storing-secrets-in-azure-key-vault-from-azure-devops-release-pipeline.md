@@ -3,6 +3,7 @@ title: "Storing Secrets in Azure Key Vault from Azure Devops Release Pipeline"
 date: 2020-07-09T00:32:31+10:00
 draft: false
 tags: ["Azure", "DevOps", "Key Vault"]
+summary: "Steps to use Azure Key Vault from an Azure DevOps Release pipeline." 
 ---
 
 <a href="https://docs.microsoft.com/en-us/azure/key-vault/general/" target="_blank">Azure Key Vault</a> is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution. You would also expect that such solution should be easy to integrate with your build/release pipelines. Azure Key Vault turns out to be an obvious option if Azure happens to be your platform of choice.
