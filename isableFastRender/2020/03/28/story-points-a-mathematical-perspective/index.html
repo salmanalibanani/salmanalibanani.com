@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Story Points - A Mathematical Perspective - Salman Ali Banani</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Story Points - A Mathematical Perspective" />
+<meta property="og:description" content="In sprint planning meetings, The Development Team works to forecast the functionality that will be developed during the Sprint. This often involves estimating the effort required to complete work on user stories. Story points are an abstract measure of the effort required to complete a story, and it’s fascinating to me how a set of educated guesses turns out to be a fairly accurate estimate of the effort required to meet sprint goals." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/2020/03/28/story-points-a-mathematical-perspective/" />
+<meta property="article:published_time" content="2020-03-28T11:16:15+10:00" />
+<meta property="article:modified_time" content="2020-03-28T11:16:15+10:00" />
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Salman Ali Banani" rel="home">
+			<div class="logo__item logo__text float-left">
+					<div class="logo__title">Salman Ali Banani
+
+					</div>
+
+					
+				</div>
+		</a>
+		<br />
+		
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/2020/02/01/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/2020/07/16/archives/">
+				
+				<span class="menu__text">Archives</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Story Points - A Mathematical Perspective</h1>
+			<br />
+			March 28, 2020
+			
+		</header><div class="content post__content clearfix">
+			<p>In sprint planning meetings, The Development Team works to forecast the functionality that will be developed during the Sprint.  This often involves estimating the effort required to complete work on user stories.  Story points are an abstract measure of the effort required to complete a story, and it’s fascinating to me how a set of educated guesses turns out to be a fairly accurate estimate of the effort required to meet sprint goals.  Planning poker or some variant of it makes the whole exercise seem somewhat arbitrary.  But it works well in the end.</p>
+
+<p>Product owners want estimates to be as accurate as possible.  It helps them set their timelines of delivery, make commitments to the stake holders, and make decisions that affect the project and possibly the entire business.</p>
+
+<p>An accurate estimate!  Do you see something weird going on here?</p>
+
+<p>According to Cambridge Dictionary, an estimate is a guess of what the size, value, amount, cost, etc. of something might be.  Note that it is just a guess.  There is no guarantee that your story points estimate represents true effort you would eventually require to complete the user story.  It can be accurate if you are lucky though.</p>
+
+<p>But then, how can we rely on a series of story points – which are really a set of estimates – for planning and decision-making purposes?  If each estimate is potentially wrong, then how do we deal with the accumulated error of estimation for an entire sprint plan?</p>
+
+<p>At this point, statistics comes to our help.</p>
+
+<p>Statisticians tell us about something called a “normal distribution”.  It is a distribution that occurs naturally in many situations.  A quick google shows that this distribution is applicable in following scenarios:</p>
+
+<ul>
+<li>Heights of people</li>
+<li>Blood pressure</li>
+<li>Points on a test</li>
+<li>IQ scores</li>
+<li>Salaries</li>
+<li>Measurement errors</li>
+</ul>
+
+<p>The last application in this list is of interest to us.  I would argue that in case of story points estimation, our error in estimation would follow normal distribution, or something very close to it.</p>
+
+<p><img src="/img/story-points-a-mathematical-perspective/b1.jpg" alt="Standard Normal Distribution" /></p>
+
+<p>So, what does that mean?</p>
+
+<p>Note that this curve is symmetric.  It’s reasonable to assume that the number of times I overestimate the effort required to complete a story (or the amount by which I overestimate some stories) will be roughly equal to the number of times I underestimate the effort (or the amount by which I underestimate).  With this mathematical intuition, I think it’s safe to assume that the overestimates will cancel the underestimates over many sprints!</p>
+
+<p>And this shows why story points work nicely for planning purposes.</p>
+
+<p>A consequence of this perspective is that there is no need to read too much into how many story-points a team has completed in any given sprint.  Many factors might have affected a single sprint.  The real value, from a planning perspective, is in the averages; for example, average story points completed in, say, last 5 sprints.</p>
+
+<p><img src="/img/story-points-a-mathematical-perspective/b2.png" alt="Story points completed per sprint" /></p>
+
+<p>The above graph shows story points in an actual project I was recently involved in.  The lumpiness of this graph makes us feel that something is not quite right here.  But the situation makes more sense if we consider the averages over 5 sprints.</p>
+
+<p><img src="/img/story-points-a-mathematical-perspective/b3.png" alt="Story points completed per sprint" /></p>
+
+<p>This graph shows the progress the same team made as the project progressed during the first 4 months or so.  After a rather slow start the team did gain some momentum.</p>
+
+<p>As long as we are able to identify the reasons of lumpiness in any given pair of two consecutive sprints, I think we should be reasonably happy with this sort of progress.  The longer-term trends showing the averages are better representatives of the progress a Scrum team makes during the course of a project.</p>
+
+<p>So, this is what I propose.   Next time when somebody passionately defends their estimate during a sprint planning meeting, just give up.  Make them happy by acknowledging their estimate as the correct one (within reason, of course), and take comfort in the fact that even if their estimate is wrong in your judgment, normal distribution will take care of errors of estimation in the long run.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/agile/" rel="tag">Agile</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/scrum/" rel="tag">Scrum</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2020/07/20/migrating-my-blog-to-hugo-netlify/">Migrating My Blog to Hugo &amp; Netlify</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/">Pushing Secrets Into Azure Key Vault Directly From Arm Template</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2020/07/10/philosophy-for-software-developers/">Philosophy for Software Developers</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/">Storing Secrets in Azure Key Vault from Azure Devops Release Pipeline</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/agile/" title="Agile">Agile</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/azure/" title="Azure">Azure</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogging/" title="Blogging">Blogging</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/devops/" title="DevOps">DevOps</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/key-vault/" title="Key Vault">Key Vault</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/philosophy/" title="Philosophy">Philosophy</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/scrum/" title="Scrum">Scrum</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/software-consulting/" title="Software Consulting">Software Consulting</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer_links">
+			&copy; 2020 Salman Ali Banani.	
+		</div>
+		<div class="footer__copyright">
+			<span class="socials"><a target="_blank" href="https://twitter.com/salmanalibanani" class="fa fa-twitter" style="text-decoration:none; font-size:16px"></a></span>
+			<span class="socials"><a target="_blank" href="https://au.linkedin.com/in/salmanalibanani" class="fa fa-linkedin" style="text-decoration:none; font-size:16px"></a></span>
+			<span class="socials"><a target="_blank" href="https://github.com/salmanalibanani" class="fa fa-github" style="text-decoration:none; font-size:16px"></a></span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

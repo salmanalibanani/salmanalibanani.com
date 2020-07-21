@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scrum on Salman Ali Banani</title>
+    <link>http://localhost:1313/tags/scrum/</link>
+    <description>Recent content in Scrum on Salman Ali Banani</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Salman Ali Banani.</copyright>
+    <lastBuildDate>Fri, 26 Jun 2020 11:16:15 +1000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scrum and Empiricism</title>
+      <link>http://localhost:1313/2020/06/26/scrum-and-empiricism/</link>
+      <pubDate>Fri, 26 Jun 2020 11:16:15 +1000</pubDate>
+      
+      <guid>http://localhost:1313/2020/06/26/scrum-and-empiricism/</guid>
+      <description>“Scrum is founded on empirical process control theory, or empiricism.”
+What? Empiricism?
+The first time I read this sentence in the Scrum Guide, I was quite impressed. As a self-professed pseudo-philosopher, I had a vague understanding of philosophical questions on which empiricists and rationalists generally disagree with each other. It’s an ongoing argument in the history of human thought. To confuse the matters further, technically you can be a rationalist in one area (say mathematics) and an empiricist in another area of physical sciences.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s Not Just the Bell Curve</title>
+      <link>http://localhost:1313/2020/05/06/its-not-just-the-bell-curve/</link>
+      <pubDate>Wed, 06 May 2020 11:16:15 +1000</pubDate>
+      
+      <guid>http://localhost:1313/2020/05/06/its-not-just-the-bell-curve/</guid>
+      <description>The Bell Curve is our friend. In a recent post, I argued that in Scrum teams the story point estimates work very well because we will inevitably overestimate effort required for certain stories and underestimate effort for others. The net effect is that the overestimates will cancel out the underestimates in the long run.
+But, there is something else that goes on in a Scrum team, that makes our estimates more accurate.</description>
+    </item>
+    
+    <item>
+      <title>Story Points - A Mathematical Perspective</title>
+      <link>http://localhost:1313/2020/03/28/story-points-a-mathematical-perspective/</link>
+      <pubDate>Sat, 28 Mar 2020 11:16:15 +1000</pubDate>
+      
+      <guid>http://localhost:1313/2020/03/28/story-points-a-mathematical-perspective/</guid>
+      <description>In sprint planning meetings, The Development Team works to forecast the functionality that will be developed during the Sprint. This often involves estimating the effort required to complete work on user stories. Story points are an abstract measure of the effort required to complete a story, and it’s fascinating to me how a set of educated guesses turns out to be a fairly accurate estimate of the effort required to meet sprint goals.</description>
+    </item>
+    
+  </channel>
+</rss>

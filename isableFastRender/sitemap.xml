@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:1313/tags/blogging/</loc>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2020/07/20/migrating-my-blog-to-hugo-netlify/</loc>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2020/07/16/archives/</loc>
+    <lastmod>2020-07-16T16:15:44+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/azure/</loc>
+    <lastmod>2020-07-14T23:20:56+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/devops/</loc>
+    <lastmod>2020-07-14T23:20:56+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/key-vault/</loc>
+    <lastmod>2020-07-14T23:20:56+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/</loc>
+    <lastmod>2020-07-14T23:20:56+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/philosophy/</loc>
+    <lastmod>2020-07-10T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2020/07/10/philosophy-for-software-developers/</loc>
+    <lastmod>2020-07-10T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/software-consulting/</loc>
+    <lastmod>2020-07-10T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/</loc>
+    <lastmod>2020-07-09T00:32:31+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/agile/</loc>
+    <lastmod>2020-06-26T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/scrum/</loc>
+    <lastmod>2020-06-26T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2020/06/26/scrum-and-empiricism/</loc>
+    <lastmod>2020-06-26T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2020/05/06/its-not-just-the-bell-curve/</loc>
+    <lastmod>2020-05-06T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2020/03/28/story-points-a-mathematical-perspective/</loc>
+    <lastmod>2020-03-28T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2020/02/01/about/</loc>
+    <lastmod>2020-02-01T11:16:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url>
+  
+</urlset>

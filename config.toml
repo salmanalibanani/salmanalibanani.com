@@ -8,9 +8,9 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 
 [Author]
-  name = "Salman Ali Banani"
+  name = "Salman"
   bio = "Here is a brief bio."
-  avatar = "about/salman.jpg"
+  avatar = "/img/about/salman.jpg"
 
 [permalinks]
   post = "/:year/:month/:day/:title/"
@@ -33,14 +33,14 @@ enableInlineShortcodes = true
 category = "categories"
 tag = "tags"
 
-[params]
+[Params]
   description = "<your site description>"
   opengraph = true
   twitter_cards = false
   readmore = false # Show "Read more" button in list if true
-  authorbox = true
-  pager = true
-  post_meta = ["date", "categories"] # Order of post meta information
+  authorbox = false 
+  pager = false 
+  post_meta = ["categories"] # Order of post meta information
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Salman Ali Banani</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Salman Ali Banani</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Salman Ali Banani.</copyright>
+    <lastBuildDate>Mon, 20 Jul 2020 16:29:09 +1000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogging</title>
+      <link>http://localhost:1313/tags/blogging/</link>
+      <pubDate>Mon, 20 Jul 2020 16:29:09 +1000</pubDate>
+      
+      <guid>http://localhost:1313/tags/blogging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>http://localhost:1313/tags/azure/</link>
+      <pubDate>Tue, 14 Jul 2020 23:20:56 +1000</pubDate>
+      
+      <guid>http://localhost:1313/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevOps</title>
+      <link>http://localhost:1313/tags/devops/</link>
+      <pubDate>Tue, 14 Jul 2020 23:20:56 +1000</pubDate>
+      
+      <guid>http://localhost:1313/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Key Vault</title>
+      <link>http://localhost:1313/tags/key-vault/</link>
+      <pubDate>Tue, 14 Jul 2020 23:20:56 +1000</pubDate>
+      
+      <guid>http://localhost:1313/tags/key-vault/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Philosophy</title>
+      <link>http://localhost:1313/tags/philosophy/</link>
+      <pubDate>Fri, 10 Jul 2020 11:16:15 +1000</pubDate>
+      
+      <guid>http://localhost:1313/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Consulting</title>
+      <link>http://localhost:1313/tags/software-consulting/</link>
+      <pubDate>Fri, 10 Jul 2020 11:16:15 +1000</pubDate>
+      
+      <guid>http://localhost:1313/tags/software-consulting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile</title>
+      <link>http://localhost:1313/tags/agile/</link>
+      <pubDate>Fri, 26 Jun 2020 11:16:15 +1000</pubDate>
+      
+      <guid>http://localhost:1313/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scrum</title>
+      <link>http://localhost:1313/tags/scrum/</link>
+      <pubDate>Fri, 26 Jun 2020 11:16:15 +1000</pubDate>
+      
+      <guid>http://localhost:1313/tags/scrum/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

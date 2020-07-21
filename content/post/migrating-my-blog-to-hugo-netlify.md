@@ -1,8 +1,9 @@
 ---
-title: "Migrating My Blog to Hugo/Netlify"
+title: "Migrating My Blog to Hugo & Netlify"
 date: 2020-07-20T16:29:09+10:00
 draft: false 
 tags: ["Blogging"]
+summary: "Some more summary"
 ---
 Don't get me wrong.  Wordpress is great.  
 

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pushing Secrets Into Azure Key Vault Directly From Arm Template - Salman Ali Banani</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Pushing Secrets Into Azure Key Vault Directly From Arm Template" />
+<meta property="og:description" content="Azure Key Vault is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution.
+In a previos post, I showed a simple technique to store the access credentials of a resource (e." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/" />
+<meta property="article:published_time" content="2020-07-14T23:20:56+10:00" />
+<meta property="article:modified_time" content="2020-07-14T23:20:56+10:00" />
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Salman Ali Banani" rel="home">
+			<div class="logo__item logo__text float-left">
+					<div class="logo__title">Salman Ali Banani
+
+					</div>
+
+					
+				</div>
+		</a>
+		<br />
+		
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/2020/02/01/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/2020/07/16/archives/">
+				
+				<span class="menu__text">Archives</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Pushing Secrets Into Azure Key Vault Directly From Arm Template</h1>
+			<br />
+			July 14, 2020
+			
+		</header><div class="content post__content clearfix">
+			
+
+<p><a href="https://docs.microsoft.com/en-us/azure/key-vault/general/" target="_blank">Azure Key Vault</a> is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution.</p>
+
+<p>In a previos <a href="/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/" target="_blank">post</a>, I  showed a simple technique to store the access credentials of a resource (e.g. a Service Bus) in an Azure Key Vault. In that post, I used “Write Secrets” task in an Azure Release pipeline to store the credentials.</p>
+
+<p>Below I show a somewhat different way to do this and keep the pipeline simple by writing the secret directly from ARM template that creates the resource (i.e. Service Bus) in previous step.</p>
+
+<p>Have a look at <a href="https://github.com/salmanalibanani/AzureKeyVaultFromTemplate" target="_blank">this</a> repository for an example of this approach. I have used a YAML based pipeline to deploy various resources (Resource Group, Key Vault, Service Bus), and our objective is to store the Servie Bus endpoint information in the Key Vault (which is created one step before the Service Bus in the pipeline). The important bit here is last part of the template that deploys Service Bus.
+<pre><code>{
+    &ldquo;type&rdquo;: &ldquo;Microsoft.KeyVault/vaults/secrets&rdquo;,
+    &ldquo;name&rdquo;: &ldquo;[concat(parameters(&lsquo;keyVaultName&rsquo;), &lsquo;/ServiceBusConnectionString&rsquo;)]&ldquo;,
+    &ldquo;apiVersion&rdquo;: &ldquo;2019-09-01&rdquo;,
+    &ldquo;dependsOn&rdquo;: [
+        &ldquo;[parameters(&lsquo;serviceBusNamespaceName&rsquo;)]&rdquo;
+    ],
+    &ldquo;location&rdquo;: &ldquo;[parameters(&lsquo;location&rsquo;)]&ldquo;,
+    &ldquo;properties&rdquo;: {
+        &ldquo;value&rdquo;: &ldquo;[listkeys(variables(&lsquo;authRuleResourceId&rsquo;), variables(&lsquo;sbVersion&rsquo;)).primaryConnectionString]&rdquo;
+    }
+}</code></pre></p>
+
+<p>This creates a new secret “ServiceBusConnectionString” in the Key Vault whose name is provided as a parameter to the template.</p>
+
+<p>Note that to make this sample work, you will have to do a few things:</p>
+
+<ol>
+<li>Define pipeline variables <strong>azureResourceManagerConnectionName</strong>, and <strong>SubscriptionId</strong> that I have used in my YAML pipeline definition.</li>
+<li>Set objectId in accessPolicies in the parameters file for the template that deploys Key Vault. This objectId is supposed to be the id of the user in your Azure Active Direct tenant who will have access to this Key Vault. You will notice that in the <strong>keysPermission</strong> variable in our template, we have given list permissions to this user. You can use the <strong>Get-AzureRmADUser</strong> in Azure Cloud Shell to find an Id of a user that you want to give access to this Key Vault.</li>
+</ol>
+
+<p><img src="/img/pushing-secrets-into-azure-key-vault-directly-from-arm-template/objectid.png" alt="New release pipeline" /></p>
+
+<p>This approach clearly makes the pipeline simpler, with no need to inject a script to parse template outputs to extract the secret (Service Bus endpoint in this case).</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In this post we learned how to store credentials to access an Azure resource directly from an ARM template that deploys that resource, without parsing template output and using the “Writing Secrets” task in a Release pipeline.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/azure/" rel="tag">Azure</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/devops/" rel="tag">DevOps</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/key-vault/" rel="tag">Key Vault</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2020/07/20/migrating-my-blog-to-hugo-netlify/">Migrating My Blog to Hugo &amp; Netlify</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/">Pushing Secrets Into Azure Key Vault Directly From Arm Template</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2020/07/10/philosophy-for-software-developers/">Philosophy for Software Developers</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/">Storing Secrets in Azure Key Vault from Azure Devops Release Pipeline</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/agile/" title="Agile">Agile</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/azure/" title="Azure">Azure</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogging/" title="Blogging">Blogging</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/devops/" title="DevOps">DevOps</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/key-vault/" title="Key Vault">Key Vault</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/philosophy/" title="Philosophy">Philosophy</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/scrum/" title="Scrum">Scrum</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/software-consulting/" title="Software Consulting">Software Consulting</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer_links">
+			&copy; 2020 Salman Ali Banani.	
+		</div>
+		<div class="footer__copyright">
+			<span class="socials"><a target="_blank" href="https://twitter.com/salmanalibanani" class="fa fa-twitter" style="text-decoration:none; font-size:16px"></a></span>
+			<span class="socials"><a target="_blank" href="https://au.linkedin.com/in/salmanalibanani" class="fa fa-linkedin" style="text-decoration:none; font-size:16px"></a></span>
+			<span class="socials"><a target="_blank" href="https://github.com/salmanalibanani" class="fa fa-github" style="text-decoration:none; font-size:16px"></a></span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
