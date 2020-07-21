@@ -3,6 +3,7 @@ title: "Scrum and Empiricism"
 date: 2020-06-26T11:16:15+10:00
 draft: false
 tags: ["Agile", "Scrum", "Philosophy"]
+summary: "Scrum demonstrates a scientific orientation towards project management.  It's foundations in empiricism make it a scientific enterprise."
 ---
 “Scrum is founded on empirical process control theory, or empiricism.”
 
