@@ -3,6 +3,7 @@ title: "Philosophy for Software Developers"
 date: 2020-07-10T11:16:15+10:00
 draft: false 
 tags: ["Philosophy", "Software Consulting"]
+summary: "Bertrand Russell has been an inspiring influence on me since my university years.  This post is inspired by his thoughts on why Philosophy is useful."
 ---
 
 > ***Science is what we know and Philosophy is what we don't know.***\

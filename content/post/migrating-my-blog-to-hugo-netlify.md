@@ -3,6 +3,7 @@ title: "Migrating My Blog to Hugo & Netlify"
 date: 2020-07-20T16:29:09+10:00
 draft: false 
 tags: ["Blogging"]
+summary: "I moved my blog from wordpress.com to Netlify and started using Hugo to generate site content from my Markdown files.  I love the workflow, and I now don't pay for stuff I am not using."
 ---
 Don't get me wrong.  Wordpress is great.  
 
