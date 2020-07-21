@@ -3,7 +3,7 @@ title: "It's Not Just the Bell Curve"
 date: 2020-05-06T11:16:15+10:00
 draft: false
 tags: ["Agile", "Scrum"]
-summary: "During the life of a project, the scrum team develops a shared understanding of how much effort a story point actually represents.  This shared sense of worth of a story point makes estimates more accurate over time."
+summary: "During the life of a Scrum project, the scrum team develops a shared understanding of how much effort a story point actually represents.  This shared sense of worth of a story point makes estimates more accurate over time."
 ---
 The Bell Curve is our friend.  In a recent <a target='_blank' href="/2020/03/28/story-points-a-mathematical-perspective/">post</a>, I argued that in Scrum teams the story point estimates work very well because we will inevitably overestimate effort required for certain stories and underestimate effort for others.  The net effect is that the overestimates will cancel out the underestimates in the long run.
 
