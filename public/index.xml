@@ -13,13 +13,21 @@
     
     
     <item>
-      <title>Migrating My Blog to Hugo/Netlify</title>
-      <link>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo/netlify/</link>
+      <title>Migrating My Blog to Hugo &amp; Netlify</title>
+      <link>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo-netlify/</link>
       <pubDate>Mon, 20 Jul 2020 16:29:09 +1000</pubDate>
       
-      <guid>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo/netlify/</guid>
-      <description>Don&amp;rsquo;t get me wrong. Wordpress is great.
-When I started to take blogging seriously a few months ago, I decided to keep things as simple as possible. I think that Wordpress.com was a good choice at that time. I could focus on content, and not worry too much about anything else. The nice HTML editor allowed me to do pretty much everything I wanted to do, and I am not ashamed of uisng an HTML editor!</description>
+      <guid>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo-netlify/</guid>
+      <description>Some more summary</description>
+    </item>
+    
+    <item>
+      <title>Archives</title>
+      <link>https://salmanalibanani.netlify.app/2020/07/16/archives/</link>
+      <pubDate>Thu, 16 Jul 2020 16:15:44 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/07/16/archives/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -38,11 +46,7 @@ In a previos post, I showed a simple technique to store the access credentials o
       <pubDate>Fri, 10 Jul 2020 11:16:15 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/2020/07/10/philosophy-for-software-developers/</guid>
-      <description>Science is what we know and Philosophy is what we don&amp;rsquo;t know.
-(Bertrand Russell)
- Software developers should have some familiarity with the ultimate philosophical questions that have been asked over the last 2000 years, and how great thinkers and writers of the past have tried to answer those questions.
-My own interest in philosophy began many years ago, when I came across this quote by Russell:
- I think nobody should be certain of anything.</description>
+      <description>This is the page summary</description>
     </item>
     
     <item>

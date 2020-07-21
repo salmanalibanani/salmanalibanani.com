@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Azure - Salman Ali Banani</title>
+	<title>Migrating My Blog to Hugo &amp; Netlify - Salman Ali Banani</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Azure" />
-<meta property="og:description" content="&lt;your site description&gt;" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/tags/azure/" />
-<meta property="og:updated_time" content="2020-07-14T23:20:56+10:00" />
+		<meta property="og:title" content="Migrating My Blog to Hugo &amp; Netlify" />
+<meta property="og:description" content="Some more summary" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo-netlify/" />
+<meta property="article:published_time" content="2020-07-20T16:29:09+10:00" />
+<meta property="article:modified_time" content="2020-07-20T16:29:09+10:00" />
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/tags/azure/index.xml" title="Salman Ali Banani">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/style.css">
 	
 	<link rel="shortcut icon" href="/favicon.ico">
+		
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -68,49 +69,48 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-	<header class="main__header">
-		<h1 class="main__title"> Azure</h1>
-	</header>
-	<article class="list__item post">
-
-		<header class="list__header">
-			<h3 class="list__title post__title ">
-				<a href="/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/" rel="bookmark">
-				Pushing Secrets Into Azure Key Vault Directly From Arm Template
-				</a>
-			</h3>
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Migrating My Blog to Hugo &amp; Netlify</h1>
+			<br />
+			July 20, 2020
 			
-		</header>
-		<p>July 14, 2020</p>	
-		<div class="content list__excerpt post__content clearfix">
-			Azure Key Vault is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution.
-In a previos post, I showed a simple technique to store the access credentials of a resource (e.
+		</header><div class="content post__content clearfix">
+			<p>Don&rsquo;t get me wrong.  Wordpress is great.</p>
+
+<p>When I started to take blogging seriously a few months ago, I decided to keep things as simple as possible.  I think that Wordpress.com was a good choice at that time.  I could focus on content, and not worry too much about anything else.  The nice HTML editor allowed me to do pretty much everything I wanted to do, and I am not ashamed of uisng an HTML editor!</p>
+
+<p>But I soon realised that it was a bit of an overkill for what I was doing.  I was paying for the premium features and hardly using any of those.</p>
+
+<p>I looked around for alternatives, and finally settled for the zero-cost combo of <a href="https://www.netlify.com/" target="_blank">Netlify</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>.</p>
+
+<p>I love the workflow.  I write my posts in VSCode, preview them locally using Hugo&rsquo;s built-in server, and push changes to my Github repo.  Netlify builds and deploys the whole thing in seconds.  You get 300 build minutes and 100GB bandwidth per-month from Netlify.  I don&rsquo;t think I&rsquo;ll ever need more than that.</p>
+
+<p>There were a few steps involved in migration from Wordpress.  The Hugo theme that I am using needed some tweaks.  It&rsquo;s not the most elegant theme in the world though, and I&rsquo;ll probably change it soon, but it works for now.  I also wanted to retain the url schemes of my site on Wordpress.com.  All the tweaks and content migration took me a couple of hours.  DONE!</p>
+
+<p>Hugo obviously offers much more than what I am currently using.  I will keep exploring, and right now I am loving the new workflow and the blazing fast speed.</p>
+
 		</div>
-
-	</article>
-	<article class="list__item post">
-
-		<header class="list__header">
-			<h3 class="list__title post__title ">
-				<a href="/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/" rel="bookmark">
-				Storing Secrets in Azure Key Vault from Azure Devops Release Pipeline
-				</a>
-			</h3>
+		<footer class="post__footer">
 			
-		</header>
-		<p>July 9, 2020</p>	
-		<div class="content list__excerpt post__content clearfix">
-			Azure Key Vault is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution. You would also expect that such solution should be easy to integrate with your build/release pipelines. Azure Key Vault turns out to be an obvious option if Azure happens to be your platform of choice.
-		</div>
-
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/blogging/" rel="tag">Blogging</a>
+		</li>
+	</ul>
+</div>
+		</footer>
 	</article>
 </main>
 
 
+
+
 			</div>
-			
-<aside class="sidebar">
+			<aside class="sidebar">
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">

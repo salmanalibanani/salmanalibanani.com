@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo/netlify/</loc>
+    <loc>https://salmanalibanani.netlify.app/tags/blogging/</loc>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo-netlify/</loc>
     <lastmod>2020-07-20T16:29:09+10:00</lastmod>
   </url>
   
@@ -14,6 +19,11 @@
   
   <url>
     <loc>https://salmanalibanani.netlify.app/</loc>
+    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/tags/</loc>
     <lastmod>2020-07-20T16:29:09+10:00</lastmod>
   </url>
   
@@ -39,11 +49,6 @@
   
   <url>
     <loc>https://salmanalibanani.netlify.app/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/</loc>
-    <lastmod>2020-07-14T23:20:56+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salmanalibanani.netlify.app/tags/</loc>
     <lastmod>2020-07-14T23:20:56+10:00</lastmod>
   </url>
   
