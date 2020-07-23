@@ -17,7 +17,11 @@ My own interest in philosophy began many years ago, when I came across this quot
 
 This is from Russell's 1960 interview with Woodrow Wyatt.  You can watch it <a href="https://www.youtube.com/watch?v=gvOcjzQ32Fw" _target="blank">here</a>.
 
-These days "philosophy" is considered pretty much useless.  Most people think of philosophy as a futile speculative exercise that doesn't really have any benefit to our daily lives.  And there are good reasons for this kind of attitude towards philosophy.  Many questions - as Russell points out in the interview mentioned above - that philosophers of the past have addressed are now in the domain of specialized fields: physics, economics, medicine etc.  Science has taken the responsibility of addressing those questions with an experiment based approach with better results. But my point here is that **reading philosophers as a hobby gives you useful mental tools which can help you in any profession of your choice, and specially in software development.**
+These days "philosophy" is considered pretty much useless.  Most people think of philosophy as a futile speculative exercise that doesn't really have any benefit to our daily lives.  
+
+<img src="/img/philosophy-for-software-developers/did-he-ever-truly-live.jpg" alt="Did he ever truly live" style="height:600px;">
+
+And there are good reasons for this kind of attitude towards philosophy.  Many questions - as Russell points out in the interview mentioned above - that philosophers of the past have addressed are now in the domain of specialized fields: physics, economics, medicine etc.  Science has taken the responsibility of addressing those questions with an experiment based approach with better results. But my point here is that **reading philosophers as a hobby gives you useful mental tools which can help you in any profession of your choice, and specially in software development.**
 
 Software development is a challenging profession.  It is not easy to stay on top of things in our field.  In the last few years every project that I have done has been significantly different from things I have done in the past,  While we are busy trying to keep up with all the innovation happening within the Cloud, DevOps, Font End, Analytics and AI spaces, what if I tell you that finding time to dabble in philosophy can help you become a better software professional?
 
