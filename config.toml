@@ -29,6 +29,12 @@ enableInlineShortcodes = true
     url = "/2020/07/16/archives/"
     weight = 10
 
+   [[menu.main]]
+    identifier = "docker-scratchpad"
+    name = "Docker Scratchpad"
+    url = "/2020/07/24/docker-scratchpad/"
+    weight = 10
+
 [taxonomies]
 category = "categories"
 tag = "tags"

@@ -4,7 +4,7 @@
 		<header class="post__header">
 			<h1 class="post__title">{{ .Title }}</h1>
 			<br />
-			{{- if and (ne .Title "Archives")  (ne .Title "About") }}
+			{{- if and (ne .Title "Archives")  (ne .Title "About") (ne .Title "Docker Scratchpad")}}
 			{{ .PublishDate.Format "January 2, 2006" }}
 			{{- end }}
 			{{- with .Params.lead }}
