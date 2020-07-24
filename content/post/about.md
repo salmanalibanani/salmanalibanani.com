@@ -2,6 +2,7 @@
 title: "About"
 date: 2020-02-01T11:16:15+10:00
 draft: false 
+menu: main
 ---
 
 ![Salman Ali Banani](/img/about/salman.jpg)

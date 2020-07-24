@@ -2,6 +2,7 @@
 title: "Docker Scratchpad"
 date: 2020-07-24T10:46:08+10:00
 draft: false 
+menu: main
 ---
 This is a collection of useful Docker commands.
 <h3>Containers and Images</h3>

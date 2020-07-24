@@ -23,7 +23,7 @@
         <div class="inner">
             {{ range (.Site.RegularPages.GroupByDate "2006") }}
                 <h3 class="archive-year">{{ .Key }}</h3>
-                    {{ range (where (where .Pages "Title" "not in" "Archives") "Title" "not in" "About")  }}
+                    {{ range (where (where (where .Pages "Title" "not in" "Archives") "Title" "not in" "About") "Title" "not in" "Docker Scratchpad") }}
                             {{ .PublishDate.Format "02 Jan" }}
                             - 
                             <a style="font-weight: 700; color:#e22d30" href="{{.RelPermalink}}">{{.Title}}</a><br/>
