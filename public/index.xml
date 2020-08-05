@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Salman Ali Banani.</copyright>
-    <lastBuildDate>Mon, 20 Jul 2020 16:29:09 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 10:46:08 +1000</lastBuildDate>
     
 	<atom:link href="https://salmanalibanani.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker Scratchpad</title>
+      <link>https://salmanalibanani.netlify.app/2020/07/24/docker-scratchpad/</link>
+      <pubDate>Fri, 24 Jul 2020 10:46:08 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/07/24/docker-scratchpad/</guid>
+      <description>This is a collection of useful Docker commands. Containers and Images  Show all running containers: docker ps  Shows all running and stopped containers: docker ps -a  Shows only CONTAINER IDs of all running and stopped containers: docker ps -aq   Stop all running containers: docker container stop $(docker container ls -aq)  Remove all containers: docker container rm $(docker container ls -aq)   Show all top level images: docker images  Remove all images: docker rmi $(docker images -aq)    Dockerfile  Build image from Dockerfile in the current directory with tag &amp;ldquo;sometag&amp;rdquo;: docker build -t sometag .</description>
+    </item>
     
     <item>
       <title>Migrating My Blog to Hugo &amp; Netlify</title>
@@ -18,7 +27,7 @@
       <pubDate>Mon, 20 Jul 2020 16:29:09 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo-netlify/</guid>
-      <description>Some more summary</description>
+      <description>I moved my blog from wordpress.com to Netlify and started using Hugo to generate site content from my Markdown files.  I love the workflow, and I now don&amp;rsquo;t pay for stuff I don&amp;rsquo;t use.</description>
     </item>
     
     <item>
@@ -36,8 +45,7 @@
       <pubDate>Tue, 14 Jul 2020 23:20:56 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/2020/07/14/pushing-secrets-into-azure-key-vault-directly-from-arm-template/</guid>
-      <description>Azure Key Vault is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution.
-In a previos post, I showed a simple technique to store the access credentials of a resource (e.</description>
+      <description>Another way to push secrets from Azure DevOps to a Key Vault using an ARM template&amp;rsquo;s output.</description>
     </item>
     
     <item>
@@ -46,7 +54,7 @@ In a previos post, I showed a simple technique to store the access credentials o
       <pubDate>Fri, 10 Jul 2020 11:16:15 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/2020/07/10/philosophy-for-software-developers/</guid>
-      <description>This is the page summary</description>
+      <description>Bertrand Russell has been an inspiring influence on me since my university years.  This post is inspired by his thoughts on why Philosophy is useful.</description>
     </item>
     
     <item>
@@ -55,7 +63,7 @@ In a previos post, I showed a simple technique to store the access credentials o
       <pubDate>Thu, 09 Jul 2020 00:32:31 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/</guid>
-      <description>Azure Key Vault is a service that you can use to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.) that you would expect from such a solution. You would also expect that such solution should be easy to integrate with your build/release pipelines. Azure Key Vault turns out to be an obvious option if Azure happens to be your platform of choice.</description>
+      <description>Steps to use Azure Key Vault from an Azure DevOps Release pipeline.</description>
     </item>
     
     <item>
@@ -64,9 +72,7 @@ In a previos post, I showed a simple technique to store the access credentials o
       <pubDate>Fri, 26 Jun 2020 11:16:15 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/2020/06/26/scrum-and-empiricism/</guid>
-      <description>“Scrum is founded on empirical process control theory, or empiricism.”
-What? Empiricism?
-The first time I read this sentence in the Scrum Guide, I was quite impressed. As a self-professed pseudo-philosopher, I had a vague understanding of philosophical questions on which empiricists and rationalists generally disagree with each other. It’s an ongoing argument in the history of human thought. To confuse the matters further, technically you can be a rationalist in one area (say mathematics) and an empiricist in another area of physical sciences.</description>
+      <description>Scrum demonstrates a scientific orientation towards project management.  It&amp;rsquo;s foundations in empiricism make it a scientific enterprise.</description>
     </item>
     
     <item>
@@ -75,8 +81,7 @@ The first time I read this sentence in the Scrum Guide, I was quite impressed. A
       <pubDate>Wed, 06 May 2020 11:16:15 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/2020/05/06/its-not-just-the-bell-curve/</guid>
-      <description>The Bell Curve is our friend. In a recent post, I argued that in Scrum teams the story point estimates work very well because we will inevitably overestimate effort required for certain stories and underestimate effort for others. The net effect is that the overestimates will cancel out the underestimates in the long run.
-But, there is something else that goes on in a Scrum team, that makes our estimates more accurate.</description>
+      <description>During the life of a Scrum project, the scrum team develops a shared understanding of how much effort a story point actually represents.  This shared sense of worth of a story point makes estimates more accurate over time.</description>
     </item>
     
     <item>
@@ -85,7 +90,7 @@ But, there is something else that goes on in a Scrum team, that makes our estima
       <pubDate>Sat, 28 Mar 2020 11:16:15 +1000</pubDate>
       
       <guid>https://salmanalibanani.netlify.app/2020/03/28/story-points-a-mathematical-perspective/</guid>
-      <description>In sprint planning meetings, The Development Team works to forecast the functionality that will be developed during the Sprint. This often involves estimating the effort required to complete work on user stories. Story points are an abstract measure of the effort required to complete a story, and it’s fascinating to me how a set of educated guesses turns out to be a fairly accurate estimate of the effort required to meet sprint goals.</description>
+      <description>Story points are a useful measure of effort required for a task, even though they are not accurate.  During the life of a project, the overestimates will cancel out the underestimates over many sprints.  The Bell Curve provides a mathematics-based intuition for that assertion.</description>
     </item>
     
     <item>

@@ -3,22 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://salmanalibanani.netlify.app/2020/07/24/docker-scratchpad/</loc>
+    <lastmod>2020-07-24T10:46:08+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/post/</loc>
+    <lastmod>2020-07-24T10:46:08+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/</loc>
+    <lastmod>2020-07-24T10:46:08+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://salmanalibanani.netlify.app/tags/blogging/</loc>
     <lastmod>2020-07-20T16:29:09+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://salmanalibanani.netlify.app/2020/07/20/migrating-my-blog-to-hugo-netlify/</loc>
-    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salmanalibanani.netlify.app/post/</loc>
-    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salmanalibanani.netlify.app/</loc>
     <lastmod>2020-07-20T16:29:09+10:00</lastmod>
   </url>
   
