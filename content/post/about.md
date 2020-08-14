@@ -11,3 +11,5 @@ I am a Senior Consultant at <a href="https://purple.telstra.com" target="_blank"
 
 I live in Sydney, Australia with my family.
 
+![Azure Fundamentals](/img/about/azure-fundamentals-600x600.png)
+
