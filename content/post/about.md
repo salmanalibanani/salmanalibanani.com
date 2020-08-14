@@ -11,5 +11,10 @@ I am a Senior Consultant at <a href="https://purple.telstra.com" target="_blank"
 
 I live in Sydney, Australia with my family.
 
-![Azure Fundamentals](/img/about/azure-fundamentals-600x600.png)
+<p>
+    <a href="https://www.youracclaim.com/badges/41458474-4f13-4571-ac9c-414dbf645aec" title="Azure Fundamentals" target="_blank">
+        <img src="/img/about/azure-fundamentals-600x600.png" />
+    </a>
+</p>
+
 
