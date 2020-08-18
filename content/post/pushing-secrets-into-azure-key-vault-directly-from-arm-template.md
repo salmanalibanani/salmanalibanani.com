@@ -1,5 +1,5 @@
 ---
-title: "Pushing Secrets Into Azure Key Vault Directly From Arm Template"
+title: "Pushing Secrets Into Azure Key Vault Directly From ARM Template"
 date: 2020-07-14T23:20:56+10:00
 draft: false
 tags: ["Azure", "DevOps", "Key Vault"]
