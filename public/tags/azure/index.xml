@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Salman Ali Banani.</copyright>
-    <lastBuildDate>Tue, 14 Jul 2020 23:20:56 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 09:31:13 +1000</lastBuildDate>
     
 	<atom:link href="https://salmanalibanani.netlify.app/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Azure Service Bus bindings and triggers for Azure Functions</title>
+      <link>https://salmanalibanani.netlify.app/2020/08/18/azure-service-bus-bindings-and-triggers-for-azure-functions/</link>
+      <pubDate>Tue, 18 Aug 2020 09:31:13 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/08/18/azure-service-bus-bindings-and-triggers-for-azure-functions/</guid>
+      <description>How to use Azure Service Bus bindings and triggers for Azure Functions to simplify your glue code</description>
+    </item>
     
     <item>
       <title>Pushing Secrets Into Azure Key Vault Directly From Arm Template</title>

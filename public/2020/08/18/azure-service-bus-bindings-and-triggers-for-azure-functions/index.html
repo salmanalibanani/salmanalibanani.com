@@ -4,17 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>About - Salman Ali Banani</title>
+	<title>Azure Service Bus bindings and triggers for Azure Functions - Salman Ali Banani</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="About" />
-<meta property="og:description" content="I am a Senior Consultant at Telstra Purple, one of the top IT consulting firms in Australia. I specialize in web development using ASP.NET MVC, JavaScript, HTML, CSS etc.
-I live in Sydney, Australia with my family.
-  " />
+		<meta property="og:title" content="Azure Service Bus bindings and triggers for Azure Functions" />
+<meta property="og:description" content="How to use Azure Service Bus bindings and triggers for Azure Functions to simplify your glue code" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://salmanalibanani.netlify.app/2020/02/01/about/" />
-<meta property="article:published_time" content="2020-02-01T11:16:15+10:00" />
-<meta property="article:modified_time" content="2020-02-01T11:16:15+10:00" />
+<meta property="og:url" content="https://salmanalibanani.netlify.app/2020/08/18/azure-service-bus-bindings-and-triggers-for-azure-functions/" />
+<meta property="article:published_time" content="2020-08-18T09:31:13+10:00" />
+<meta property="article:modified_time" content="2020-08-18T09:31:13+10:00" />
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -63,7 +61,7 @@ I live in Sydney, Australia with my family.
 				
 			</a>
 		</li>
-		<li class="menu__item menu__item--active">
+		<li class="menu__item">
 			<a class="menu__link" href="/2020/02/01/about/">
 				
 				<span class="menu__text">About</span>
@@ -95,23 +93,98 @@ I live in Sydney, Australia with my family.
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">About</h1>
+			<h1 class="post__title">Azure Service Bus bindings and triggers for Azure Functions</h1>
 			<br />
+			August 18, 2020
 			
 		</header><div class="content post__content clearfix">
-			<p><img src="/img/about/salman.jpg" alt="Salman Ali Banani" /></p>
+			
 
-<p>I am a Senior Consultant at <a href="https://purple.telstra.com" target="_blank">Telstra Purple</a>, one of the top IT consulting firms in Australia.  I specialize in web development using ASP.NET MVC, JavaScript, HTML, CSS etc.</p>
+<p>As we use more PAAS/serverless services on the cloud, we must find ways to integrate these services with each other to build features that our customers want.  <a target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/">Azure Functions</a> is one offering where you often end up fetching information from other services, or passing on stuff to those services.  In this article we will see how we can simplify integration between Azure Functions and <a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a>.</p>
 
-<p>I live in Sydney, Australia with my family.</p>
+<h2 id="output-binding-and-triggers">Output Binding and Triggers</h2>
 
-<p>
-    <a href="https://www.youracclaim.com/badges/41458474-4f13-4571-ac9c-414dbf645aec" title="Azure Fundamentals" target="_blank">
-        <img src="/img/about/azure-fundamentals-600x600.png" />
-    </a>
-</p>
+<p>Azure Service Bus is an enterprise integration message broker, and sometimes we need a service like that to decouple various parts of our solution on the cloud.  Azure Functions can interact with Service Bus in various ways:</p>
+
+<ul>
+<li>We can use <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-output" target="_blank">output binding</a> to send messages from a Function App to a Service Bus.</li>
+<li>We can use a <a href ="https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-trigger" target="_blank">trigger</a> to respond to messages from Service Bus queue or topic.<br /></li>
+</ul>
+
+<h2 id="output-binding">Output Binding</h2>
+
+<p>Here is an example of how you would pass a message to a Service Bus queue without using output binding.</p>
+
+<pre><code>[FunctionName("MyFunctionName")]
+public static async void Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req, ILogger log)
+{
+    string queueName = Environment.GetEnvironmentVariable("QueueName");
+    string serviceBusConnectionString = System.Environment.GetEnvironmentVariable("ServiceBusConnectionString");
+
+    string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+
+    var client = new QueueClient(serviceBusConnectionString, queueName);
+    var message = new Message(Encoding.UTF8.GetBytes(requestBody));
+
+    await client.SendAsync(message);
+}</code></pre>
+
+<p>It is a fairly straightforward approach.  You read the service bus connection string and queue name from environment, and create a QueueClient object to pass a message to a queue.</p>
+
+<p>With output binding, you can write something like this:
+<pre><code>[FunctionName(&ldquo;MyFunctionName&rdquo;)]
+public static void Run([HttpTrigger(AuthorizationLevel.Function, &ldquo;get&rdquo;, &ldquo;post&rdquo;, Route = null)] HttpRequest req, ILogger log,
+    [ServiceBus(&ldquo;replyqueue&rdquo;, Connection = &ldquo;ServiceBusConnectionString&rdquo;, EntityType = EntityType.Queue)] out string queueMessage)
+{
+    string requestBody = new StreamReader(req.Body).ReadToEnd();
+    queueMessage = requestBody;
+}</code></pre></p>
+
+<p>This is a more declarative way of working with Azure Functions and Service Bus.   The output variable is passed on to the queue that we have specified through &ldquo;ServiceBus&rdquo; attribute.  The function now has one less dependency (QueueClient) which makes it potentially more unit-testable.</p>
+
+<p>You can also move the attributes to the function level instead of the output parameter.
+<pre><code>[FunctionName(&ldquo;MyFunctionName&rdquo;)]
+[return: ServiceBus(&ldquo;replyqueue&rdquo;, Connection = &ldquo;ServiceBusConnectionString&rdquo;)]
+public static string Run([HttpTrigger(AuthorizationLevel.Function, &ldquo;get&rdquo;, &ldquo;post&rdquo;, Route = null)] HttpRequest req, ILogger log)
+{
+    string requestBody = new StreamReader(req.Body).ReadToEnd();
+    return requestBody;
+}</code></pre>
+This is somewhat more readable because the function&rsquo;s return value is now being passed to the queue.</p>
+
+<h2 id="triggers">Triggers</h2>
+
+<p>Triggers are a way to interact with a Service Bus in the opposite direction.  You can fire a Function from a Service Bus queue or topic.  You can simply supply the queue name and connection information using the &ldquo;ServiceBusTrigger&rdquo; attribute.</p>
+
+<pre><code>[FunctionName("QueueTrigger")]
+public static void Run([ServiceBusTrigger("replyqueue", AccessRights.Manage, Connection = "ServiceBusConnectionSetting")]string message, TraceWriter log)
+{
+    // Do something with the message.
+    log.Info(message");
+}</code></pre>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Understanding how to effectively connect Azure services with each other is a key skill to implement successful solutions on Azure.  In this post, we demonstrated how to use Azure Service Bus bindings and triggers to work with Azure Functions and Service Bus.</p>
 
 		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/azure/" rel="tag">Azure</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/service-bus/" rel="tag">Service Bus</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/functions/" rel="tag">Functions</a>
+		</li>
+	</ul>
+</div>
+		</footer>
 	</article>
 </main>
 

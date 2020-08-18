@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://salmanalibanani.netlify.app/2020/07/24/docker-scratchpad/</loc>
-    <lastmod>2020-07-24T10:46:08+10:00</lastmod>
+    <loc>https://salmanalibanani.netlify.app/tags/azure/</loc>
+    <lastmod>2020-08-18T09:31:13+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/2020/08/18/azure-service-bus-bindings-and-triggers-for-azure-functions/</loc>
+    <lastmod>2020-08-18T09:31:13+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/tags/functions/</loc>
+    <lastmod>2020-08-18T09:31:13+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://salmanalibanani.netlify.app/post/</loc>
-    <lastmod>2020-07-24T10:46:08+10:00</lastmod>
+    <lastmod>2020-08-18T09:31:13+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://salmanalibanani.netlify.app/</loc>
+    <lastmod>2020-08-18T09:31:13+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/tags/service-bus/</loc>
+    <lastmod>2020-08-18T09:31:13+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/tags/</loc>
+    <lastmod>2020-08-18T09:31:13+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salmanalibanani.netlify.app/2020/07/24/docker-scratchpad/</loc>
     <lastmod>2020-07-24T10:46:08+10:00</lastmod>
   </url>
   
@@ -28,18 +53,8 @@
   </url>
   
   <url>
-    <loc>https://salmanalibanani.netlify.app/tags/</loc>
-    <lastmod>2020-07-20T16:29:09+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://salmanalibanani.netlify.app/2020/07/16/archives/</loc>
     <lastmod>2020-07-16T16:15:44+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salmanalibanani.netlify.app/tags/azure/</loc>
-    <lastmod>2020-07-14T23:20:56+10:00</lastmod>
   </url>
   
   <url>
