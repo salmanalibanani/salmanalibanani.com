@@ -30,7 +30,7 @@ public static async void Run([HttpTrigger(AuthorizationLevel.Function, "get", "p
     await client.SendAsync(message);
 }</code></pre>
 
-It is a straightforward approach but has a few drawbacks.  We read the service bus connection string and queue name from environment, and create a QueueClient object to pass a message to a queue.  In doing so, we have built a dependency on a "QueueClient" object.  Our code is now more aware of the "glue" logic between your Function and Service Bus.
+It is a straightforward approach but has a few drawbacks.  We read the service bus connection string and queue name from environment, and create a QueueClient object to pass a message to a queue.  In doing so, we have built a dependency on a "QueueClient" object.  Our code is now more aware of the "glue" logic between our Function and Service Bus.
 
 With output binding, we can write something like this:
 <pre><code>[FunctionName("MyFunctionName")]
