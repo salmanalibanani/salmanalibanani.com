@@ -8,7 +8,7 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Azure Service Bus bindings and triggers for Azure Functions" />
-<meta property="og:description" content="How to use Azure Service Bus bindings and triggers for Azure Functions to simplify your glue code" />
+<meta property="og:description" content="How to use Azure Service Bus bindings and triggers for Azure Functions to simplify your glue code." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://salmanalibanani.netlify.app/2020/08/18/azure-service-bus-bindings-and-triggers-for-azure-functions/" />
 <meta property="article:published_time" content="2020-08-18T09:31:13+10:00" />
@@ -100,11 +100,11 @@
 		</header><div class="content post__content clearfix">
 			
 
-<p>As we use more PAAS/serverless services on the cloud, we must find ways to integrate these services with each other to build features that our customers want.  <a target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/">Azure Functions</a> is one offering where you often end up fetching information from other services, or passing on stuff to those services.  In this article we will see how we can simplify integration between Azure Functions and <a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a>.</p>
+<p>As we use more and more PAAS/serverless services on the cloud, we must find ways to integrate these services with each other to build features that our customers want.  <a target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/">Azure Functions</a> is one offering where we often end up fetching information from other services, or passing on stuff to those services.  In this article we will see how we can simplify integration between Azure Functions and <a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a>.</p>
 
 <h2 id="output-binding-and-triggers">Output Binding and Triggers</h2>
 
-<p>Azure Service Bus is an enterprise integration message broker, and sometimes we need a service like that to decouple various parts of our solution on the cloud.  Azure Functions can interact with Service Bus in various ways:</p>
+<p><a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a> is an enterprise integration message broker, and sometimes we need a service like that to decouple various parts of our solution on the cloud.  Azure Functions can interact with Service Bus in various ways:</p>
 
 <ul>
 <li>We can use <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-output" target="_blank">output binding</a> to send messages from a Function App to a Service Bus.</li>
@@ -129,9 +129,9 @@ public static async void Run([HttpTrigger(AuthorizationLevel.Function, "get", "p
     await client.SendAsync(message);
 }</code></pre>
 
-<p>It is a fairly straightforward approach.  You read the service bus connection string and queue name from environment, and create a QueueClient object to pass a message to a queue.</p>
+<p>It is a straightforward approach but has a few drawbacks.  We read the service bus connection string and queue name from environment, and create a QueueClient object to pass a message to a queue.  In doing so, we have built a dependency on a &ldquo;QueueClient&rdquo; object.  Our code is now more aware of the &ldquo;glue&rdquo; logic between your Function and Service Bus.</p>
 
-<p>With output binding, you can write something like this:
+<p>With output binding, we can write something like this:
 <pre><code>[FunctionName(&ldquo;MyFunctionName&rdquo;)]
 public static void Run([HttpTrigger(AuthorizationLevel.Function, &ldquo;get&rdquo;, &ldquo;post&rdquo;, Route = null)] HttpRequest req, ILogger log,
     [ServiceBus(&ldquo;replyqueue&rdquo;, Connection = &ldquo;ServiceBusConnectionString&rdquo;, EntityType = EntityType.Queue)] out string queueMessage)
@@ -140,9 +140,9 @@ public static void Run([HttpTrigger(AuthorizationLevel.Function, &ldquo;get&rdqu
     queueMessage = requestBody;
 }</code></pre></p>
 
-<p>This is a more declarative way of working with Azure Functions and Service Bus.   The output variable is passed on to the queue that we have specified through &ldquo;ServiceBus&rdquo; attribute.  The function now has one less dependency (QueueClient) which makes it potentially more unit-testable.</p>
+<p>This is a more declarative way of working with Azure Functions and Service Bus.   The output variable is passed on to the queue that we have specified through &ldquo;ServiceBus&rdquo; attribute.  The function now has one less dependency (QueueClient) and has no awareness of how that output variable is handed over to the Service Bus.  This makes the function potentially more unit-testable.</p>
 
-<p>You can also move the attributes to the function level instead of the output parameter.
+<p>We can also move the attributes to the function level instead of the output parameter.
 <pre><code>[FunctionName(&ldquo;MyFunctionName&rdquo;)]
 [return: ServiceBus(&ldquo;replyqueue&rdquo;, Connection = &ldquo;ServiceBusConnectionString&rdquo;)]
 public static string Run([HttpTrigger(AuthorizationLevel.Function, &ldquo;get&rdquo;, &ldquo;post&rdquo;, Route = null)] HttpRequest req, ILogger log)
@@ -154,7 +154,7 @@ This is somewhat more readable because the function&rsquo;s return value is now 
 
 <h2 id="triggers">Triggers</h2>
 
-<p>Triggers are a way to interact with a Service Bus in the opposite direction.  You can fire a Function from a Service Bus queue or topic.  You can simply supply the queue name and connection information using the &ldquo;ServiceBusTrigger&rdquo; attribute.</p>
+<p>Triggers are a way to interact with a Service Bus in the opposite direction.  We can fire a Function from a Service Bus queue or topic.  We can simply supply the queue name and connection information using the &ldquo;ServiceBusTrigger&rdquo; attribute.</p>
 
 <pre><code>[FunctionName("QueueTrigger")]
 public static void Run([ServiceBusTrigger("replyqueue", AccessRights.Manage, Connection = "ServiceBusConnectionSetting")]string message, TraceWriter log)
@@ -165,7 +165,7 @@ public static void Run([ServiceBusTrigger("replyqueue", AccessRights.Manage, Con
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>Understanding how to effectively connect Azure services with each other is a key skill to implement successful solutions on Azure.  In this post, we demonstrated how to use Azure Service Bus bindings and triggers to work with Azure Functions and Service Bus.</p>
+<p>When it comes to implementing successful Azure solutions, understanding how to effectively connect Azure services with each other is a key skill.  In this post, we demonstrated how to use Azure Service Bus bindings and triggers to work with Azure Functions and Service Bus.  This is a more maintainable approach because with the use of attribues, we are handing over the responsibility of passing values between Azure services to the platform itself, and we don&rsquo;t have to worry about creating &ldquo;QueueClient&rdquo; objects and the like.</p>
 
 		</div>
 		<footer class="post__footer">

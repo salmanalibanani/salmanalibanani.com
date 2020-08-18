@@ -3,7 +3,7 @@ title: "Azure Service Bus bindings and triggers for Azure Functions"
 date: 2020-08-18T09:31:13+10:00
 draft: false
 tags: ["Azure", "Service Bus", "Functions"]
-summary: "How to use Azure Service Bus bindings and triggers for Azure Functions to simplify your glue code"
+summary: "How to use Azure Service Bus bindings and triggers for Azure Functions to simplify your glue code."
 ---
 As we use more and more PAAS/serverless services on the cloud, we must find ways to integrate these services with each other to build features that our customers want.  <a target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-functions/">Azure Functions</a> is one offering where we often end up fetching information from other services, or passing on stuff to those services.  In this article we will see how we can simplify integration between Azure Functions and <a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a>.
 
