@@ -11,7 +11,7 @@ As we use more and more PAAS/serverless services on the cloud, we must find ways
 <a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a> is an enterprise integration message broker, and sometimes we need a service like that to decouple various parts of our solution in the cloud.  Azure Functions can interact with Service Bus in various ways:
 
 * We can use <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-output" target="_blank">output binding</a> to send messages from a Function App to a Service Bus.
-* We can use a <a href ="https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-trigger" target="_blank">trigger</a> to respond to messages from Service Bus queue or topic.  
+* We can use <a href ="https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-service-bus-trigger" target="_blank">triggers</a> to respond to messages from Service Bus queue or topic.  
 
 ## Output Binding
 Here is an example of how you would pass a message to a Service Bus queue without using output binding.
