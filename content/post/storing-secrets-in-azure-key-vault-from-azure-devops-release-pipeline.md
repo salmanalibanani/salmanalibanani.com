@@ -10,7 +10,7 @@ summary: "Steps to use Azure Key Vault from an Azure DevOps Release pipeline."
 
 Let’s say you deploy an Azure Service Bus using a template and want to store the details to access that resource securely in an Azure Key Vault.
 
-Below I will show an example which illustrates a very simple technique to achieve this. This apprach can be applied to any Azure resource that requires secure access credentials.
+Below I will show an example which illustrates a very simple technique to achieve this. This approach can be applied to any Azure resource that requires secure access credentials.
 
 This technique can be particularly useful during the development, as you design and evolve your system and possibly destroy and re-create resources a few times. Every time that happens, you want to store the connection information in Key Vault so that later stages of pipeline can get the correct keys generated in the earlier stages of the pipeline.
 
@@ -50,7 +50,7 @@ Here is the PowerShell script for the task above.
 $connectionString = $armOutputObj.namespaceConnectionString.value
 "##vso[task.setvariable variable=ServiceBusConnectionString;]$connectionString</code></pre>
 
-## Step 3 – Use “Write Secrets” task to store secrets to the Key Vault
+## Step 3 – Use “Write Secrets” task to store secrets in the Key Vault
 Add a task to your release pipeline stage to write secrets to Azure Key Vault. It will look something like this (replace name of your Key Vault here). Note that the secret value is coming from the variable we set in Step 2 above.
 ![New release pipeline](/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-4.png)
 At this stage, if you have setup subscription information, Key Vault Name and other parameters correctly in the above task, and you run the pipeline, you will run into the following error:
@@ -73,4 +73,4 @@ You can now go to the Key Vault and ensure that the new secret was created and v
 ![New release pipeline](/img/storing-secrets-in-azure-key-vault-from-azure-devops-release-pipeline/pic-9.png)
 
 ## Conslusion
-In this post, we demonstrated how to store credentials to access an Azure resource in a Key Vault from a Release pipeline using “Write Secrets” task.
+In this post, we demonstrated how to store credentials to access an Azure resource in a Key Vault from a Release pipeline using the “Write Secrets” task.
