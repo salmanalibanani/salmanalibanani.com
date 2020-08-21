@@ -110,15 +110,15 @@
 
 <p>Have a look at <a href="https://github.com/salmanalibanani/AzureKeyVaultFromTemplate" target="_blank">this</a> repository for an example of this approach. I have used a YAML based pipeline to deploy various resources (Resource Group, Key Vault, Service Bus), and our objective is to store the Servie Bus endpoint information in the Key Vault (which is created one step before the Service Bus in the pipeline). The important bit here is last part of the template that deploys Service Bus.
 <pre><code>{
-    &ldquo;type&rdquo;: &ldquo;Microsoft.KeyVault/vaults/secrets&rdquo;,
-    &ldquo;name&rdquo;: &ldquo;[concat(parameters(&lsquo;keyVaultName&rsquo;), &lsquo;/ServiceBusConnectionString&rsquo;)]&ldquo;,
-    &ldquo;apiVersion&rdquo;: &ldquo;2019-09-01&rdquo;,
-    &ldquo;dependsOn&rdquo;: [
-        &ldquo;[parameters(&lsquo;serviceBusNamespaceName&rsquo;)]&rdquo;
+    &quot;type&quot;: &quot;Microsoft.KeyVault/vaults/secrets&quot;,
+    &quot;name&quot;: &quot;[concat(parameters(&apos;keyVaultName&apos;), &apos;/ServiceBusConnectionString&apos;)]&quot;,
+    &quot;apiVersion&quot;: &quot;2019-09-01&quot;,
+    &quot;dependsOn&quot;: [
+        &quot;[parameters(&apos;serviceBusNamespaceName&apos;)]&quot;
     ],
-    &ldquo;location&rdquo;: &ldquo;[parameters(&lsquo;location&rsquo;)]&ldquo;,
-    &ldquo;properties&rdquo;: {
-        &ldquo;value&rdquo;: &ldquo;[listkeys(variables(&lsquo;authRuleResourceId&rsquo;), variables(&lsquo;sbVersion&rsquo;)).primaryConnectionString]&rdquo;
+    &quot;location&quot;: &quot;[parameters(&apos;location&apos;)]&quot;,
+    &quot;properties&quot;: {
+        &quot;value&quot;: &quot;[listkeys(variables(&apos;authRuleResourceId&apos;), variables(&apos;sbVersion&apos;)).primaryConnectionString]&quot;
     }
 }</code></pre></p>
 
