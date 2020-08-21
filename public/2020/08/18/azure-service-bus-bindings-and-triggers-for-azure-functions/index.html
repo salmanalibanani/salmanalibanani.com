@@ -117,37 +117,33 @@
 
 <p>Here is an example of how you would pass a message to a Service Bus queue without using output binding.</p>
 
-<pre><code>[FunctionName("MyFunctionName")]
-public static async void Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req, ILogger log)
+<pre><code>[FunctionName(&quot;MyFunctionName&quot;)]
+public static async void Run([HttpTrigger(AuthorizationLevel.Function, &quot;get&quot;, &quot;post&quot;, Route = null)] HttpRequest req, ILogger log)
 {
-    string queueName = Environment.GetEnvironmentVariable("QueueName");
-    string serviceBusConnectionString = System.Environment.GetEnvironmentVariable("ServiceBusConnectionString");
-
+    string queueName = Environment.GetEnvironmentVariable(&quot;QueueName&quot;);
+    string serviceBusConnectionString = System.Environment.GetEnvironmentVariable(&quot;ServiceBusConnectionString&quot;);
     string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-
     var client = new QueueClient(serviceBusConnectionString, queueName);
     var message = new Message(Encoding.UTF8.GetBytes(requestBody));
-
     await client.SendAsync(message);
 }</code></pre>
 
 <p>It is a straightforward approach but has a few drawbacks.  We read the service bus connection string and queue name from environment, and create a QueueClient object to pass a message to a queue.  In doing so, we have built a dependency on a &ldquo;QueueClient&rdquo; object.  Our code is now more aware of the &ldquo;glue&rdquo; logic between our Function and Service Bus.</p>
 
 <p>With output binding, we can write something like this:
-<pre><code>[FunctionName(&ldquo;MyFunctionName&rdquo;)]
-public static void Run([HttpTrigger(AuthorizationLevel.Function, &ldquo;get&rdquo;, &ldquo;post&rdquo;, Route = null)] HttpRequest req, ILogger log,
-    [ServiceBus(&ldquo;replyqueue&rdquo;, Connection = &ldquo;ServiceBusConnectionString&rdquo;, EntityType = EntityType.Queue)] out string queueMessage)
+<pre><code>[FunctionName(&quot;MyFunctionName&quot;)]
+public static void Run([HttpTrigger(AuthorizationLevel.Function, &quot;get&quot;, &quot;post&quot;, Route = null)] HttpRequest req, ILogger log,
+    [ServiceBus(&quot;replyqueue&quot;, Connection = &quot;ServiceBusConnectionString&quot;, EntityType = EntityType.Queue)] out string queueMessage)
 {
     string requestBody = new StreamReader(req.Body).ReadToEnd();
     queueMessage = requestBody;
-}</code></pre></p>
-
-<p>This is a more declarative way of working with Azure Functions and Service Bus.   The output variable is passed on to the queue that we have specified through &ldquo;ServiceBus&rdquo; attribute.  The function now has one less dependency (QueueClient) and has no awareness of how that output variable is handed over to the Service Bus.  This makes the function potentially more unit-testable.</p>
+}</code></pre>
+This is a more declarative way of working with Azure Functions and Service Bus.   The output variable is passed on to the queue that we have specified through &ldquo;ServiceBus&rdquo; attribute.  The function now has one less dependency (QueueClient) and has no awareness of how that output variable is handed over to the Service Bus.  This makes the function potentially more unit-testable.</p>
 
 <p>We can also move the attributes to the function level instead of the output parameter.
-<pre><code>[FunctionName(&ldquo;MyFunctionName&rdquo;)]
-[return: ServiceBus(&ldquo;replyqueue&rdquo;, Connection = &ldquo;ServiceBusConnectionString&rdquo;)]
-public static string Run([HttpTrigger(AuthorizationLevel.Function, &ldquo;get&rdquo;, &ldquo;post&rdquo;, Route = null)] HttpRequest req, ILogger log)
+<pre><code>[FunctionName(&quot;MyFunctionName&quot;)]
+[return: ServiceBus(&quot;replyqueue&quot;, Connection = &quot;ServiceBusConnectionString&quot;)]
+public static string Run([HttpTrigger(AuthorizationLevel.Function, &quot;get&quot;, &quot;post&quot;, Route = null)] HttpRequest req, ILogger log)
 {
     string requestBody = new StreamReader(req.Body).ReadToEnd();
     return requestBody;
@@ -162,7 +158,7 @@ This is somewhat more readable because the function&rsquo;s return value is now 
 public static void Run([ServiceBusTrigger("replyqueue", AccessRights.Manage, Connection = "ServiceBusConnectionSetting")]string message, TraceWriter log)
 {
     // Do something with the message.
-    log.Info(message");
+    log.Info(&quot;message&quot;);
 }</code></pre>
 
 <h2 id="conclusion">Conclusion</h2>
