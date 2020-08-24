@@ -1,7 +1,7 @@
 ---
 title: "Fairness and bias in Machine Learning"
 date: 2020-08-24T16:41:39+10:00
-draft: true
+draft: false
 tags: ["Machine Learning", "Bias"]
 summary: "How bias in machine learning is affective our lives and what can we do about it."
 ---
@@ -18,7 +18,9 @@ This is a typical example of "surpervised" learning, the mode of machine learnin
 
 Let's look at an actual historical example of this: Amazon's secret AI based recruting tool.
 
-Amazon is reported to have an AI tool to review job applicants' resume.  The idea was simple: given a set 100 resumes, return top 5 resumes that are most suitable for a given job.  It turned out that the algorithm was not rating candidates for roles in a gender neutral way.  It was systemically downgrading women's CVs for technical jobs such as software developer.  And it not difficult to see why that was the case.  The algorithm was fed resumes submitted to the company over a period of 10 years.  Most of those resumes came from men, which is a reflection of the male dominance in tech industry.  The algorithm essentially learned the "skewness" of the real world.  
+Amazon is reported to have an AI tool to review job applicants' resume.  The idea was simple: given a set 100 resumes, return top 5 resumes that are most suitable for a given job.  It turned out that the algorithm was not rating candidates for roles in a gender neutral way.  It was systemically downgrading women's CVs for technical jobs such as software developer.  And it not difficult to see why that was the case.  The algorithm was fed resumes submitted to the company over a period of 10 years.  Most of those resumes came from men, which is a reflection of the male dominance in tech industry.  The algorithm essentially learned the "skewness" of the real world.  It learned that male applicants were preferable, and it penalized resumes from female candidates.  The tool was ultimately decomissioned because there was no guarantee that the algorithm was not going to learn other discriminatory ways of sorting resumes.
+
+
 
 ## References
 * <a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G" target="blank">Amazon scraps secret AI recruiting tool that showed bias against women</a>
