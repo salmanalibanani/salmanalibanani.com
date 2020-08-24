@@ -3,7 +3,7 @@ title: "Fairness and bias in Machine Learning"
 date: 2020-08-24T16:41:39+10:00
 draft: false
 tags: ["Machine Learning", "Bias"]
-summary: "How bias in machine learning is affective our lives and what can we do about it."
+summary: "How bias in machine learning impacts our lives and what can we do about it."
 ---
 Bias in machine learning models is now a well know phenomenon.  There is a serious conversation happening in the ML community on this subject.  Existance and consequences of algorithmic bias in <a href="https://www.technologyreview.com/2020/07/17/1005396/predictive-policing-algorithms-racist-dismantled-machine-learning-bias-criminal-justice/" target="_blank">predictive policing</a>, <a href="https://qz.com/work/1098954/ai-is-the-future-of-hiring-but-it-could-introduce-bias-if-were-not-careful/" target="_blank">hiring</a>, <a href="https://www.brookings.edu/research/credit-denial-in-the-age-of-ai/" target="_blank">credit lending</a> and many other applications are being acknowledged.
 

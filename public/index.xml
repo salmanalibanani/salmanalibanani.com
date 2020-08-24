@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Salman Ali Banani.</copyright>
-    <lastBuildDate>Tue, 18 Aug 2020 09:31:13 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2020 16:41:39 +1000</lastBuildDate>
     
 	<atom:link href="https://salmanalibanani.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fairness and bias in Machine Learning</title>
+      <link>https://salmanalibanani.netlify.app/2020/08/24/fairness-and-bias-in-machine-learning/</link>
+      <pubDate>Mon, 24 Aug 2020 16:41:39 +1000</pubDate>
+      
+      <guid>https://salmanalibanani.netlify.app/2020/08/24/fairness-and-bias-in-machine-learning/</guid>
+      <description>How bias in machine learning impacts our lives and what can we do about it.</description>
+    </item>
     
     <item>
       <title>Azure Service Bus bindings and triggers for Azure Functions</title>
