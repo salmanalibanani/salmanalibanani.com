@@ -24,9 +24,3 @@ Amazon is reported to have an AI tool to review job applicants' resume.  The ide
 
 ## References
 * <a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G" target="blank">Amazon scraps secret AI recruiting tool that showed bias against women</a>
-
-## Approaches to address algorithmic bias
-
-
-
-## Governance of algorithmic bias
