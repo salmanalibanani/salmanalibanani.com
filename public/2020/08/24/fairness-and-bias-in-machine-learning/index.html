@@ -106,7 +106,7 @@
 
 <p>In this three part series, I will explain the nature of this bias which often results in unexpected consequences when algorithms are deployed in real world scenarios.  I will talk about the origins of this bias, the problems caused by this bias, and what can be done to address these problems.</p>
 
-<h2 id="source-of-algorithmic-bias">Source of algorithmic bias</h2>
+<h2 id="sources-of-algorithmic-bias">Sources of algorithmic bias</h2>
 
 <p>To understand the source of algorithmic bias, we must first take a look at how machine learning actually works.</p>
 
@@ -117,6 +117,10 @@
 <p>Let&rsquo;s look at an actual historical example of this: Amazon&rsquo;s secret AI based recruting tool.</p>
 
 <p>Amazon is reported to have an AI tool to review job applicants&rsquo; resume.  The idea was simple: given a set 100 resumes, return top 5 resumes that are most suitable for a given job.  It turned out that the algorithm was not rating candidates for roles in a gender neutral way.  It was systemically downgrading women&rsquo;s CVs for technical jobs such as software developer.  And it not difficult to see why that was the case.  The algorithm was fed resumes submitted to the company over a period of 10 years.  Most of those resumes came from men, which is a reflection of the male dominance in tech industry.  The algorithm essentially learned the &ldquo;skewness&rdquo; of the real world.  It learned that male applicants were preferable, and it penalized resumes from female candidates.  The tool was ultimately decomissioned because there was no guarantee that the algorithm was not going to learn other discriminatory ways of sorting resumes.</p>
+
+<p>There are other <a href="https://www.tessella.com/insights/three-causes-of-ai-bias-and-how-to-deal-with-them" target="_blank">sources of bias</a>.  But bias in training data is probably the biggest technical challenge.</p>
+
+<p>Bias in, bias out!</p>
 
 <h2 id="references">References</h2>
 
