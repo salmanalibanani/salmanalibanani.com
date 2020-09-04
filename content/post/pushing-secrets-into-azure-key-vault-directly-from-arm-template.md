@@ -12,19 +12,21 @@ In a previos <a href="/2020/07/09/storing-secrets-in-azure-key-vault-from-azure-
 Below I show a somewhat different way to do this and keep the pipeline simple by writing the secret directly from ARM template that creates the resource (i.e. Service Bus) in previous step.
 
 Have a look at <a href="https://github.com/salmanalibanani/AzureKeyVaultFromTemplate" target="_blank">this</a> repository for an example of this approach. I have used a YAML based pipeline to deploy various resources (Resource Group, Key Vault, Service Bus), and our objective is to store the Servie Bus endpoint information in the Key Vault (which is created one step before the Service Bus in the pipeline). The important bit here is last part of the template that deploys Service Bus.
-<pre><code>{
-    &quot;type&quot;: &quot;Microsoft.KeyVault/vaults/secrets&quot;,
-    &quot;name&quot;: &quot;[concat(parameters(&apos;keyVaultName&apos;), &apos;/ServiceBusConnectionString&apos;)]&quot;,
-    &quot;apiVersion&quot;: &quot;2019-09-01&quot;,
-    &quot;dependsOn&quot;: [
-        &quot;[parameters(&apos;serviceBusNamespaceName&apos;)]&quot;
-    ],
-    &quot;location&quot;: &quot;[parameters(&apos;location&apos;)]&quot;, 
-    &quot;properties&quot;: {
-        &quot;value&quot;: &quot;[listkeys(variables(&apos;authRuleResourceId&apos;), variables(&apos;sbVersion&apos;)).primaryConnectionString]&quot;
-    }
-}</code></pre>
 
+```json
+{
+    "type": "Microsoft.KeyVault/vaults/secrets",
+    "name": "[concat(parameters('keyVaultName'), '/ServiceBusConnectionString')]",
+    "apiVersion": "2019-09-01",
+    "dependsOn": [
+        "[parameters('serviceBusNamespaceName')]"
+    ],
+    "location": "[parameters('location')]", 
+    "properties": {
+        "value": "[listkeys(variables('authRuleResourceId'), variables('sbVersion')).primaryConnectionString]"
+    }
+}
+```
 This creates a new secret “ServiceBusConnectionString” in the Key Vault whose name is provided as a parameter to the template.
 
 Note that to make this sample work, you will have to do a few things:
@@ -38,3 +40,7 @@ This approach clearly makes the pipeline simpler, with no need to inject a scrip
 
 ## Conclusion
 In this post we learned how to store credentials to access an Azure resource directly from an ARM template that deploys that resource, without parsing template output and using the “Writing Secrets” task in a Release pipeline.
+
+
+
+
