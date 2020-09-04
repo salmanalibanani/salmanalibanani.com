@@ -81,7 +81,7 @@ topicClient.SendAsync(new Message() {Body = Encoding.ASCII.GetBytes("Some messag
 In the case of topic client, the message sent to the topic will be received by all subscriptions to that topic.  Therefore, to test this in Azure portal, you need to create subscriptions against the topic you are using.
 
 ## Conclusion
-The Service Bus SDK can be used to perform administration tasks on Service Bus using the ManagementClient class.  To work with individual objects (e.g. passing messages to queues etc), we will require to use the respect client objects (QueueClient, TopicClient) as shown above.
+The Service Bus SDK can be used to perform administrative tasks on Service Bus using the ManagementClient class.  To work with individual objects (e.g. passing messages to queues etc), we need to use the respect client objects (QueueClient, TopicClient) as shown above.
 
 In this post we have only scratched the surface of capabilities of the SDK.  Depending upon the requrirements of your application, you can explore the APIs to use the features you need.  
 
