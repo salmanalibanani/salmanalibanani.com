@@ -2,7 +2,7 @@
 title: "Azure Service Bus client library for .NET"
 date: 2020-09-04T15:25:13+10:00
 draft: false
-tags: ["Azure", "Service Bus"]
+tags: ["Azure", "Service Bus", "Azure SDK"]
 summary: "Get started with Azure Service Bus client library for .NET"
 ---
 <a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a> is an enterprise integration message broker.  We need services like these to decouple various parts of our solutions.  Over the last few months, I have been playing with a number of services that Microsoft groups together as <a href="https://azure.microsoft.com/en-us/resources/azure-integration-services/" target="_blank">Azure Integration Services</a>.  This time around I decided to look into ways to interact with these services using the SDKs provided by Microsoft.  In this post, I'll show how easy it is to integrate a .NET application with Azure Service Bus.
