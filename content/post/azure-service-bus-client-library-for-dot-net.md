@@ -98,7 +98,7 @@ In the case of topic client, the message sent to the topic will be received by a
 You can find the above code <a href="https://github.com/salmanalibanani/AzureServiceBusSDKSample" target="_blank">here</a>.
 
 
-## Receive message from the queue
+## Receive message from the Queue
 
 To receive a message sent to queue, you use ``RegisterMessageHandler`` of the ``QueueClient`` class.  
 ```C#
@@ -118,7 +118,7 @@ Below is a sample run of two console applications which shows how messages sent 
 
 ![Standard Normal Distribution](/img/azure-service-bus-client-library-for-dot-net/pic.png)
 
-## Subscribing to a topic
+## Subscribing to a Topic
 The code to subscribe to a topic follows a very similar pattern.  Instead of using ``TopicClient``, we use ``SubscriptionClient``.  To make this demo work, we created a subscription via Azure Portal, but it is possible to create subscriptions via ``ManagementClient`` object, which we used above. 
 
 You can find the sender application <a href="https://github.com/salmanalibanani/AzureServiceBusTopicSend" target="_blank">here</a>, and receiver application <a href="https://github.com/salmanalibanani/AzureServiceBusTopicReceive" target="_blank">here</a>.
