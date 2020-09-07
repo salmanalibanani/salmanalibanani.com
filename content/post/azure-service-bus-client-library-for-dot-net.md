@@ -19,7 +19,7 @@ For my first foray into world of Azure SDKs I decided to use the older version o
 
 Start with the following on console.  (I am using .NET Core 3.1.301.)
 ```xml
-dotnet newconsole -n AzureServiceBusSDKSample
+dotnet new console -n AzureServiceBusSDKSample
 cd AzureServiceBusSDKSample
 dotnet add package Microsoft.Azure.ServiceBus --version 4.1.3
 dotnet add package Microsoft.Extensions.Configuration
