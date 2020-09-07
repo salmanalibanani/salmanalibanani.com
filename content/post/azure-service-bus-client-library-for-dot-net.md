@@ -85,11 +85,11 @@ await client.UpdateQueueAsync(queueDescription);
 We can use ``QueueClient``and ``TopicClient`` to pass messages to individual objects.
 
 ```C#
-var queueClient = new QueueClient(connectionString, "replyqueue");  //second parameter is queue name.
+var queueClient = new QueueClient(connectionString, "replyqueue");  
 await queueClient.SendAsync(new Message() { Body = Encoding.ASCII.GetBytes("Hello queue again")});
-await queueClient.CloseAsync()
+await queueClient.CloseAsync();
 
-var topicClient = new TopicClient(connectionString, "new-topic");  //second parameter is topic name
+var topicClient = new TopicClient(connectionString, "new-topic"); 
 await topicClient.SendAsync(new Message() {Body = Encoding.ASCII.GetBytes("Hello topic agian")});
 await topicClient.CloseAsync();
 ```
