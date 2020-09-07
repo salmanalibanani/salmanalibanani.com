@@ -10,17 +10,17 @@ summary: "Get started with Azure Service Bus client library for .NET"
 * Google offers a <a href="https://cloud.google.com/pubsub/docs" target="_blank">Pub/Sub</a> service.
 * AWS has <a href="https://aws.amazon.com/sqs/" target="_blank">Simple Queue Service (SQS)</a> and <a href="https://aws.amazon.com/sns"target="_blank">Simple Notification Service (SNS)</a>.
 
-And in the open source world we have <a href="https://www.rabbitmq.com/" target="_blank">RabbitMQ</a> which is also made available in cloud as managed clusters by <a href="https://www.cloudamqp.com/" target="_blank">CloudAMQP</a>.
+And in the open source world we have <a href="https://www.rabbitmq.com/" target="_blank">RabbitMQ</a> which is also made available in the cloud as managed clusters by <a href="https://www.cloudamqp.com/" target="_blank">CloudAMQP</a>.
 
 Over the last few months, I have been playing with a number of services that Microsoft groups together as <a href="https://azure.microsoft.com/en-us/resources/azure-integration-services/" target="_blank">Azure Integration Services</a>.  This time around I decided to look into ways to interact with these services using the SDKs provided by Microsoft.  In this post, I'll show how easy it is to integrate a .NET application with Azure Service Bus.
 
-Currently there are at least two Service Bus SDKs available as NuGet packages:
+Currently there are two Service Bus SDKs for .NET available as NuGet packages:
 
-* <a href="https://www.nuget.org/packages/Microsoft.Azure.ServiceBus/" _target="blank">Microsoft.Azure.ServiceBus</a> which seems to have been released in 2017 and is at version 4.1.3 at the time of this writing.
+* <a href="https://www.nuget.org/packages/Microsoft.Azure.ServiceBus/" _target="blank">Microsoft.Azure.ServiceBus</a> which seems to have been released in 2017 and is at version 4.1.3 at the time of writing.
 
-* <a href="https://www.nuget.org/packages/Azure.Messaging.ServiceBus/" _target="blank">Azure.Messaging.ServiceBus</a> which looks like a much recent project kicked off in 2020 and is more active on <a href="https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.ServiceBus_7.0.0-preview.6/sdk/servicebus" _target="blank">GitHub</a>.  At the time of this writing it is still in preview.
+* <a href="https://www.nuget.org/packages/Azure.Messaging.ServiceBus/" _target="blank">Azure.Messaging.ServiceBus</a> which looks like a much more recent project kicked off in 2020, and is more active on <a href="https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.ServiceBus_7.0.0-preview.6/sdk/servicebus" _target="blank">GitHub</a>.  At the time of this writing it is still in preview.
 
-For my first foray into world of Azure SDKs I decided to use the older version of the Service Bus SDK, given that the new one is still in preview.  I document the steps below, and you will need an Azure subscription with a Service Bus Namespace and preferably a few Queues and Topics if you want to follow along.
+For my first foray into the world of Azure SDKs I decided to use the older version of the Service Bus SDK, given that the new one is still in preview.  I document the steps below, and you will need an Azure subscription with a Service Bus Namespace and preferably a few Queues and Topics if you want to follow along.
 
 ## Setting up the project
 
@@ -54,12 +54,12 @@ Here is my ``.csproj`` file.  Note ``<LangVersion>`` and ``<CopyToOutputDirector
   </ItemGroup>
 </Project>
 ```
-This sets up the project nicely with references to Configuration API which we will use to store the connection string for Service Bus.  We store connection string in our ``appsettings.json`` file, and we can get the connection string from Azure portal.
+This sets up the project nicely with references to Configuration API which we will use to store the connection string for Service Bus.  We store the connection string in our ``appsettings.json`` file, and we can get the connection string from Azure portal.
 
 Note that in real projects, connection strings should be not be kept in config files.  A great place to keep connection strings is <a href="https://docs.microsoft.com/en-us/azure/key-vault/general/" target="_blank">Azure Key Vault</a>.
 
 ## Calling Management Client APIs
-The SDK provides a ``MamagementClient`` object which can be used to read and update properties of various objects associated with Service Bus.  We need to supply connection string to create a Management Object.
+The SDK provides a ``ManagementClient`` object which can be used to read and update properties of various objects associated with Service Bus.  We need to supply a connection string to create a ``ManagementClient`` object.
 ```C#
 IConfiguration config = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", true, true)
@@ -100,14 +100,14 @@ var topicClient = new TopicClient(connectionString, "new-topic");
 await topicClient.SendAsync(new Message() {Body = Encoding.ASCII.GetBytes("Hello topic agian")});
 await topicClient.CloseAsync();
 ```
-In the case of topic client, the message sent to the topic will be received by all subscriptions to that topic.  Therefore, to test this in Azure portal, we need to create subscriptions against the topic we are using.
+In the case of a topic client, the message sent to the topic will be received by all subscriptions to that topic.  Therefore, to test this in Azure portal, we need to create subscriptions against the topic we are using.
 
 You can find the above code <a href="https://github.com/salmanalibanani/AzureServiceBusSDKSample" target="_blank">here</a>.
 
 
 ## Receive message from the Queue
 
-To receive a message sent to queue, you use ``RegisterMessageHandler`` of the ``QueueClient`` class.  
+To receive a message sent to a queue, you use ``RegisterMessageHandler`` of the ``QueueClient`` class.  
 ```C#
 client = new QueueClient(connectionString, "demoqueue4261");  
 
@@ -126,7 +126,7 @@ Below is a sample run of two console applications which shows how messages sent 
 ![Standard Normal Distribution](/img/azure-service-bus-client-library-for-dot-net/pic.png)
 
 ## Subscribing to a Topic
-The code to subscribe to a topic follows a very similar pattern.  Instead of using ``TopicClient``, we use ``SubscriptionClient``.  To make this demo work, we created a subscription via Azure Portal, but it is possible to create subscriptions via ``ManagementClient`` object, which we used above. 
+The code to subscribe to a topic follows a very similar pattern.  Instead of using ``TopicClient``, we use ``SubscriptionClient``.  To make this demo work, we created a subscription via Azure Portal, but it is also possible to create subscriptions via a ``ManagementClient`` object, which we used above. 
 
 You can find the sender application <a href="https://github.com/salmanalibanani/AzureServiceBusTopicSend" target="_blank">here</a>, and receiver application <a href="https://github.com/salmanalibanani/AzureServiceBusTopicReceive" target="_blank">here</a>.
 
