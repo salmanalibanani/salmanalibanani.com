@@ -24,7 +24,7 @@ For my first foray into world of Azure SDKs I decided to use the older version o
 
 ## Setting up the project
 
-Start with the following on console.  (I am using .NET Core 3.1.301.)
+Start with the following on console.  (I am using .NET Core 3.1.301).
 ```code
 dotnet new console -n AzureServiceBusSDKSample
 cd AzureServiceBusSDKSample
