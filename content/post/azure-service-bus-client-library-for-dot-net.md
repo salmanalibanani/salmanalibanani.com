@@ -5,7 +5,14 @@ draft: false
 tags: ["Azure", "Service Bus", "Azure SDK"]
 summary: "Get started with Azure Service Bus client library for .NET"
 ---
-<a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a> is an enterprise integration message broker.  We need services like these to decouple various parts of our solutions.  Over the last few months, I have been playing with a number of services that Microsoft groups together as <a href="https://azure.microsoft.com/en-us/resources/azure-integration-services/" target="_blank">Azure Integration Services</a>.  This time around I decided to look into ways to interact with these services using the SDKs provided by Microsoft.  In this post, I'll show how easy it is to integrate a .NET application with Azure Service Bus.
+<a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a> is an enterprise integration message broker.  We need services like these to decouple various parts of our solutions.  All major cloud providers offer similar services:
+
+* Google offers a <a href="https://cloud.google.com/pubsub/docs" target="_blank">Pub/Sub</a> service.
+* AWS has <a href="https://aws.amazon.com/sqs/" target="_blank">Simple Queue Service (SQS)</a> and <a href="https://aws.amazon.com/sns"target="_blank">Simple Notification Service (SNS)</a>.
+
+And in the open source world we have <a href="https://www.rabbitmq.com/" target="_blank">RabbitMQ</a> which is also made available in cloud as managed clusters by <a href="https://www.cloudamqp.com/" target="_blank">CloudAMQP</a>.
+
+Over the last few months, I have been playing with a number of services that Microsoft groups together as <a href="https://azure.microsoft.com/en-us/resources/azure-integration-services/" target="_blank">Azure Integration Services</a>.  This time around I decided to look into ways to interact with these services using the SDKs provided by Microsoft.  In this post, I'll show how easy it is to integrate a .NET application with Azure Service Bus.
 
 Currently there are at least two Service Bus SDKs available as NuGet packages:
 
