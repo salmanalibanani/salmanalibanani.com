@@ -124,8 +124,8 @@ The code to subscribe to a topic follows a very similar pattern.  Instead of usi
 You can find the sender application <a href="https://github.com/salmanalibanani/AzureServiceBusTopicSend" target="_blank">here</a>, and receiver application <a href="https://github.com/salmanalibanani/AzureServiceBusTopicReceive" target="_blank">here</a>.
 
 ## Conclusion
-The Service Bus SDK can be used to programmatically interact with Service Bus and perform administrative tasks using the ManagementClient class.  To work with individual objects (e.g. passing messages to queues etc), we need to use the respective client objects (QueueClient, TopicClient) as shown above.
+The Service Bus SDK can be used to programmatically interact with Service Bus and perform administrative tasks using the ``ManagementClient`` class.  To work with individual objects (e.g. passing messages to queues etc), we need to use the respective client objects (``QueueClient``, ``TopicClient``, ``SubscriptionClient``) as shown above.
 
-In this post we have only scratched the surface of capabilities of the SDK.  Depending upon the requrirements of your application, you can explore the APIs to use the features you need.  
+In this post we have only scratched the surface of capabilities of the SDK.  Depending upon the requrirements of your application, play around with the SDK to learn about the features you need.  
 
 
