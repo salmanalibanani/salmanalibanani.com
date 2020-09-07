@@ -13,7 +13,7 @@ Currently there are at least two Service Bus SDKs available as NuGet packages:
 
 * <a href="https://www.nuget.org/packages/Azure.Messaging.ServiceBus/" _target="blank">Azure.Messaging.ServiceBus</a> which looks like a much recent project kicked off in 2020 and is more active on <a href="https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.ServiceBus_7.0.0-preview.6/sdk/servicebus" _target="blank">GitHub</a>.  At the time of this writing it is still in preview.
 
-For my first foray into world of Azure SDKs I decided to use the older version of the Service Bus SDK.  I document the steps below, and you will need an Azure subscription with a Service Bus Namespace and preferably a few Queues and Topics if you want to follow along.
+For my first foray into world of Azure SDKs I decided to use the older version of the Service Bus SDK, given that the new one is still in preview.  I document the steps below, and you will need an Azure subscription with a Service Bus Namespace and preferably a few Queues and Topics if you want to follow along.
 
 ## Setting up the project
 
@@ -126,6 +126,6 @@ You can find the sender application <a href="https://github.com/salmanalibanani/
 ## Conclusion
 The Service Bus SDK can be used to programmatically interact with Service Bus and perform administrative tasks using the ``ManagementClient`` class.  To work with individual objects (e.g. passing messages to queues etc), we need to use the respective client objects (``QueueClient``, ``TopicClient``, ``SubscriptionClient``) as shown above.
 
-In this post we have only scratched the surface of capabilities of the SDK.  Depending upon the requrirements of your application, play around with the SDK to learn about the features you need.  
+In this post we have only scratched the surface of capabilities of the SDK.  Depending upon the requirements of your application, play around with the SDK to learn about the features you need.  
 
 
