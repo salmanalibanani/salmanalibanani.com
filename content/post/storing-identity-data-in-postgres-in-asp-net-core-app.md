@@ -28,6 +28,7 @@ In Package Manager Console in Visual Studio 2019, use the following to install N
 ```code
 Install-Package Npgsql.EntityFrameworkCore.PostgreSQL -Version 3.1.4
 ```
+You should also remove the Entity Framework Core package for SQL Server from your project dependencies.
 
 ## Step 2 - Configure Startup.cs to use PostgreSQL
 
