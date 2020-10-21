@@ -66,6 +66,8 @@ Update-Database
 
 At this point you can see the tables in your new database.  You can now run the default template as expected.
 
+The complete sample can be found <a href="https://github.com/salmanalibanani/AspNetIdentitySample" target="blank">here</a>.
+
 
 
 
