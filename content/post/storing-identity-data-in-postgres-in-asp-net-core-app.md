@@ -5,7 +5,7 @@ draft: false
 tags: ["ASP.NET Core", "PostgreSQL", "Visual Studio"]
 summary: "Use a PostgreSQL database to store ASP.NET Identity data."
 ---
-One way in which Visual Studio helps developers be more productive is through project templates, which give developers project shells with various dependencies in place.  In this post, our focus is the default Visual Studio 2019 project template for ASP.NET Core.  We will modify this project to store user identity information in a PostgreSQL database (the default is a SQL Server LocalDB).
+One way in which Visual Studio helps developers to be more productive is through project templates, which give developers project shells with various dependencies in place.  In this post, our focus is the default Visual Studio 2019 project template for ASP.NET Core.  We will modify this project to store user identity information in a PostgreSQL database (the default is a SQL Server LocalDB).
 
 In the following example I am using the project template that uses React at the front end.
 
