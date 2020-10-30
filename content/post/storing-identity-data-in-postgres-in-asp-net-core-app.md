@@ -55,13 +55,32 @@ At this point make sure that you have a proper connection string in appsettings.
 ## Step 3 - Set up database using Docker-Compose
 Thanks to Docker it's easy to set up PostgreSQL with <a href="https://www.adminer.org/" target="_blank">Adminer</a>.  You can use the following .yml file to set things up nicely.  The file is included in the Github repo linked below.
 
-![Docker compose](/img/storing-identity-data-in-postgres-in-asp-net-core-app/docker-compose.jpg)
+```code
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres:13.0
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: AspNetIdentitySampleDB 
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+```
 
 Use the following to fire up the two containers:
 ```code
 docker-compose up -d
 ```
-The "-d" option runs this command in detatched mode.  You can verify that the two containers are running using "docker ps".
+The "-d" option runs this command in detached mode.  You can verify that the two containers are running using "docker ps".
 
 ## Step 4 - Recreate the default migration
 
