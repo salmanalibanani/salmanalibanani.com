@@ -106,7 +106,7 @@ You should now be able to see the database with Identity tables.
 You can now run the default template as expected.
 
 ## Conclusion
-In this post we setup a ASP.NET Core application using the template provided by Visual Studio 2019 with Identity data stored in a PostgreSQL database running in a container.  We also setup Adminer to work with PostgreSQL.  
+In this post we setup a ASP.NET Core application using the template provided by Visual Studio 2019 with Identity data stored in a PostgreSQL database running in a container.
 
 The complete sample can be found <a href="https://github.com/salmanalibanani/AspNetIdentitySample" target="blank">here</a>.
 
