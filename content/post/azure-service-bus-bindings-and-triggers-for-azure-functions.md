@@ -16,11 +16,11 @@ As we use more and more PAAS/serverless services on the cloud, we must find ways
 ## Output Binding
 Here is an example of how you would pass a message to a Service Bus queue without using output binding.
 ```C#
-[FunctionName(&quot;MyFunctionName&quot;)]
-public static async void Run([HttpTrigger(AuthorizationLevel.Function, &quot;get&quot;, &quot;post&quot;, Route = null)] HttpRequest req, ILogger log)
+[FunctionName("MyFunctionName")]
+public static async void Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req, ILogger log)
 {
-    string queueName = Environment.GetEnvironmentVariable(&quot;QueueName&quot;);
-    string serviceBusConnectionString = System.Environment.GetEnvironmentVariable(&quot;ServiceBusConnectionString&quot;);
+    string queueName = Environment.GetEnvironmentVariable("QueueName");
+    string serviceBusConnectionString = System.Environment.GetEnvironmentVariable("ServiceBusConnectionString");
     string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
     var client = new QueueClient(serviceBusConnectionString, queueName);
     var message = new Message(Encoding.UTF8.GetBytes(requestBody));
@@ -32,9 +32,9 @@ It is a straightforward approach but has a few drawbacks.  We read the service b
 
 With output binding, we can write something like this:
 ```C#
-[FunctionName(&quot;MyFunctionName&quot;)]
-public static void Run([HttpTrigger(AuthorizationLevel.Function, &quot;get&quot;, &quot;post&quot;, Route = null)] HttpRequest req, ILogger log,
-    [ServiceBus(&quot;replyqueue&quot;, Connection = &quot;ServiceBusConnectionString&quot;, EntityType = EntityType.Queue)] out string queueMessage)
+[FunctionName("MyFunctionName")]
+public static void Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req, ILogger log,
+    [ServiceBus("replyqueue", Connection = "ServiceBusConnectionString", EntityType = EntityType.Queue)] out string queueMessage)
 {
     string requestBody = new StreamReader(req.Body).ReadToEnd();
     queueMessage = requestBody;
@@ -44,9 +44,9 @@ This is a more declarative way of working with Azure Functions and Service Bus. 
 
 We can also move the attributes to the function level instead of the output parameter.
 ```C#
-[FunctionName(&quot;MyFunctionName&quot;)]
-[return: ServiceBus(&quot;replyqueue&quot;, Connection = &quot;ServiceBusConnectionString&quot;)]
-public static string Run([HttpTrigger(AuthorizationLevel.Function, &quot;get&quot;, &quot;post&quot;, Route = null)] HttpRequest req, ILogger log)
+[FunctionName("MyFunctionName")]
+[return: ServiceBus("replyqueue", Connection = "ServiceBusConnectionString")]
+public static string Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req, ILogger log)
 {
     string requestBody = new StreamReader(req.Body).ReadToEnd();
     return requestBody;
@@ -63,7 +63,7 @@ Triggers are a way to interact with a Service Bus in the opposite direction.  We
 public static void Run([ServiceBusTrigger("replyqueue", AccessRights.Manage, Connection = "ServiceBusConnectionSetting")]string message, TraceWriter log)
 {
     // Do something with the message.
-    log.Info(&quot;message&quot;);
+    log.Info("message");
 }
 ```
 
