@@ -3,7 +3,7 @@ title: "Azure Service Bus client library for .NET"
 date: 2020-09-04T15:25:13+10:00
 draft: false
 tags: ["Azure", "Service Bus", "Azure SDK"]
-summary: "Get started with Azure Service Bus client library for .NET"
+summary: "Get started with Azure Service Bus client library for .NET."
 ---
 <a target="_blank" href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/">Azure Service Bus</a> is an enterprise integration message broker.  We need services like these to decouple various parts of our solutions.  All major cloud providers offer similar services:
 
