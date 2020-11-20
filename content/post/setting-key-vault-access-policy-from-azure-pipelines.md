@@ -12,7 +12,7 @@ If you create a Key Vault via an ARM template in your YAML base pipeline, you ne
 
 ## The problem
 
-Below is an example run of Azure Pipelines where you can see a number of resources being created (Resource Group, Service Bus etc).  Our objective in this pipeline is to store the connection information for the Azure Service Bus in Key Vault.  The connection information for Service Bus comes from the output of the ARM template that creates Service Bus.  You can find this pipeline in the repository linked below.
+ Here is an example run of Azure Pipelines where you can see a number of resources being created (Resource Group, Service Bus etc).  Our objective in this pipeline is to store the connection information for the Azure Service Bus in Key Vault.  The connection information for Service Bus comes from the output of the ARM template that creates Service Bus.  You can find this pipeline in the repository linked below.
 
 ![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/problem.jpg)
 
