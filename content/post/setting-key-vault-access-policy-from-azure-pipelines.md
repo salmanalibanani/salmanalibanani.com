@@ -128,7 +128,7 @@ There are a few details in our pipeline .yml file that you may want to have a cl
 - pwsh: |
     $armOutputObj = '$(servicebustemplateoutput)' | convertfrom-json
     $connectionString = $armOutputObj.namespaceConnectionString.value
-    Write-Output "##vso[task.setvariable variable=ServiceBusConnectionString;]$connectionString"
+    Write-Output "##vso[task.setvariable variable=ServiceBusConnectionString;issecret=true]$connectionString"
 - task: cboroson-WriteSecrets@1
   displayName: WriteSecrets
   inputs:
@@ -138,7 +138,7 @@ There are a few details in our pipeline .yml file that you may want to have a cl
     SecretName: 'ServiceBusConnectionString'
     SecretValue: '$(ServiceBusConnectionString)'
 ```
-First, notice the "deploymentOutputs" part in the "DeployServiceBus" task.  This creates a pipeline variable "servicebustemplateoutput" that contains output of the ARM template that creates Service Bus.  We refer to this variable in the next step where we run a custom PowerShell script to parse the connection string out of the json output of the template, and put it in another pipeline variable "ServiceBusConnectionString".
+First, notice the "deploymentOutputs" part in the "DeployServiceBus" task.  This creates a pipeline variable "servicebustemplateoutput" that contains output of the ARM template that creates Service Bus.  We refer to this variable in the next step where we run a custom PowerShell script to parse the connection string out of the json output of the template, and put it in another pipeline variable "ServiceBusConnectionString".  Note that we use the "issecret=true" property to make sure that the variable is masked out from logs.
 
 The last bit of the .yml file uses a task to write this connection string as a secret to the Key Vault.
 
