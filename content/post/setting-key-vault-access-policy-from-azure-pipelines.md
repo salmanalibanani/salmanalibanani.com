@@ -108,7 +108,7 @@ Now we have all the information that we need to pass as parameters to our ARM te
     }
 }
 ```
-The tenantId comes from the screenshot in Step 1 above, and objectId is the id that we found using Cloud Sell in step 2.
+The tenantId comes from the screenshot in Step 1 above, and objectId is the id that we found in step 2.
 
 Now if you run the pipeline again, you will see that the "WriteSecrets" step is successful, and the connection string for the Service Bus is being saved successfully.
 
