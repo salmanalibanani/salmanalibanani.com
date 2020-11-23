@@ -151,7 +151,7 @@ First, notice the "deploymentOutputs" part in the "DeployServiceBus" task.  This
 The last bit of the .yml file uses a task to write this connection string as a secret to the Key Vault.
 
 ## Conclusion
-In this post, we demonstrated how to store credentials to access an Azure resource (Service Bus in this example) in a Key Vault from an Azure Pipeline.  Both the target resource and the Key Vault were created using ARM templates within the same pipeline.  The important step was to find the Service Principal information that we needed to add to our Key Vault ARM template, so that later stages of our pipeline can write to the Key Vault.
+In this post, we demonstrated how to store credentials to access an Azure resource (Service Bus in this example) in a Key Vault from an Azure Pipeline.  Generally you keep your Azure resources within a single ARM template if possible, which makes things a lot simpler.  The techniques demonstrated in this post are useful when you need to split your sources using multiple ARM templates.  The important step was to find the Service Principal information that we needed to add to our Key Vault ARM template, so that later stages of our pipeline can write to the Key Vault.
 
 The source code is available <a href="https://github.com/salmanalibanani/AzureIntegrationDemo" target="_blank">here</a>.
 
