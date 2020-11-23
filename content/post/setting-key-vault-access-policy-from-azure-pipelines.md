@@ -67,9 +67,17 @@ This takes you to a page where you can find application id for your Azure Dev Op
 ![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/Step1A.jpg)
 
 ## Step 2 - Find Azure AD Service Principal
-Using this application id, we need to find the Azure AD Service Principal object id that we can use in our ARM template for the Key Vault.  
+Our objective is to find the Azure AD Service Principal object id that we can use in our ARM template for the key vault.
 
-Open Cloud Shell in your Azure portal, and type the following:
+The easiest way to find this object id is to click on the "Managed application in local directory" link.  
+
+![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/Step1B.jpg)
+
+This takes you to a page where you can see the object id you need.
+
+![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/Step1C.jpg)
+
+Another way to find this object id is by using some PowerShell script via Cloud Shell, and use the application id that we found in step 1.  Open Cloud Shell in your Azure portal, and type the following:
 
 ```code
 Connect-AzureAD
