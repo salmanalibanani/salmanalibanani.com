@@ -56,7 +56,7 @@ As shown below in the snippet from the ARM template, we can set access policies 
 ```
 Below are the steps to find out these ids.
 
-## Step 1 - Find Service Principal details for your Azure DevOps project.
+## Step 1 - Find Service Principal details for your Azure DevOps project
 
 In your Azure DevOps projects where your Azure Pipelines pipeline resides, click on "Service connections" in Project Settings, and then click on "Manage Service Principal" link.
 
@@ -87,7 +87,7 @@ You can see the ObjectId in the result that you need.
 
 ![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/Step2.jpg)
 
-## Step 3 - Use the Object Id in your ARM template parameters file
+## Step 3 - Use the objectId in your ARM template parameters file
 
 Now we have all the information that we need to pass as parameters to our ARM template.  Here is our parameters.json file for the template.
 
