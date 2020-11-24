@@ -83,7 +83,7 @@ Another way to find this object id is by using a PowerShell script via Cloud She
 Connect-AzureAD
 Get-AzureADServicePrincipal -Filter "AppId eq '95fc81ef-589e-4638-ba7c-74fb52fed6e8'"
 ```
-You can see the ObjectId in the result that you need.
+You can see the objectId in the result that you need.
 
 ![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/Step2.jpg)
 
@@ -153,11 +153,4 @@ The last bit of the .yml file uses a task to write this connection string as a s
 ## Conclusion
 In this post, we demonstrated how to store credentials to access an Azure resource (Service Bus) in a Key Vault from an Azure Pipeline.  Generally you keep your Azure resources within a single ARM template if possible, which makes things a lot simpler.  The techniques demonstrated in this post are useful when you need to split your resources using multiple ARM templates.  The important step was to find the Service Principal information that we needed to add to our ARM template that provisioned the Key Vault, so that in the later stages of our pipeline, we can write to the Key Vault.
 
-The source code is available <a href="https://github.com/salmanalibanani/AzureIntegrationDemo" target="_blank">here</a>.
-
-
-
-
-
-
-
+The source code is available <a href="https://github.com/salmanalibanani/AzureIntegrationDemo" target="_blank">here</a>
