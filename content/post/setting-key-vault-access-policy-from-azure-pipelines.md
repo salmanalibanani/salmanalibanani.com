@@ -3,7 +3,7 @@ title: "Setting Key Vault Access Policy from Azure Pipelines"
 date: 2020-11-20T10:51:02+11:00
 draft: false 
 tags: ["Azure", "Key Vault", "Pipelines"]
-summary: "How to set access policy on a Key Vault created via an ARM template."
+summary: "How to set access policy on a Key Vault provisioned via an ARM template."
 ---
 
 <a href="https://docs.microsoft.com/en-us/azure/key-vault/general/" target="_blank">Azure Key Vault</a> is a service that can be used to store application secrets, tokens, connection strings, certificates and API keys (amongst other things). The advantage of using Azure Key Vault to store all this information is that it provides a secured location with all usual safegaurds (encryption, access control and replication etc.)
