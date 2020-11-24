@@ -6,13 +6,13 @@ tags: ["Azure", "Key Vault", "Pipelines"]
 summary: "How to set access policy on a Key Vault created via an ARM template."
 ---
 
-<a href="https://docs.microsoft.com/en-us/azure/key-vault/general/" target="_blank">Azure Key Vault</a> is a service that can be used to store application secrets and keys. You can store tokens, connection strings, certificates, API keys etc. in a Key Vault, and it provides a secured location with all usual safegaurds (encryption, access control etc.)
+<a href="https://docs.microsoft.com/en-us/azure/key-vault/general/" target="_blank">Azure Key Vault</a> is a service that can be used to store application secrets, tokens, connection strings, certificates and API keys (amongst other things). The advantage of using Azure Key Vault to store all this information is that it provides a secured location with all usual safegaurds (encryption, access control and replication etc.)
 
-If you create a Key Vault via an ARM template in your YAML base pipeline, you need to set access policy on that Key Vault, so that in later stages of the pipeline you can store secrets in it.  You have to find an Azure AD Service Principal that Azure Dev Ops uses to access your Azure resources.  Below we will show how to do that.
+If you create a Key Vault via an ARM (Azure Resource Manager) template in a YAML based pipeline, you will need to set access policies on that Key Vault, so that in later stages of the pipeline you can store secrets in it.  You need an Azure AD (Active Directory) Service Principal that Azure DevOps uses to access your Azure resources.  Below I will show how to do these steps.
 
 ## The problem
 
- Here is an example run of Azure Pipelines where you can see a number of resources being created (Resource Group, Service Bus etc).  Our objective in this pipeline is to store the connection information for the Azure Service Bus in Key Vault.  The connection information for Service Bus comes from the output of the ARM template that creates Service Bus.  You can find this pipeline in the repository linked below.
+ Here is an example run of Azure Pipelines where you can see a number of resources being provisioned.  Our objective in this pipeline is to store the connection information for the Azure Service Bus in the Key Vault.  The connection information for the Service Bus comes from the output of the ARM template that creates Service Bus.  You can find this pipeline in the repository linked below.
 
 ![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/problem.jpg)
 
@@ -56,18 +56,18 @@ As shown below in the snippet from the ARM template, we can set access policies 
 ```
 Below are the steps to find out these ids.
 
-## Step 1 - Find Service Principal details for your Azure Dev Ops project.
+## Step 1 - Find Service Principal details for your Azure DevOps project.
 
-In your Azure Dev Ops projects where your Azure Pipelines pipeline resides, click on "Service connections" in Project Settings, and then click on "Manage Service Principal" link.
+In your Azure DevOps projects where your Azure Pipelines pipeline resides, click on "Service connections" in Project Settings, and then click on "Manage Service Principal" link.
 
 ![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/Step1.jpg)
 
-This takes you to a page where you can find application id for your Azure Dev Ops project.
+This takes you to a page where you can find applicationId for your Azure DevOps project.
 
 ![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/Step1A.jpg)
 
 ## Step 2 - Find Azure AD Service Principal
-Our objective is to find the Azure AD Service Principal object id that we can use in our ARM template for the key vault.
+Our objective is to find the Azure AD Service Principal object id that we can use in our ARM template for the Key Vault.
 
 The easiest way to find this object id is to click on the "Managed application in local directory" link.  
 
@@ -77,7 +77,7 @@ This takes you to a page where you can see the object id you need.
 
 ![Problem](/img/setting-key-vault-access-policy-from-azure-pipelines/Step1C.jpg)
 
-Another way to find this object id is by using some PowerShell script via Cloud Shell, and use the application id that we found in step 1.  Open Cloud Shell in your Azure portal, and type the following:
+Another way to find this object id is by using a PowerShell script via Cloud Shell, and use the applicationId that we found in step 1.  Open Cloud Shell in your Azure portal, and type the following:
 
 ```code
 Connect-AzureAD
@@ -146,12 +146,12 @@ There are a few details in our pipeline .yml file that you may want to have a cl
     SecretName: 'ServiceBusConnectionString'
     SecretValue: '$(ServiceBusConnectionString)'
 ```
-First, notice the "deploymentOutputs" part in the "DeployServiceBus" task.  This creates a pipeline variable "servicebustemplateoutput" that contains output of the ARM template that creates Service Bus.  We refer to this variable in the next step where we run a custom PowerShell script to parse the connection string out of the json output of the template, and put it in another pipeline variable "ServiceBusConnectionString".  Also note that we use the "issecret=true" property to make sure that the variable is masked out from logs.
+First, notice the "deploymentOutputs" part in the "DeployServiceBus" task.  This creates a pipeline variable "servicebustemplateoutput" that contains the output of the ARM template that creates the Service Bus.  We refer to this variable in the next step where we run a custom PowerShell script to parse the connection string out of the json output of the template, and put it in another pipeline variable "ServiceBusConnectionString".  Also note that we use the "issecret=true" property to make sure that the variable is masked out from the logs.
 
 The last bit of the .yml file uses a task to write this connection string as a secret to the Key Vault.
 
 ## Conclusion
-In this post, we demonstrated how to store credentials to access an Azure resource (Service Bus in this example) in a Key Vault from an Azure Pipeline.  Generally you keep your Azure resources within a single ARM template if possible, which makes things a lot simpler.  The techniques demonstrated in this post are useful when you need to split your sources using multiple ARM templates.  The important step was to find the Service Principal information that we needed to add to our Key Vault ARM template, so that later stages of our pipeline can write to the Key Vault.
+In this post, we demonstrated how to store credentials to access an Azure resource (Service Bus) in a Key Vault from an Azure Pipeline.  Generally you keep your Azure resources within a single ARM template if possible, which makes things a lot simpler.  The techniques demonstrated in this post are useful when you need to split your resources using multiple ARM templates.  The important step was to find the Service Principal information that we needed to add to our ARM template that provisioned the Key Vault, so that in the later stages of our pipeline, we can write to the Key Vault.
 
 The source code is available <a href="https://github.com/salmanalibanani/AzureIntegrationDemo" target="_blank">here</a>.
 
