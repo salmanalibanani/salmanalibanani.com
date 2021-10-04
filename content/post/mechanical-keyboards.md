@@ -132,4 +132,4 @@ The next in the list for me could've been the Moonlander, but the ortholinear la
 
 I have used both Microsoft Sculpt and Respawn Ninja. I'd recommend both of them at their price point, with the later offering much more customisation and flexibility at essentially the same price here in Australia.
 
-And if you don't care much about ergonomics and just want a decent and affordable mechanical gaming keyboard with great connectivity options, Keychron K1 V4 is a beauty.
+And if you don't care much about ergonomics and just want a decent and affordable wireless mechanical gaming keyboard with great connectivity options, Keychron K1 V4 is a beauty.
