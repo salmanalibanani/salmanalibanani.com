@@ -2,6 +2,8 @@
 title: "My journey through the world of keyboards"
 date: 2021-04-10T18:26:10+10:00
 draft: false
+tags: ["Keyboard", "Ergonomic"]
+summary: "Improving the ergonomics of my devices for better experience and less pain"
 ---
 
 As a software developer, I spend a lot of time on my desk with keyboard and mouse. About a decade ago when I used to play tennis regularly, I injured my right wrist due to my bad forehand technique. Since I stopped playing regularly, my wrist has somewhat recovered, but sometimes I still feel mild pain. And as I grow old I am getting more concerned about the general ergonomics of the tools I spend so much time with.
