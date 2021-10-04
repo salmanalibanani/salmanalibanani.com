@@ -21,7 +21,7 @@ Over the last six months I got interested in much more than just the ergonomics 
 - RGB
 - Size
 
-These are the four main dimensions of comparison of various devices I consider buying.  You will notice that price as a dimention is missing from the list above, but it's actually always at play. I don't believe that expensive necessarily equats to the best, and I am always after the most bang for the buck. But, as you will read below, starting with cheap keyboards and eventually moving into more expensive range made me realise that the quality of keyboard is generally related to how much you are willing to pay. No surprises there.
+These are the four main dimensions of comparison of various devices I consider buying.  You will notice that price as a dimention is missing from the list above, but it's actually always at play. I don't believe that expensive necessarily equats to the best, and I am always after the best bang for the buck. But, as you will read below, starting with cheap keyboards and eventually moving into more expensive range made me realise that the quality of keyboard is generally related to how much you are willing to pay. No surprises there.
 
 ## Ergonomics
 
