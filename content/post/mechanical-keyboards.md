@@ -14,7 +14,7 @@ You can spend as much or as little money as you want on a keyboard. Right now, t
 
 ## The 4 Axis
 
-Over the last six months I got interested much more than just the ergonomics of a keyboard. Eventually I realized that I was interested in four main areas:
+Over the last six months I got interested in much more than just the ergonomics of a keyboard. Eventually I realized that I was interested in four main areas:
 
 - Ergonomics
 - Switches
