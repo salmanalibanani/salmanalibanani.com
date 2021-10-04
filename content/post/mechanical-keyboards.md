@@ -41,7 +41,7 @@ One potential issue that I found is that once you get used to a split design, yo
 Please do note that people have had mixed results with Microsoft Sculpt.  There are well documented issues with wireless connectivity, and some people found that it was simply dropping characters, or the connection was simply too slow. It is actually a very old keyboard and doesn't offer bells and whistles of a modern keyboard of the same price range.  I personally have had no issues with it, and it has done the job pretty well.
 ## Switches
 
-But I knew I could do better than the Sculpt. I don't really like the Sculpt mouse the comes with the keyboard. Also, I saw a gaming mechanical keyboard that a colleague was using, and I felt that I absolutely must get a mechanical keyboard. More specifically, the tectile feel of a mechanical keyboard made me look for a good affordable mechanical keyboard.
+But I knew I could do better than the Sculpt. I don't really like the Sculpt mouse the comes with the keyboard. Also, I saw a gaming mechanical keyboard that a colleague was using, and I felt that I absolutely must get a mechanical keyboard. More specifically, the tactile feel of a mechanical keyboard made me look for a good affordable mechanical keyboard.
 
 After some research I found this: the <a href='https://www.rtings.com/keyboard/reviews/keychron/k1'>Keychron k1 V4</a> with Gateron Low Profile Red switches. There are cheaper options availble form eBay or Ali Express (Red Dragon comes to mind, Ajazz is another one), but I found really good reviews for the K1. The other thing is that at this point in my journey, I realised that I don't really need the number pad thanks to my experience with the Sculpt, and TKL was the best option for me.
 
