@@ -128,7 +128,7 @@ Obviously I have a particular set of criteria which may not apply to you. But ba
 
 None of the other keyboards I have found meet their level of customisation and ergonomics.
 
-The next in the list for me could've been the Moonlander, but the orthlinear layout is a deal breaker for me.
+The next in the list for me could've been the Moonlander, but the ortholinear layout is a deal breaker for me.
 
 I have used both Microsoft Sculpt and Respawn Ninja. I'd recommend both of them at their price point, with the later offering much more customisation and flexibility at essentially the same price here in Australia.
 
