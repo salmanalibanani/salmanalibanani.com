@@ -89,7 +89,7 @@ UHK is an amazing achievement. The cool thing about it is that it supports vario
 But I think that for me, my next keyboard is going to be <a href='https://dygma.com/'>Dygma Raise</a>.
 
 ## Dgyma Raise - the best money can buy (arguably)
-Dygma Raise is developed by people who are really passionate about keyboard ergonomics. It is as cusotmisable as any other keyboard I could find, and looks absolutely stunning. The team has really engaged the community and it has a cult-like following. In fact, their users have helped solve them some of the <a href='https://www.reddit.com/r/DygmaLab/comments/mm0jtp/full_story_on_the_freezing_issue_issue_solved/' target='_blank'>technical challenges</a> they were facing as they keep researching and improving the product. Recently they finslized the design of their tent-kit, and I think it's the best tenting option I have seen so far.
+Dygma Raise is developed by people who are really passionate about keyboard ergonomics. It is as cusotmisable as any other keyboard I could find, and looks absolutely stunning. The team has really engaged the community and it has a cult-like following. In fact, their users have helped solve them some of the <a href='https://www.reddit.com/r/DygmaLab/comments/mm0jtp/full_story_on_the_freezing_issue_issue_solved/' target='_blank'>technical challenges</a> they were facing as they keep researching and improving the product. Recently they finalized the design of their tent-kit, and I think it's the best tenting option I have seen so far.
 
 ## Keyboard tenting - Why is that a big deal
 
