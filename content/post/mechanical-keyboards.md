@@ -86,7 +86,7 @@ Ergodox is an impressive beast. But it goes against my philosophy that my keyboa
 
 UHK is an amazing achievement. The cool thing about it is that it supports various modules that you can buy to attach to the keyboard. UHK and Dygma have taken the approach that the Space Bar on keyboards is basically a wasted space. UHK gives you a number of options to utilize that space, so you can either have a trackball or a touchpad module in that area, or a key cluster that you can customise. It is now hot swappable, and the software to customize the keyboard looks awesome with support for multiple layers. I find UHK to be the most innovative keyboard ever, even though it is not ortholinear which I don't care much about anyway.
 
-But I think that for me, my next keyboard is going to be <a href='https://dygma.com/'>Dygma Raise</a>.
+But I think that for me, my next keyboard is going to be <a href='https://dygma.com/' target='_blank'>Dygma Raise</a>.
 
 ## Dgyma Raise - the best money can buy (arguably)
 Dygma Raise is developed by people who are really passionate about keyboard ergonomics. It is as cusotmisable as any other keyboard I could find, and looks absolutely stunning. The team has really engaged the community and it has a cult-like following. In fact, their users have helped solve them some of the <a href='https://www.reddit.com/r/DygmaLab/comments/mm0jtp/full_story_on_the_freezing_issue_issue_solved/' target='_blank'>technical challenges</a> they were facing as they keep researching and improving the product. Recently they finalized the design of their tent-kit, and I think it's the best tenting option I have seen so far.
