@@ -7,7 +7,7 @@ menu: main
 
 ![Salman Ali Banani](/img/about/salman.jpg)
 
-I am a full-stack developer at <a href="https://www.paytron.com.au" target="_blank">Paytron"</a>, a cloud platform to send & receive payments, automate back office & open multi currency business accounts.  Historically I have been a .NET developer, but right now for me it's <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down" target="_blank">JavaScript all the way down!</a>
+I am a full-stack developer at <a href="https://www.paytron.com.au" target="_blank">Paytron</a>, a cloud platform to send & receive payments, automate back office & open multi currency business accounts.  Historically I have been a .NET developer, but right now for me it's <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down" target="_blank">JavaScript all the way down!</a>
 
 I live in Sydney, Australia with my family.
 
