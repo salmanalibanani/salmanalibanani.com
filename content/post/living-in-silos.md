@@ -55,7 +55,9 @@ The outcome peeps don't like to be placed in silos.  When they see a problem, th
 
 ## Middle managers do their thing
 
-I don't have a better solution to the scaling problem.  Eventually you want more hands on deck.  And emergence of the middle management is a natural consequence of that need for growth.  What does matter though is that how that management layer approaches its role.  My argument is that a process/territory oriented middle management team hurts your business more than it helps.
+I don't have a better solution to the scaling problem.  Eventually you want more hands on deck.  And emergence of the middle management is a natural consequence of that need for growth.  What does matter though is that how that management layer approaches its role.  My argument is that a process/territory oriented middle management team hurts your business more than it helps.  Often the people in roles like scrum master or deliver leads are people who haven't been a software developers themselves.  I am not an elitist and do hate it when a smart developer thinks that they can be as good at everything in life.  Anyone can be arrogant.  But I do believe that not everyone can appreciate the mental process of a developer who is solving a problem in code without knowing how the eventual solution is going to look like.  If as a delivery person you believe that coding is as structured as the work of an accountant or a plumber, you are more likely to be part of the problem then the solution.  I have utmost respect for all other professions, but I believe that the mind of a software developer works differently.
+
+  
 
 
 
