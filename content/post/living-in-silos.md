@@ -89,3 +89,5 @@ There are many solid developers who want change in their careers.  They are smar
 I am more than happy with the idea that developers do need to learn certain level of discipline, some skills other than writing code.  That discipline and other related skills are acquired over the period of time with experience, and nothing can replace that.  But for the roles that do need some coding experience, you can't get people with zero coding experience and hope that they can be effective.  Instead of supporting the team, they will cause significant damage.
 
 If you are a startup, the stakes are higher for you, so just don't do it.  If you can't find the right people for these supporting roles, you are better off without anyone playing them.
+
+P.S.  All events in this blog post are work of fiction.  Any resemblance with real life events is purely coincidental, although highly likely.
