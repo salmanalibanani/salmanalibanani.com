@@ -7,7 +7,7 @@ menu: main
 
 ![Salman Ali Banani](/img/about/salman.jpg)
 
-I am a Lead Consultant at <a href="https://purple.telstra.com" target="_blank">Telstra Purple</a>, one of the top IT consulting firms in Australia.  I specialize in web development using ASP.NET MVC, JavaScript, HTML, CSS etc.
+I am a full-stack developer at <a href="https://www.paytron.com.au" target="_blank">Paytron</a>, a cloud platform to send & receive payments, automate back office & open multi currency business accounts.  Historically I have been a .NET developer, but right now it's <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down" target="_blank">JavaScript all the way down!</a>
 
 I live in Sydney, Australia with my family.
 
