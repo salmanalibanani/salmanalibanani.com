@@ -83,7 +83,7 @@ Warning: strong opinions ahead.
 
 I think that these roles are important.  But I am convinced that if you have never written a single line of code in your life then you shouldn't be supporting a software development team in any of these capacities.  You will find it challenging be an effective delivery lead or a BA, and it is likely that you will piss your developers off frequently.  Any talented developers in your team will eventually leave your team (specially if job market for software developers is anything like what we are seeing in Australia right now) and you will be left with like minded, process oriented territorially insecure people around you.  In this situation opposites actually repel. 
 
-There are many solid developers who want change in their careers.  They are smart enough to support a team deliver effectively, who have great communications skills to help a team as scrum masters or BAs.  They are out there.  Go find them.  
+There are many solid developers who want change in their careers.  They are smart enough to support a team as delivery leads, and have great communications skills to help a team as scrum masters or BAs.  They are out there.  Go find them.  
 
 I am more than happy with the idea that developers do need to learn certain level of discipline, some skills other than writing code.  That discipline and other related skills are acquired over the period of time with experience, and nothing can replace that.  But for the roles that do need some coding experience, you can't get people with zero coding experience and hope that they can be effective.  Instead of supporting the team, they will cause significant damage.
 
