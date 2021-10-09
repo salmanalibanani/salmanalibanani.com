@@ -1,5 +1,5 @@
 ---
-title: "Living in Silos"
+title: "Territory oriented software development"
 date: 2021-10-09T16:05:37+11:00
 draft: false
 ---
