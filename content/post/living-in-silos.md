@@ -22,7 +22,7 @@ This was in August, by the way.
 
 ## The life of a startup
 
-In the beginning there is an idea.  The idea is good, and then somebody says "let there be an investor who can pay for this to be build".  And therefore an investor emerges, and with their money the founders hire five developers and put them in a space in Stone & Chalk in the Sydney CBD.  Three months later, the idea comes to life and hits production.  
+In the beginning there is an idea.  The idea is good, and then somebody says "let there be an investor who can pay for this to be built".  And therefore an investor emerges, and with their money the founders hire five developers and put them in a space in Stone & Chalk in the Sydney CBD.  Three months later, the idea comes to life and hits production.  
 
 And the founders and investors like it, and they say "let there be an IPO".  Well, three months is probably too soon, but they want that eventually.
 
