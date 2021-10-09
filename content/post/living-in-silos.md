@@ -9,7 +9,7 @@ It was a Monday morning.  I was under the pump due to a looming project deadline
 
 I emailed the scrum master working with that team.
 
-"Hello!  Can you guys please prioritize the changes to the API we discussed last week.  I am hoping you can pull this off by the end of the week, so that we can finish our part and show our customer that we have the capability to deliver this kind of stuff.  You already have the specifics in the JIRA ticket I assigned to you."
+"Hello!  Can you please prioritize the changes to the API we discussed last week.  I am hoping you can pull this off by the end of the week, so that we can finish our part and show our customer that we have the capability to deliver this kind of stuff.  You already have the specifics in the JIRA ticket I assigned to you."
 
 Unfortunately, I didn't get a reply.
 
