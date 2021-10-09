@@ -53,6 +53,12 @@ The process peeps, by the very nature of their approach, tend to be more territo
 
 The outcome peeps don't like to be placed in silos.  When they see a problem, they want to fix it and it doesn't matter to them who owns the code.  They want working software to hit production as often as possible, and they get frustrated with the territory based excuses like "sorry I am too busy the backlog my boss gave me".  They tend to miss the fact that all teams actually work for a single business.  So, if another "territory" isn't doing well, it's their problem too.
 
+## Middle managers do their thing
+
+I don't have a better solution to the scaling problem.  Eventually you want more hands on deck.  And emergence of the middle management is a natural consequence of that need for growth.  What does matter though is that how that management layer approaches its role.  My argument is that a process/territory oriented middle management team hurts your business more than it helps.
+
+
+
 
 
 
