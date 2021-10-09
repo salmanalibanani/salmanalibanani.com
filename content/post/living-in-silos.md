@@ -61,9 +61,23 @@ The outcome peeps don't think that way.  They don't like to be placed in silos. 
 
 ## Middle manager makes technical decisions
 
-This eventually happens.  And I will tell you why this is bad.
+This eventually happens.
 
-Typically the BAs and Scrum Masters I have met have no experience of writing working software.  They don't understand I don't have a better solution to the scaling problem. Eventually you want more hands on deck. And emergence of the middle management is a natural consequence of that need for growth. What does matter though is that how that management layer approaches its role. My argument is that a process/territory oriented middle management team hurts your business more than it helps. Often the people in roles like scrum master or deliver leads are people who haven't been a software developers themselves. I am not an elitist and do hate it when a smart developer thinks that they can be as good at everything in life. Anyone can be arrogant. But I do believe that not everyone can appreciate the mental process of a developer who is solving a problem in code without knowing how the eventual solution is going to look like. If as a delivery person you believe that coding is as structured as the work of an accountant or a plumber, you are more likely to be part of the problem then the solution. I have utmost respect for all other professions, but I believe that the mind of a software developer works differently.
+I don't have a better solution to the scaling problem. Eventually you want more hands on deck. And emergence of the middle management is a natural consequence of that need for growth. What does matter though is that how these mid-level leaders approach their role. My argument is that a process/territory oriented middle management team hurts your business more than it helps. Often the people in roles like scrum master or deliver leads are people who haven't been software developers themselves. 
+
+I need to emphasize this point: I am not an elitist and I hate it when a smart developer thinks that they can be as good at everything in life. Anyone can be arrogant. But I do believe that not everyone can appreciate the mental process of a developer who is solving a problem in code without knowing how the eventual solution is going to look like. If as a delivery person you believe that coding is as structured as the work of an accountant or a plumber, you are more likely to be mamking things worse for your business.  I have utmost respect for all professions, but I believe that the mind of a software developer works differently.  And it is difficult to appreciate the weirdness of this profession if you haven't experienced the mental activity of making computer do what you want it to do.
+
+There are so many questions that a deverloper askes themselves 50 times a day that don't make sense to anybody else.  What design trade offs I am making here?  Is this the best way to ensure that anyone else reading this code will know the intent?  Am I missing a potential null reference check?  Will my API design make sense to my partners who kind of know our business but don't really know the complexities of what we do?  Can I get away with a little bit of technical debt here?  
+
+Some of us developers are full of self doubt, even if you can't tell.  That's not a personality fault.  It's an occupational hazzard.
+
+How then can someone who hasn't experienced this all can make important technical decisions?  
+
+And you see this story play again and again.  Take technical debt, for example.  Because solving those issues doesn't result in any tanginble benefits in the immediate future and only seems to slow down the velocity, they keep getting ignored.  The people who are given power to make those decisions have no idea how code can - metaphorically speaking - start to rot and smell.  In fact, it's easy to see that they push best developers of their away from the team because after having months and months of same argument again and again, the developer just can't deal with that anymore!
+
+
+
+
 
 
 
