@@ -63,27 +63,28 @@ The outcome peeps don't think that way.  They don't like to be placed in silos. 
 
 This eventually happens.
 
-I don't have a better solution to the scaling problem. Eventually you want more hands on deck. And emergence of the middle management is a natural consequence of that need for growth. What does matter though is that how these mid-level leaders approach their role. My argument is that a process/territory oriented middle management team hurts your business more than it helps. Often the people in roles like scrum master or deliver leads are people who haven't been software developers themselves. 
+I don't have a better solution to the scaling problem. Eventually you want more hands on deck. And emergence of the middle management is a natural consequence of that need for growth. What does matter though is that how these mid-level leaders approach their role. My argument is that a process/territory oriented middle management team hurts your business more than it helps. Often the people in roles like scrum master or delivery leads are people who haven't been software developers themselves. 
 
-I need to emphasize this point: I am not an elitist and I hate it when a smart developer thinks that they can be as good at everything in life. Anyone can be arrogant. But I do believe that not everyone can appreciate the mental process of a developer who is solving a problem in code without knowing how the eventual solution is going to look like. If as a delivery person you believe that coding is as structured as the work of an accountant or a plumber, you are more likely to be mamking things worse for your business.  I have utmost respect for all professions, but I believe that the mind of a software developer works differently.  And it is difficult to appreciate the weirdness of this profession if you haven't experienced the mental activity of making computer do what you want it to do.
+I need to emphasize this point: I am not an elitist and I hate it when a smart developer thinks that they can be as good at everything in life. Anyone can be arrogant. But I do believe that not everyone can appreciate the mental processes of a developer who is solving a problem in code without knowing how the eventual solution is going to look like. If as a delivery person you believe that coding is as structured as the work of an accountant or a plumber, you are more likely to be mamking things worse for your business.  I have utmost respect for all professions, but I believe that the mind of a software developer works differently.  And it is difficult to appreciate the weirdness of this profession if you haven't experienced the mental activity of making computer do what you want it to do.
 
-There are so many questions that a deverloper askes themselves 50 times a day that don't make sense to anybody else.  What design trade offs I am making here?  Is this the best way to ensure that anyone else reading this code will know the intent?  Am I missing a potential null reference check?  Will my API design make sense to my partners who kind of know our business but don't really know the complexities of what we do?  Can I get away with a little bit of technical debt here?  
+<img src="/img/living-in-silos/nv.jpg" alt="What goes on inside their head" style="height:300px;"> <br /> <br />
+There are so many questions that a deverloper askes themselves 50 times a day that don't make sense to anybody else.  What design trade offs am I making here?  Is this the best way to ensure that anyone else reading this code will know the intent?  Am I missing a potential null reference check?  Will my API design make sense to our business partners who kind of, sort of know our business but don't really know the complexities of what we do?  Can I get away with a little bit of technical debt here?  
 
-Some of us developers are full of self doubt, even if you can't tell.  That's not a personality fault.  It's an occupational hazzard.
+Some of us developers are full of self doubt, even if you can't tell.  That's not a personality flaw.  It's an occupational hazzard.
 
 How then can someone who hasn't experienced this all can make important technical decisions?  
 
-And you see this story play again and again.  Take technical debt, for example.  Because solving those issues doesn't result in any tanginble benefits in the immediate future and only seems to slow down the velocity, they keep getting ignored.  The people who are given power to make those decisions have no idea how code can - metaphorically speaking - start to rot and smell.  In fact, it's easy to see that they push best developers of their away from the team because after having months and months of same argument again and again, the developer just can't deal with that anymore!
+In reality though you see this story play again and again.  Take technical debt, for example.  Because solving those issues doesn't result in any tanginble benefits in the immediate future and only seems to reduce team velocity, they keep getting ignored.  The people who are given power to make those decisions have no idea how code can - metaphorically speaking - start to rot and smell.  In fact, it's easy to see that they push best developers in the team away because after having months and months of same argument again and again, the developers just can't deal with that anymore!
 
+I don't mean to imply that developers who are territorial and process oriented don't really exist.  I have met many of them, and perhaps at times I behave as if I am one of them.  I am also not suggesting that there is anything intrinsiclly wrong with that mindset.  My intention - if it is not clear yet - is to point out that the clash of pragmatist and territorail approaches is a problem which companies must be mindful of and must try to avoid, specially if you are a startup that needs to move fast to survive. 
+##  How do find your scrum masters, BAs and delivery leads
 
+Warning: strong opinions ahead.
 
+I am convinced that if you have never written a single line of code in your life, or if your code has never hit production environment, you should not be a scrum master for a software development team.  You can never be an effective delivery lead or a BA either, and you will only piss your developers off.  Any talented developers in your team will leave you (specially if IT job market is anything like what we are seeing in Australia right now) and you will be left with like minded, process oriented territorially insecure people around you.  In this scenario opposites actually do repel. 
 
+There are many solid developers who want change in their careers.  They are smart enough to help a team deliver effectively, who have great communications skills to help a team as scrum masters or BAs.  They are out there.  Go find them.  
 
+I am more than happy with the idea that developers do need to learn certain discipline.  That discipline comes with experience, and nothing can replace that.  Those skill can be learned.  But for the roles that do need some coding experience, you can't get people with zero coding experience and hope that they can be effective.
 
-
-
-
-
-
-
-
+Specially if you are a startup.
