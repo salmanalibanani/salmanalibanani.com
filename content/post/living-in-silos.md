@@ -5,7 +5,7 @@ draft: false
 ---
 I still remember it as if it happened yesterday.
 
-It was a Monday morning.  I was under the pump due to a looming project deadline.  The extension to the API end point that my customer had asked for was critical for signing off the contract.  But the backend for that API was owned by another team in the company.
+It was a Monday morning.  I was under the pump due to a looming project deadline.  The extension to the API endpoint that my customer had asked for was critical for signing off the contract.  But the backend for that API was owned by another team in the company.
 
 I emailed the scrum master working with that team.
 
