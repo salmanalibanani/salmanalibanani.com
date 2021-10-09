@@ -36,7 +36,7 @@ To address the scaling problems, the newly hired engineering managers (a role th
 
 And two years later, you find me scratching my head trying to figure out what should I do when a simple change in a code base owned by another team needs six months of wait time.  "It used to take a couple of hours in good old days", I told myself back in August.  And if you are still reading this, you probabaly did too.
 
-## The birth of the middle management
+## The birth of middle management
 
 I have nothing against middle management.  I probably haven't explained yet their role in the issues I have raised above.  I don't even know what the solution to this scaling problem is.  I do know, however, what a bad solution to this problem in the life of a startup looks like.
 
