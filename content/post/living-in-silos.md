@@ -47,7 +47,7 @@ If you can't see the sheer stupidity of that statement, I humbly request you not
 
 ## The rise of territorial boundaries
 
-People have different approaches to their work.  Some have a process oriented mindset: you give them a team and they will define who does what, maintain a backlog of work to be done, keep everyone busy etc; their focus is on the management of "state of affairs" and they believe that the outcomes will follow if process is perfected.  
+People have different approaches to their work.  Some have a process oriented mindset: you give them a team and they will define who does what, maintain a backlog of work to be done, keep everyone busy etc.  Their focus is on the management of "state of affairs" and they believe that the outcomes will follow if process is perfected.  
 
 Others are problem solvers: you give them a problem statement, and they deliver a working, end-to-end solution.  For them process is only an enabler and nothing more.  It's only the outcome that counts.  If a process doesn't work for them, they want to throw it away and design a different process.  They are pragmatists. 
 
