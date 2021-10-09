@@ -3,7 +3,7 @@ title: "Living in Silos"
 date: 2021-10-09T16:05:37+11:00
 draft: false
 ---
-I still remember it as if it all happened yesterday.
+I still remember it as if it happened yesterday.
 
 It was a Monday morning.  I was under the pump.  The extension to the API end point that my customer had asked for was critical for signing off the contract.  But the backend for that API was owned by another team in the company.
 
