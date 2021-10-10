@@ -20,7 +20,7 @@ Next Monday, I called my boss to talk to their boss about the backend changes.  
 
 This was in August, by the way.
 
-## The life of a startup
+## The birth of a startup
 
 In the beginning there is an idea.  The idea is good, and then somebody says "let there be an investor who can pay for this to be built".  And therefore an investor emerges, and with their money the founders hire five developers and put them in a space in Stone & Chalk in the Sydney CBD.  Three months later, the idea comes to life and hits production.  
 
@@ -36,7 +36,7 @@ To address the scaling problems, the newly hired engineering managers (a role th
 
 And two years later, you find me scratching my head trying to figure out what should I do when a simple change in a code base owned by another team needs six months of wait time.  "It used to take a couple of hours in good old days", I told myself back in August.  And if you are still reading this, you probabaly did too.
 
-## The birth of middle management
+## The arrival of middle management
 
 I have nothing against middle management.  I probably haven't explained yet their role in the issues I have raised above.  I don't even know what the solution to this scaling problem is.  I do know, however, what a bad solution to this problem in the life of a startup looks like.
 
