@@ -1,5 +1,5 @@
 ---
-title: "Territory oriented software development x"
+title: "Territory oriented software development"
 date: 2021-10-09T16:05:37+11:00
 draft: false
 summary: How growing software development teams are hurt by territorial tendencies of bad middle management.
