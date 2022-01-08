@@ -1,5 +1,5 @@
 ---
-title: "It's Not Just the Bell Curve"
+title: "It's not just the bell curve"
 date: 2020-05-06T11:16:15+10:00
 draft: false
 tags: ["Agile", "Scrum"]

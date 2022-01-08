@@ -1,5 +1,5 @@
 ---
-title: "Story Points - A Mathematical Perspective"
+title: "Story Points - a mathematical perspective"
 date: 2020-03-28T11:16:15+10:00
 draft: false
 tags: ["Agile", "Scrum"]

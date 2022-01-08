@@ -1,5 +1,5 @@
 ---
-title: "Storing Secrets in Azure Key Vault from Azure DevOps Release Pipeline"
+title: "Storing secrets in Azure Key Vault from Azure DevOps Release Pipeline"
 date: 2020-07-09T00:32:31+10:00
 draft: false
 tags: ["Azure", "DevOps", "Key Vault"]
