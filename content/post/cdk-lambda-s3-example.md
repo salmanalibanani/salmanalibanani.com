@@ -21,9 +21,25 @@ In CDK, it is convenient to define all your resources somewhere in a file that *
 ## TypeScript to the rescue
 In CDK, because you are working with a familiar high-language programming language, you can use familiar techniques to organize your infrastructure code as well.
 
-In order to explain how we can do that using TypeScript, I have created a small CDK application.  You can find it <a href='https://github.com/salmanalibanani/cdk-lambda-s3-example' target='_blank'>here</a>.
+In order to explain how we can do that using TypeScript, I have created a small CDK application.  You can find it <a href='https://github.com/salmanalibanani/cdk-lambda-s3-example' target='_blank'>here</a>.  This is a really basic application covering a scenario that you often face in real world: an API Gateway that calls a Lambad which does it's thing and needs to write the results to an S3 bucket.
 
-At the top level, you will notice that we have two separate directories.  The **app** directory contains your business logic, so in the context of serverless AWS, all your Lambda code will go there.  The **infra** directory is your CDK specific code.  The **/infra/app.ts** file is the entry point of your CDK application, reffered to in the cdk.json file in the root.
+## Project structure
+At the top level, you will notice that we have two separate directories.  The **app** directory contains your business logic, so in the context of serverless AWS, all your Lambda code will go there.  The **infra** directory is your CDK specific code.  The **/infra/app.ts** file is the entry point of your CDK application, reffered to in the cdk.json file in the root.  The application code is unaware of any infrastructure related pieces, and having them in separate folders helps project maintainers down the line find what they are looking for.
+
+At the CDK entry point, we have the AWS stack.  At that level you only want to create top level bits of your infrastructure.  In this example, I have only created the S3 bucket and the ApiGateway, and I have done that by defining separate classes for each resource.
+
+The ApiGateway in turn creates the lambda, and binds it to a resource in the API.  The ApiGateway delegates the creation of lambda to another class, which helps us have a separation of concenrs in our code.  The class that actually creates the Lambda is responsible for not only it's creation, but also for adding any policy statements to grant access to resources that the Lambda needs to do it's job.  In this case we add a policy to let it access the S3 bucket.  
+
+A few general ideas are at play in this design:
+
+* A resource creates only those resources that it needs to do it's job.  There is a hierarchy of resource in our code, which will make it easy to find where each resource is created in the long run.
+* Creation of each resource is encapsulated in a separate class.
+* The class corresponding to each resource knows how to create that resource, how to delegate the creation of other resources it depends on, and how to grant access to those other resources.
+* Any resources that will be accessed from many other parts of infrastructure can be created directly by the top level class that creates your Stack.
+
+## Conclusion
+
+So far, I have only applied this idea to an application that has about a dozen resources.  But for a serverless application I find this to be a lot more maintainable than having to dump creation of every lambda in a single file.  Also, this lets me work in a way where I can decide how am I going to solve a business problem, what AWS resources do I need for it, and then create stuff as I am writing my business logic in a more agile sort of way.  And it's <a href='https://en.wikipedia.org/wiki/Turtles_all_the_way_down' target='_blank'>TypeScript all the way down!</a>
 
 
 
