@@ -19,7 +19,7 @@ Note that cloud providers already support features to break things down into sma
 In CDK, it is convenient to define all your resources somewhere in a file that **cdk init** generates for you.  The problem is that if you keep adding stuff there, you end up with an infrastructure monolith, which is ugly.  When you look at a thousand lines of infrastructure code stuffed into one TypeScript file, you have to ask yourself: how is this any different from a huge CloudFormation template, and can we do better?  
 
 ## TypeScript to the rescue
-In CDK, because you are working with a familiar high-language programming language, you can use familiar techniques to organize your infrastructure code as well.
+In CDK, because you are working with a familiar high-level programming language, you can use familiar techniques to organize your infrastructure code as well.
 
 In order to explain how we can do that using TypeScript, I have created a small CDK application.  You can find it <a href='https://github.com/salmanalibanani/cdk-lambda-s3-example' target='_blank'>here</a>.  This is a really basic application covering a scenario that you often face in real world: an API Gateway that calls a Lambad which does it's thing and needs to write the results to an S3 bucket.
 
