@@ -1,11 +1,15 @@
 ---
-title: "CDK init - where do we go from here"
+title: "An example CDK serverless project using TypeScript"
 date: 2022-01-08T13:26:00+11:00
-draft: true
+draft: false
 tags: ["AWS", "CDK", "S3", "Lambda"]
 summary: "An example layout for large CDK projects."
----
+----
 
+<a href='https://github.com/aws/aws-cdk' target='_blank'>AWS Cloud Development Kit (AWS CDK)</a> is an open source **Infrastructure-as-Code** library for AWS.  It is essentially a high-level layer that can be used through a number of modern OO languages.
+
+
+I have worked with Infrastructure-as-Code solutions in a few projects, and recently had an opportunity to gain experience with AWS Cloud Development Kit (CDK).  
 Having worked with various Infrastructure-as-Code solutions in recent months, the first thing that you notice with a framework like CDK is this: lesser friction.
 
 Let me explain.
