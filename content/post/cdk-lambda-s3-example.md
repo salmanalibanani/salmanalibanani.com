@@ -4,7 +4,7 @@ date: 2022-01-08T13:26:00+11:00
 draft: false
 tags: ["AWS", "CDK", "S3", "Lambda"]
 summary: "An example layout for large CDK projects."
-----
+---
 
 <a href='https://github.com/aws/aws-cdk' target='_blank'>AWS Cloud Development Kit (AWS CDK)</a> is an open source **Infrastructure-as-Code** library for AWS.  It is essentially a high-level layer that can be used through a number of modern OO languages to create AWS resources.
 
