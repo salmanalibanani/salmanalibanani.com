@@ -21,7 +21,7 @@ In CDK, it is convenient to define all your resources somewhere in a file that *
 ## TypeScript to the rescue
 In CDK, because you are working with a familiar high-language programming language, you can use familiar techniques to organize your infrastructure code as well.
 
-In order to explain how we can do that using TypeScript, I have created a small CDK application.  You can find it <a href='https://github.com/aws/aws-cdkhttps://github.com/salmanalibanani/cdk-lambda-s3-example' target='_blank'>here</a>.
+In order to explain how we can do that using TypeScript, I have created a small CDK application.  You can find it <a href='https://github.com/salmanalibanani/cdk-lambda-s3-example' target='_blank'>here</a>.
 
 At the top level, you will notice that we have two separate directories.  The **app** directory contains your business logic, so in the context of serverless AWS, all your Lambda code will go there.  The **infra** directory is your CDK specific code.  The **/infra/app.ts** file is the entry point of your CDK application, reffered to in the cdk.json file in the root.
 
