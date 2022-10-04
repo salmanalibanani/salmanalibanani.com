@@ -53,4 +53,7 @@ tag = "tags"
   linkedin = "SalmanAliBanani"
 
 [markup]
-  defaultMarkdownHandler = "blackfriday"
+  defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark.renderer]
+  unsafe = true
