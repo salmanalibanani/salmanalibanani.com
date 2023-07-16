@@ -50,7 +50,7 @@ I would recommend three keyboard that are reasonably ergonomic and don't break t
 * Microsoft Sculpt
 * <a target='_blank' href='https://www.logitech.com/en-au/products/keyboards/k860-split-ergonomic.920-010111.html'>Logitech ERGO K860</a>
   
-  This might surprise you: you are reading a blog post losely related to mechanical keyboards, and the top pick here is **not** a mechanical keyboard.  But this is my top recommendation.  It's not even a gaming/RGB keyboard and is a little expensive but has a lot more features compared to Microsoft Sculpt. 
+  This might surprise you: you are reading a blog post loosely related to mechanical keyboards, and the top pick here is **not** a mechanical keyboard.  But this is my top recommendation.  It's not even a gaming/RGB keyboard and is a little expensive but has a lot more features compared to Microsoft Sculpt. 
 * Respawn Ninja Ergonomic Split RGB Gaming keyboard
   
   This is not a very popular device, and currently doesn't seem be available anywhere.  But the one I have has Cherry MX brown switches and good split design.  Definitely worth $100 I paid for it.
