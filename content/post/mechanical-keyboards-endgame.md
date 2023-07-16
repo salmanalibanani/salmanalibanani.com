@@ -10,14 +10,14 @@ summary: "What I learned about myself by collecting a huge pile of plastic."
 
 A moment of stillness fell upon us, punctuated by a silence that seemed amplified by the palpable disparity in our excitement levels about the topic under discussion - my Dygma Raise ergonomic mechanical keyboard.
 
-"Sure. By the way did you bring yogurt on your way back? I reminded you twice this morning." She finally said.
+"Sure. By the way did you bring yoghurt on your way back? I reminded you twice this morning." She finally said.
 
-Yogurt?
+Yoghurt?
 
 The unexpected reference to this specific dairy product by my wife inflicted a peculiar sting at that moment, a pain rooted deeply in my past.  To really understand the reason behind this, we must embark on a journey back to my early years, set in a small Southeast Asian country, roughly the size of New South Wales, yet bursting with a population approximately seven times that of Australia.
 
 ## A burden on earth
-In Pakistani society, commanding respect requires much more than merely being a living, breathing entity. It rests squarely on your shoulders to demonstrate your worth, to prove that you are more than just "zameen par bojh", an unwanted burden on the earth.  During my childhood, if my mum ever caught me counting the specks of dust in the sunlight, she would promptly propose a more productive endeavor. Sending me off on a mission to fetch some yoghurt from the shops was always on top of her list for reasons I can't comprehend to this day.  It came to the point that each instance when she instructed me to venture out for some yogurt became an illuminating moment, an awakening striking me with the revelation that whatever my engagement was at that very moment, it was essentially devoid of any real value.  Yogurt represented an opportunity to prove myself worthy of existence.
+In Pakistani society, commanding respect requires much more than merely being a living, breathing entity. It rests squarely on your shoulders to demonstrate your worth, to prove that you are more than just "zameen par bojh", an unwanted burden on the earth.  During my childhood, if my mum ever caught me counting the specks of dust in the sunlight, she would promptly propose a more productive endeavor. Sending me off on a mission to fetch some yoghurt from the shops was always on top of her list for reasons I can't comprehend to this day.  It came to the point that each instance when she instructed me to venture out for some yoghurt became an illuminating moment, an awakening striking me with the revelation that whatever my engagement was at that very moment, it was essentially devoid of any real value.  Yoghurt represented an opportunity to prove myself worthy of existence.
 
 When my wife brought up yoghurt in aforementioned conversation, it inadvertently reopened old wounds. Once again, I found myself questioning my place in the world. "Is this hobby truly worthy of my time?" I pondered, the old insecurities rearing their heads yet again.
 
