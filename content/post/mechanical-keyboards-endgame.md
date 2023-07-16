@@ -19,9 +19,9 @@ The unexpected reference to this specific dairy product by my wife inflicted a p
 ## A burden on earth
 In Pakistani society, commanding respect requires much more than merely being a living, breathing entity. It rests squarely on your shoulders to demonstrate your worth, to prove that you are more than just "zameen par bojh", an unwanted burden on the planet.  During my childhood, if my mum ever caught me counting the specks of dust in the sunlight, she would promptly propose a more productive endeavor. Sending me off on a mission to fetch some yoghurt from the shops was always on top of her list for reasons I can't comprehend to this day.  It came to the point that each instance when she instructed me to venture out for some yoghurt became an illuminating moment, an awakening striking me with the revelation that whatever my engagement was at that very moment, it was essentially devoid of any real value.  "Go get some yoghurt" was more than just an instruction; it was an opportunity to prove myself worthy of existence.
 
-When my wife brought up yoghurt in aforementioned conversation, it inadvertently reopened old wounds. Once again, I found myself questioning my place in the world. "Is this hobby truly worthy of my time?" I pondered, the old insecurities rearing their heads yet again.
+When my wife brought up yoghurt in aforementioned conversation, it inadvertently reopened old wounds. Once again, I found myself questioning my existence... my place in the universe. "Could it be that a life, wherein a part of each of my days is consumed in the rhythmic yet futile dance of fingers upon mechanical keyboards, truly encapsulates a meaningful existence?"  I pondered.  The old insecurities were clearly rearing their heads yet again.
 
-At that moment, a profound epiphany washed over me: the response to perhaps the most crucial existential question I'd ever grappled with in my life was an unequivocal "no".
+At that moment, a profound epiphany washed over me: the response to perhaps this most crucial existential question I'd ever grappled with in my life was an unequivocal "no".
 
 ## I blame Youtubers - but I still watch their videos 
 
