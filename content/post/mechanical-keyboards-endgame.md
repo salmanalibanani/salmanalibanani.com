@@ -36,7 +36,7 @@ It had to stop.
 Buying a good keyboard is not rocket science.  There are only a few parameters that really matter:
 
 * How comfortable it is to use.
-* How inexpensive it is.
+* How (in)expensive it is.
 * How durable it is.
 
 And that's basically it.
