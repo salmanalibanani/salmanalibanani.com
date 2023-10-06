@@ -19,7 +19,9 @@ This is the story of my time at <a target="_blank" href="https://www.neduet.edu.
 
 --
 
-I anticipate that I will end up writing quite a few posts in this series.  May be 10, or 50, I don’t know yet.  I am not sure exactly what events of my life will I cover in this series of posts.  I am not sure if it’ll be an interesting read, and if Hollywood will ever make a movie based on the events of my life.
+I anticipate that I will end up writing quite a few posts in this series.  May be 10, or 50, I don’t know yet.  I am not sure exactly what events of my life will I cover in this series of posts.  
+
+I am not sure if it’ll be an interesting read, and if Hollywood will ever make a movie based on the events of my life.
 
 Probably not, and probably never :-)
 
@@ -33,9 +35,7 @@ And perhaps, reflecting on the past will be therapeutic for my mental health as 
 
 Perhaps I'll share a few tales of people around me as well.
 
-I want to tell the story of Abdul - that forever young child - and his struggles with bullying.  Even though he clearly didn't have the physical and mental capacities to deal with the bullies, he had no choice but to deal with them.  
-
-I know very little about Abdul, but from the few memories I have of him, I can't help but feel that there is a little bit of him within me.
+I want to tell the story of Abdul - that forever young child - and his struggles with bullying.  Even though he clearly didn't have the physical and mental capacities to deal with the bullies, he had no choice but to deal with them.  I know very little about Abdul, but from the few memories I have of him, I can't help but feel that there is a little bit of him within me.
 
 I may recount a few stories from the past. At the moment, I'm uncertain which stories to share and which ones to consign to the deepest corners of my memory, never to be revisited.
 
