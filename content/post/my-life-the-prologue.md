@@ -13,9 +13,9 @@ I am going to embrace my past.  In particular, I am going to tell the story of a
 
 As I am typing these words on my iPhone, my mind is blank.  I don’t know what follows next in this piece.
 
-But, I think, I do have a vague idea where this needs to go.  I'll let my fingers glide across the virtual keyboard, and will patiently observe how this journey unfolds
+But, I think, I do have a vague idea where this needs to go.  I'll let my fingers glide across the virtual keyboard, and will patiently observe how this journey unfolds.
 
-This is the story of my time at N.E.D. - the most dreadful period of my life that started 30 years ago.
+This is the story of my time at <a target="_blank" href="https://www.neduet.edu.pk/">N.E.D. University of Engineering & Technology</a> - the most dreadful period of my life that started 30 years ago.
 
 --
 
