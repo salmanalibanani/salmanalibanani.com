@@ -33,9 +33,7 @@ And perhaps, reflecting on the past will be therapeutic for my mental health as 
 
 -- 
 
-Perhaps I'll share a few tales of people around me as well.
-
-I may recount a few stories from the past. At the moment, I'm uncertain which stories to share and which ones to consign to the deepest corners of my memory, never to be revisited.
+Perhaps I'll share a few tales of people around me as well.  At the moment, I'm uncertain which stories to share and which ones to consign to the deepest corners of my memory, never to be revisited.
 
 But most importantly, this is the beginning of two new stories.  Stories of my son, and my daughter.  Growing up in a "new" country where they are different from almost everybody around them, disconnected from the culture, language, and way of life of their ancestors.  They are different from everyone around them in so many ways... I'd be heartbroken if they have to learn these hard lessons of life the way I did.
 
