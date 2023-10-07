@@ -1,5 +1,5 @@
 ---
-title: "My Life - The Prologue"
+title: "My Life at N.E.D. - The Prologue"
 date: 2023-10-07T09:17:16+11:00
 draft: false
 summary: Strolling down the memory lane on my birthday.
