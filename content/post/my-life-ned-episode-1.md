@@ -2,6 +2,7 @@
 title: "My Life at N.E.D. - Episode 1"
 date: 2023-10-08T09:00:33+11:00
 draft: false
+summary: What I remember of day 1 at N.E.D.
 ---
 
 I was immediately impressed by his poised demeanor and self-assured presence.  And I can't remember if I had heard such an authentic American ascent in Pakistan before.  As he introduced himself, he said that he did his undergrad from N.E.D., and his graduate studies from a famous U.S. university of which I can't remember the name right now.  And that he was "Inshallah" going to be enrolled in a Ph.D. program at another famous U.S. university soon.
