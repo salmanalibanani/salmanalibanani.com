@@ -15,7 +15,7 @@ It was one of those pinch-me moments for me.
 
 Suddenly, I heard someone screaming from just outside the lecture hall.  "Rangers... bhaag"!  Which roughly translates to "Police is here, run for your life!".
 
-What I saw next bamboozles me to this day.  The guy, our "lecturer" took off.  I think it must have taken him less than 0.1 second to get out of the class and disappear.  Usain Bolt would've been proud of that swift departure from the room.
+What I saw next bamboozles me to this day.  The guy, our "lecturer" took off.  I think it must have taken him less than a tenth of a second to get out of the class and disappear.  Usain Bolt would've been proud of that swift departure from the room.
 
 What the heck!
 
