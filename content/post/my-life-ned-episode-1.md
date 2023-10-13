@@ -5,13 +5,13 @@ draft: false
 summary: What I remember of day 1 at N.E.D.
 ---
 
-I was immediately impressed by his poised demeanor and self-assured presence.  And I can't remember if I had heard such an authentic American ascent in Pakistan before.  As he introduced himself, he said that he did his undergrad from N.E.D., and his graduate studies from a famous U.S. university of which I can't remember the name right now.  And that he was "Inshallah" going to be enrolled in a Ph.D. program at another famous U.S. university soon.
+I was immediately impressed by his poised demeanor and self-assured presence.  
 
-At the age of 17, on my very first day at N.E.D., I found myself amidst a cohort of top H.S.C. graduates from across Pakistan.  To give you some context, even though I was a good student myself, I was barely able to get into Computer Systems Engineering program at N.E.D., surviving the cut off by 2 marks if I remember correctly. 
+I can't remember if I had heard such an authentic American ascent in Pakistan before.  As he introduced himself, he said that he did his undergrad from N.E.D., and his graduate studies from a famous U.S. university of which I can't remember the name right now.  And that he was "Inshallah" going to be enrolled in a Ph.D. program at another famous U.S. university soon.
 
-How good was this!  Everybody around me had better results than me at HSC.  Everybody was basically a super nerd!  And this guy, our lecturer, was as nerdy as they get.  He probably knew everything there is to know about the subject he was teaching, I thought.
+At the age of 17, on my very first day at N.E.D., I found myself amidst a cohort of top H.S.C. graduates from across Pakistan.  To give you some context, even though I was a good student myself, I was barely able to get into Computer Systems Engineering program at N.E.D., surviving the cut off by 2 marks if I remember correctly. So basically everybody around me had better results than me at HSC, and I was sitting in the same room as arguably the best students in the country of that age group.  And now this guy, our lecturer, was probably as impressive as they get.  
 
-"I am lucky to be alive right now", I remember telling myself.
+It was one of those pinch-me moments for me.
 
 Suddenly, I heard someone screaming from just outside the lecture hall.  "Rangers... bhaag"!  Which roughly translates to "Police is here, run for your life!".
 
