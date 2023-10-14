@@ -9,7 +9,7 @@ summary: How I perfected my rendition of native American chants.
 
 <a href="https://www.betterhelp.com/advice/memory/an-overview-of-selective-memory/" target="_blank"> Selective amnesia</a> is a fascinating aspect of human cognition.
 
-Consider this: there is no other person in the world who has experienced life exactly the same way as you have. The memories you accumulate throughout your lives, with all their intricacies and nuances, are singular to you. There is no backup file of past events of your life; it's all stored inside _your_ head. And your memory is prone to errors. And it fades with time. Some people forget stuff faster than others. Selective amnesia means that when you try to recall events of the past, you may only have fragments of events and experiences available in cold storage. Your brain has to fill in the gaps while you are trying to piece together past events and experiences.
+Consider this: there is no other person in the world who has experienced life exactly the same way as you have. The memories you accumulate throughout your life, with all their intricacies and nuances, are singular to you. There is no backup file of past events of your life; it's all stored inside _your_ head. And your memory is prone to errors. And it fades with time. Some people forget stuff faster than others. Selective amnesia means that when you try to recall events of the past, you may only have fragments of events and experiences available in cold storage. Your brain has to fill in the gaps while you are trying to piece together past events and experiences.
 
 As a result, the picture of any given past event that your brain re-constructs in the present may be different from what really happened back then.
 
