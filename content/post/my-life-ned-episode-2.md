@@ -13,7 +13,9 @@ Consider this: there is no other person in the world who has experienced life ex
 
 As a result, the picture of any given past event that your brain re-constructs in the present may be different from what really happened back then.
 
-The words I opened this piece with were uttered by our C language lecturer (whose identity I'll keep under wraps) during a lecture. This was probably during my second year at N.E.D. Strangely enough, the latter part of that sentence eludes my memory. That's probably because the second part of the sentence wasn't as shocking as the first part. I surmise it bore the undertones of a threat. Our class, for reasons I will explain in a moment, had clearly irked him. He threatened us that there would be a pop quiz at some point in the near future, one designed with a singular goal of being insurmountable for second year Computer Systems Engineering students.
+The words I opened this piece with were uttered by our C language lecturer (whose identity I'll keep under wraps) during a lecture. This was probably during my second year at N.E.D. The fragment roughly translates as "I don't care if you people bark like a sog ir meow like a cat...".  
+
+Strangely enough, the latter part of that sentence eludes my memory. That's probably because the second part of the sentence wasn't as shocking as the first part. I surmise it bore the undertones of a threat. Our class, for reasons I will explain in a moment, had clearly irked him. So basiclaly he was saying that as the response to our barking and meowing, there would be a pop quiz at some point in the near future, one designed with a singular goal of being insurmountable for second year Computer Systems Engineering students.
 
 So basically, we were all doomed.
 
