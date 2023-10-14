@@ -27,7 +27,7 @@ Most of the lecturers we had met up to that point in N.E.D. seemed to embody the
 
 Pouring over our notes after the event felt like being part of an archaeologist club trying to decode an alien civilization's grocery list.
 
-Some of us were better at taking notes than others. While my notes sometimes looked like I was doodling my next masterpiece, others had records that could give the Encyclopedia Britannica a run for its money, capturing every nuance. So I would often be missing calculation steps in my notes, while others would've copied everything on the board, plus every sneeze, yawn and fart of the presenter. And, believe it or not, during our late-night decoding sessions, knowing - for example - the exact moment of Sundi's dramatic sigh often turned out to be the Rosetta Stone we needed!
+Some of us were better at taking notes than others. While my notes sometimes looked like I was doodling my next masterpiece, others had records that could give the Encyclopedia Britannica a run for its money, capturing every nuance. So I would often be missing calculation steps in my notes, while others would've captured of the presenter. And, believe it or not, during our late-night decoding sessions, knowing - for example - the exact moment of Sundi's dramatic sigh often turned out to be the Rosetta Stone we needed!
 
 Sundi, by the way, was the secretive nickname we gave to our physics lecturer. It's the Urdu term for caterpillar. The moniker seemed apt, as his lectures often felt as if they were designed to decimate our brain cells, much like a caterpillar infestation ravaging crops.
 
