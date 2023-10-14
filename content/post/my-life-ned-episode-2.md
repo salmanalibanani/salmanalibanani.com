@@ -19,7 +19,7 @@ Strangely enough, the latter part of that sentence eludes my memory. That's prob
 
 So basically, we were all doomed.
 
-Our brains are much better in capturing shocking moments of life than the routine and predictable. I guess the first part of the aforementioned warning was much more shocking to me than the second part.
+Our brains are much better in capturing shocking moments of life than the routine and predictable. I guess the first part of the aforementioned warning was much more shocking to me than the second part. It was probably the way he said it.
 
 But why would a teacher threaten the whole class that he wanted us to fail the impending quiz? And to do that to a class that comprised of arguably the best 18 year old students in the country of over 100 million people at the time? And why did he mention specifically cats and dogs?
 
