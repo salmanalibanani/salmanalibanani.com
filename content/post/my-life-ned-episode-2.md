@@ -1,5 +1,5 @@
 ---
-title: "My Life at N.E.D. - Episode 2: On Cats and Dogs"
+title: "My Life at N.E.D. - Episode 2: Cats, dogs and native Americans"
 date: 2023-10-14T18:45:29+11:00
 draft: false
 summary: How I perfected my rendition of native American chants.
