@@ -45,7 +45,7 @@ In the hindsight, I would agree that our behavior was bad. Before N.E.D. I wasn'
 
 In a future post I'll try to explain in more detail how extremely damaging my subsequent experiences were at N.E.D. to my personal and academic life. But the most perplexing question to me up to this point was that how on earth somebody was able to find these clowns to teach at what was supposed to be the most prestigious Engineering university in the country? Most of these "faculty members" had no clue what they were teaching, and in those rare cases when an N.E.D. lecturer actually understood the subject matter they were teaching, they had such poor communication skills that their intellectual powers was basically useless. Out of the 39 courses that we did during my bachelor's of Computer Systems Engineering degree, I would think that probably four teachers in my very subjective opinion actually deserved to be teaching at the best Engineering School in the country.
 
-The academic standards at N.E.D. was garbage back then. I sincerely hope the past 30 years have ushered in improvements. Having now experienced a range of academic programs globally, I feel more secure in my assessment of N.E.D.'s educational quality back then.
+The academic standard at N.E.D. was garbage back then. I sincerely hope the past 30 years have ushered in improvements. Having now experienced a range of academic programs globally, I feel more secure in my assessment of N.E.D.'s educational quality back then.
 
 However, those very lectures, which often seemed uninspiring, became the backdrop for mastering an eclectic mix of sounds and chants reminiscent of forests worldwide.
 
