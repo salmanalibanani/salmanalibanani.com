@@ -33,7 +33,7 @@ Sundi, by the way, was the secretive nickname we gave to our physics lecturer. I
 
 In the midst of classroom sessions where understanding was elusive and our only task seemed to be transcribing bewildering strings of numbers and symbols, what was our recourse? How were we to keep ourselves engaged and maintian our sanity? The solution was obvious: unleash some amusing sound effects.
 
-And for obvious reasons, cat and dog sounds reigned supreme in such circumstances, likely due to the ease of their imitation. Whenever the teacher pivoted to the board to continue their mindless copying from their notes, our class would magically transform into a bustling menagerie of meows and barks. My personal pride? A Native American chant I'd picked up from a movie, which I had honed to perfection by then. And, if I might add, my rendition of a German Shepherd's growl wasn't too shabby either.
+And for obvious reasons, cat and dog sounds reigned supreme in such circumstances, likely due to the ease of their imitation. Whenever the teacher pivoted to the board to continue their mindless copying from their notes, our class would magically transform into a bustling menagerie of meows and barks. My personal pride? A particular native American chant I'd picked up from a movie, which I had honed to perfection by then. And, if I might add, my rendition of a German Shepherd's growl wasn't too shabby either.
 
 Obviously that day in the C language class our teacher couldn't take that animal behavior anymore.
 
