@@ -49,6 +49,6 @@ In a future post I'll try to explain in more detail how extremely damaging my su
 
 The academic standard at N.E.D. was garbage back then. I sincerely hope the past 30 years have ushered in improvements. Having now experienced a range of academic programs globally, I feel more secure in my assessment of N.E.D.'s educational quality back then.
 
-However, those very lectures, which often seemed uninspiring, became the backdrop for mastering an eclectic mix of sounds and chants reminiscent of forests worldwide.
+However, those very lectures, which often seemed uninspiring, became the backdrop for mastering an eclectic mix of sounds and chants from all over the world.
 
 I guess I got something out of those sessions after all.
