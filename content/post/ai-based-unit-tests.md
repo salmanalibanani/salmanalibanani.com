@@ -2,6 +2,8 @@
 title: "Don't be ashmed of creating unit tests with ChatGPT"
 date: 2024-05-21T22:24:20+10:00
 draft: false
+tags: ["AI", "test"]
+summary: "Why AI generated tests are valuable"
 ---
 
 "Your tests should be based on the original requirements specified for the system", they say.
