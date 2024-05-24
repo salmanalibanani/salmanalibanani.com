@@ -7,7 +7,7 @@ menu: main
 
 ![Salman Ali Banani](/img/about/salman_final.jpg)
 
-I am a full-stack developer at <a href="https://www.myob.com/au" target="_blank">MYOB</a>, a business management and accounting software provider to small and medium businesses.
+I am a full-stack developer at <a href="https://www.rib-software.com/en/" target="_blank">RIB Software</a>, a global project management software provider for the construction industry.
 
 I live in Sydney, Australia with my family.
 
