@@ -5,7 +5,7 @@ draft: false
 menu: main
 ---
 
-![Salman Ali Banani](/img/about/salman.jpg)
+![Salman Ali Banani](/img/about/salman_final.jpg)
 
 I am a full-stack developer at <a href="https://www.myob.com/au" target="_blank">MYOB</a>, a business management and accounting software provider to small and medium businesses.
 
