@@ -1,7 +1,7 @@
 ---
 title: "My Life at N.E.D. - Episode 3: The betrayal"
 date: 2023-12-30T10:58:19+11:00
-draft: false
+draft: true
 summary: About my worst friend.
 ---
 
