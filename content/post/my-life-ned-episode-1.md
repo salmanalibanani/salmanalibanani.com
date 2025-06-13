@@ -1,7 +1,7 @@
 ---
 title: "My Life at N.E.D. - Episode 1: The Lightning Dash"
 date: 2023-10-08T09:00:33+11:00
-draft: false
+draft: true
 summary: What I remember of day 1 at N.E.D.
 ---
 
