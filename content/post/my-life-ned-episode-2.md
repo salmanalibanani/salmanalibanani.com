@@ -1,7 +1,7 @@
 ---
 title: "My Life at N.E.D. - Episode 2: Cats, dogs and native American chants"
 date: 2023-10-14T18:45:29+11:00
-draft: false
+draft: true
 summary: How I perfected my rendition of native American chants.
 ---
 
