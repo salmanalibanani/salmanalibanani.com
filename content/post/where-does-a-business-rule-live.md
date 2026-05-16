@@ -149,7 +149,7 @@ Ask what that word means on the screen, in the backend, in the database, in the 
 
 Also look at the tests. If different layers test approval, do their test names and scenarios show that they are protecting the same concept? Does the React test about approval look connected to the backend test about approval? Does the report validation use the same business examples? Or is each test only checking local behaviour while the larger business meaning drifts around unsupervised?
 
-This exercise is not glamorous. It mostly involves reading old code, old reports, and old assumptions while developing complicated feelings about people you have never met. But it will tell you something useful. It will tell you whether your architecture protects meaning, or merely organises files.
+This exercise will tell you something useful. It will tell you whether your architecture protects meaning, or merely organises files.
 
 ## Where the Rule Actually Lives
 
