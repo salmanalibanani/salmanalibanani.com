@@ -160,4 +160,6 @@ A better answer is that a business rule lives where its meaning is defined, owne
 
 Define the rule clearly. Make the unavoidable copies visible. Design the tests so that different layers still speak the same business language. When the business asks what approved means, the system should not respond with four different answers and a report query written in 2017.
 
-That is where the rule actually lives: in the combination of definition, ownership, visible copies, and tests that stop meaning from drifting quietly across the system. Otherwise, what we have is not architecture in any useful sense. It is archaeology with a production incident attached.
+That is where the rule actually lives: in the combination of definition, ownership, visible copies, and tests that stop meaning from drifting quietly across the system.
+
+But if you want its "postal address", look in the tests across the layers that deal with it.
