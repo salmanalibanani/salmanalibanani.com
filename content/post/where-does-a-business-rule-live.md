@@ -2,6 +2,7 @@
 title: "Where Does a Business Rule Live?"
 date: 2026-05-16
 draft: false
+summary: A business rule does not really live where the folder says it lives; it lives where its meaning is defined, protected, and kept from quietly becoming four different truths.
 ---
 
 Software architects, like philosophers, have a habit of dealing with questions that seem simple and making everyone uncomfortable by thinking about them properly.
