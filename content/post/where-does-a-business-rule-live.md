@@ -37,7 +37,7 @@ Now there is an escalated ticket. Someone says this was clearly not tested. Some
 
 This is how a small change becomes a production issue. This is how a developer ends up fixing a report at 2 am on Saturday night, trying to work out why a query written years ago suddenly has a different understanding of “approved”.
 
-## The Problem Is Not of Duplication - The Problem is of Definition
+## The Problem Is Definition, Not Duplication
 
 It is easy to call this a duplication problem. In one sense, it is. The same rule exists in more than one place. But the more interesting problem is that the copied rule may not mean the same thing everywhere.
 
@@ -69,7 +69,7 @@ The real meaning of “approval” in the system is not found in any one of thes
 
 ## What Do You Mean?
 
-Justin Bieber has a song called _What Do You Mean?_. I must admit I am not a fan of his music, but I really like this particular song. I suspect he did not write it as a contribution to software architecture. May be he did. But there is no doubt that the question itself is surprisingly useful for architects.
+Justin Bieber has a song called _What Do You Mean?_. I must admit I am not a fan of his music, but I really like this particular song. I suspect he did not write it as a contribution to software architecture. Maybe he did. But there is no doubt that the question itself is surprisingly useful for architects.
 
 What do you mean by approved?
 
@@ -133,7 +133,7 @@ This is where the philosophical question becomes practical. Asking “what does 
 
 A useful way to judge this design is to imagine a developer joining the team six months from now. They are given a ticket that changes what approved means. They did not attend the original meetings. They do not know why the report has that strange condition. They do not know about the SQL incident from a decade ago.
 
-That future developer matters. When we write code, we are not only telling the computer what to do today. We are also leaving something behind for someone else to read later. In that sense, code is a kind of time capsule. One day it will be opened by a different civilisation i.e. a developer with limited context, and a ticket that says “small approval change”.
+That future developer matters. When we write code, we are not only telling the computer what to do today. We are also leaving something behind for someone else to read later. In that sense, code is a kind of time capsule. One day it will be opened by a different civilization: a developer with limited context and a ticket that says “small approval change”.
 
 What helps that developer avoid mistakes? A clear business definition helps. An authoritative implementation helps. A visible list of known copies helps. Test scenarios that repeat the same business examples across the front end, backend, and report help even more.
 
