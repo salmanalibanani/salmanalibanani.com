@@ -1,7 +1,7 @@
 ---
 title: "My Life at N.E.D. - Episode 2: Cats, dogs and native American chants"
 date: 2023-10-14T18:45:29+11:00
-draft: true
+draft: false
 summary: How I perfected my rendition of native American chants.
 ---
 
@@ -13,7 +13,7 @@ Consider this: there is no other person in the world who has experienced life ex
 
 As a result, the picture of any given past event that your brain re-constructs in the present may be different from what really happened back then.
 
-The words I opened this piece with were uttered by our C language lecturer (whose identity I'll keep under wraps) during a lecture. This was probably during my second year at N.E.D. The fragment roughly translates as "I don't care if you people bark like a dog or meow like a cat...".  
+The words I opened this piece with were uttered by our C language lecturer (whose identity I'll keep under wraps) during a lecture. This was probably during my second year at N.E.D. The fragment roughly translates as "I don't care if you people bark like a dog or meow like a cat...".
 
 Strangely enough, the latter part of that sentence eludes my memory. That's probably because the second part of the sentence wasn't as shocking as the first part. I surmise it bore the undertones of a threat. Our class, for reasons I will explain in a moment, had clearly irked him. So basically he was saying that as the response to our barking and meowing, there would be a pop quiz at some point in the near future, one designed with a singular goal of being insurmountable for second year Computer Systems Engineering students.
 
@@ -35,7 +35,7 @@ Sundi, by the way, was the secretive nickname we gave to our physics lecturer. I
 
 In the midst of classroom sessions where understanding was elusive and our only task seemed to be transcribing bewildering strings of numbers and symbols, what was our recourse? How were we to keep ourselves engaged and maintian our sanity? The solution was obvious: unleash some amusing sound effects.
 
-And for obvious reasons, cat and dog sounds reigned supreme in such circumstances, likely due to the ease of their imitation. Whenever the teacher pivoted to the board to continue their mindless copying from their notes, our class would magically transform into a bustling menagerie of meows and barks. My personal pride though was a human tradition deeply rooted in an amazing ancient culture: a particular native American chant I'd picked up from a movie, which I had honed to perfection by then. But just like my mates, I loved animals too.  My rendition of a German Shepherd's growl wasn't too shabby either, if I might add.
+And for obvious reasons, cat and dog sounds reigned supreme in such circumstances, likely due to the ease of their imitation. Whenever the teacher pivoted to the board to continue their mindless copying from their notes, our class would magically transform into a bustling menagerie of meows and barks. My personal pride though was a human tradition deeply rooted in an amazing ancient culture: a particular native American chant I'd picked up from a movie, which I had honed to perfection by then. But just like my mates, I loved animals too. My rendition of a German Shepherd's growl wasn't too shabby either, if I might add.
 
 Obviously that day in the C language class our teacher couldn't take that animal behavior anymore.
 
