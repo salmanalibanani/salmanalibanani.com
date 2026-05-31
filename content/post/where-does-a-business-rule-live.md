@@ -2,7 +2,7 @@
 title: "Where Does a Business Rule Live?"
 date: 2026-05-16
 draft: falsea
-tags: ["Philosophy", "Meaning", "Wittgenstein"]
+tags: ["Philosophy", "Meaning", "Wittgenstein", "Bieber", "The Matrix"]
 summary: A business rule does not really live where the folder says it lives; it lives where its meaning is defined, protected, and kept from quietly becoming four different truths.
 ---
 
