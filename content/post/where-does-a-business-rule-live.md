@@ -82,6 +82,11 @@ These are important architectural questions. They force us to slow down before w
 
 That is why the philosophical question matters. Philosophy is not being added to the discussion so that this blog post can wear a slightly more expensive jacket. The question of meaning has a practical function. It helps us notice that a production bug may not come from bad syntax, bad SQL, or bad React code. It may come from the fact that different parts of the system answered the same meaning-question differently.
 
+<figure>
+  <img src="/img/where-does-a-business-rule-live/WittgensteinAndBeiber.png" alt="Ludwig Wittgenstein and Justin Bieber discussing payroll architecture" />
+  <figcaption>Justin Bieber and Ludwig Wittgenstein discussing the payroll system design</figcaption>
+</figure>
+
 ## So What Problem Are We Actually Solving?
 
 At this point, it is tempting to say the solution is obvious. Put the rule in one place. Make the business layer own it. Make the domain model express it. Make everyone else call that. Then go home early and explain to your family that enterprise software has finally been brought under control.
