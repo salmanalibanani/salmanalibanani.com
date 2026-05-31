@@ -20,6 +20,11 @@ In many systems, a business rule does not live in one place. It lives in the fro
 
 At that point, that single business rule has turned into something else. It has spread like a rumour and settled into the system like an urban legend. It perhaps once descended from the heavens (i.e. the mind of the Architect), and then began replicating itself like Agent Smith in _The Matrix_.
 
+<figure>
+  <img src="/img/where-does-a-business-rule-live/NeoAndBusinessRules.png" alt="Developer dealing with a business rule while numerous copies of it exist in the system" />
+  <figcaption>Developer dealing with a business rule while numerous copies of it exist in the system</figcaption>
+</figure>
+
 ## The Small Change
 
 Imagine a rule that decides whether something is approved.
@@ -83,7 +88,7 @@ These are important architectural questions. They force us to slow down before w
 That is why the philosophical question matters. Philosophy is not being added to the discussion so that this blog post can wear a slightly more expensive jacket. The question of meaning has a practical function. It helps us notice that a production bug may not come from bad syntax, bad SQL, or bad React code. It may come from the fact that different parts of the system answered the same meaning-question differently.
 
 <figure>
-  <img src="/img/where-does-a-business-rule-live/WittgensteinAndBeiber.png" alt="Ludwig Wittgenstein and Justin Bieber discussing payroll architecture" />
+  <img src="/img/where-does-a-business-rule-live/WittgensteinAndBeiber.png" alt="Justin Bieber and Ludwig Wittgenstein discussing the payroll system design" />
   <figcaption>Justin Bieber and Ludwig Wittgenstein discussing the payroll system design</figcaption>
 </figure>
 
