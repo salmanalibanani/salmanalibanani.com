@@ -80,7 +80,7 @@ What do you mean by complete, locked, paid, discharged, cancelled, or eligible?
 
 These are important architectural questions. They force us to slow down before we allow the same word to travel through the system with five slightly different passports. The moment we ask “what do you mean?”, we stop treating a business word as obvious and start treating it as something that must be defined, protected, and tested.
 
-That is why the philosophical question matters. Philosophy is not being added to the discussion so the blog post can wear a slightly more expensive jacket. The question of meaning has a practical job. It helps us notice that a production bug may not come from bad syntax, bad SQL, or bad React code. It may come from the fact that different parts of the system answered the same meaning-question differently.
+That is why the philosophical question matters. Philosophy is not being added to the discussion so that this blog post can wear a slightly more expensive jacket. The question of meaning has a practical function. It helps us notice that a production bug may not come from bad syntax, bad SQL, or bad React code. It may come from the fact that different parts of the system answered the same meaning-question differently.
 
 ## So What Problem Are We Actually Solving?
 
@@ -92,7 +92,7 @@ A React component may still need to know enough about approval to guide the user
 
 So the problem we are solving is not the existence of repetition. The problem we are solving is confusion. When the same business rule appears in several places, the team needs to know which definition is correct, who owns it, and which other places are merely expressing that definition for local reasons.
 
-That is what ownership means in this context. It does not mean every other part of the system becomes ignorant. It means the system knows which definition wins when two parts disagree.
+That is what ownership means in this context. It means the system knows which definition wins when two parts of the system disagree on it.
 
 If the React component treats something as approved, but the backend rejects it, the team should know which side carries authority. If the report counts something as approved, but the core workflow excludes it, the team should know which interpretation is wrong. Without that clarity, every copy of the rule becomes a possible truth, and the application starts behaving like a small country with five governments.
 
@@ -156,10 +156,10 @@ This exercise will tell you something useful. It will tell you whether your arch
 
 So where does a business rule live? The simple answer says it belongs in the business layer, or the domain layer, or whichever part of the system owns business meaning. That answer points in the right direction, but it does not go far enough, because real systems often need the same rule to appear in more than one place.
 
-A better answer is that a business rule lives where its meaning is defined, owned, and kept consistent. Copies may exist elsewhere, but they should remain copies, not competing truths. The goal is not architectural purity. The goal is traceability of meaning.
+A better answer is that a business rule lives where its meaning is defined, owned, and kept consistent. Copies may exist elsewhere, but they should remain copies, not competing truths. Our goal here is _traceability of meaning_.
 
 Define the rule clearly. Make the unavoidable copies visible. Design the tests so that different layers still speak the same business language. When the business asks what approved means, the system should not respond with four different answers and a report query written in 2017.
 
 That is where the rule actually lives: in the combination of definition, ownership, visible copies, and tests that stop meaning from drifting quietly across the system.
 
-But if you want its "postal address", look in the tests across the layers that deal with it.
+But if you want its "postal address" (to answer the question "Where does it live?"... see what I did there :D), look in the tests across the layers that deal with it.
