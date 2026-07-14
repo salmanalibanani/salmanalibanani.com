@@ -36,6 +36,29 @@ In a <a target="_blank" href="/2026/07/04/a-two-agent-pr-workflow-claude-writes-
 
 A developer who respects process treats tickets, pull request descriptions, and commit messages as part of the product itself. They hold the memory of why the system looks the way it does. When that memory disappears, the code base starts to feel haunted.
 
+## Coding is surprisingly small part of the job
+
+There is one final irony in all of this.
+
+For decades we have referred to ourselves as software engineers, when what we often meant was programmers. Writing code became so central to our identity that we quietly forgot about the rest of the profession.
+
+AI is forcing us to remember.
+
+Coding is still important, but it is becoming a surprisingly small part of the job. The modern software engineer spends their day moving between disciplines. They diagnose broken build pipelines. They discuss customer requirements like a business analyst. They explain technical trade-offs in stand-ups. They review AI-generated code with healthy scepticism. They think about architecture, testing, deployment, security and product decisions. Somewhere in between all of that, they also write some code.
+
+<figure>
+  <img src="/img/the-death-and-rebirth-of-software-engineering/life-of-a-developer.png" alt="A perfectly ordinary day in software engineering" />
+  <figcaption>A perfectly ordinary day in software engineering</figcaption>
+</figure>
+
+Perhaps software engineering has always been one of the most multidisciplinary professions in technology. We simply forgot because typing code took up so much of our time.
+
+The strangest role is one we rarely talk about. Software engineers have become archaeologists working in reverse.
+
+An archaeologist uncovers clues left behind by past civilisations. We leave clues for future engineering teams. Every ticket, pull request description, commit message and design note is an artefact for developers who will one day inherit the system and wonder what possessed us to write it this way. Our job is to leave enough evidence that they never need to conduct a séance with former team members.
+
+In many ways, AI has not made software engineering smaller. It has simply revealed what it always was. The typing part of the job was never the whole profession. It was merely the most visible part of it.
+
 Put the two skills together and the shape of the new profession becomes clearer. Product thinking on its own turns into fast chaos. Process on its own turns into slow theatre. The useful developer is the one who can decide well and explain clearly.
 
 That is why I do not think software engineering has died. The typing part of the job has been heavily devalued. The surrounding judgment has become more exposed. AI removed one of the easier ways engineers used to prove that they were valuable.
