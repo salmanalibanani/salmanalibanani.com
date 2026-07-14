@@ -63,6 +63,11 @@ Put the two skills together and the shape of the new profession becomes clearer.
 
 That is why I do not think software engineering has died. The typing part of the job has been heavily devalued. AI removed one of the easier ways engineers used to prove that they were valuable. In doing so, it has made the harder parts of the profession impossible to ignore.
 
-The hard part has always been deciding what deserved to exist, making thoughtful trade-offs, shaping ideas into something coherent, and leaving enough reasoning behind that the next person can continue the work without needing a seance. Those responsibilities were always there. Writing code was simply the most visible expression of them.
+The hard part has always been deciding what deserved to exist, making thoughtful trade-offs, shaping ideas into something coherent, and leaving enough reasoning behind that the next person can continue the work without needing a séance. Those responsibilities were always there. Writing code was simply the most visible expression of them.
+
+<figure>
+  <img src="/img/the-death-and-rebirth-of-software-engineering/seance.png" alt="A Software Engineering Séance" />
+  <figcaption>A Software Engineering Séance</figcaption>
+</figure>
 
 If there is a rebirth happening, I suspect it is not software engineering itself that is being reborn. It is our understanding of what it means to be a software engineer.
