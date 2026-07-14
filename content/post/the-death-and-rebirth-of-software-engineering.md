@@ -61,8 +61,8 @@ In many ways, AI has not made software engineering smaller. It has simply reveal
 
 Put the two skills together and the shape of the new profession becomes clearer. Product thinking on its own turns into fast chaos. Process on its own turns into slow theatre. The useful developer is the one who can decide well and explain clearly.
 
-That is why I do not think software engineering has died. The typing part of the job has been heavily devalued. The surrounding judgment has become more exposed. AI removed one of the easier ways engineers used to prove that they were valuable.
+That is why I do not think software engineering has died. The typing part of the job has been heavily devalued. AI removed one of the easier ways engineers used to prove that they were valuable. In doing so, it has made the harder parts of the profession impossible to ignore.
 
-The hard part has always been deciding what deserved to exist, shaping it into something coherent, and leaving enough reasoning behind that the next person can continue the work without needing a seance.
+The hard part has always been deciding what deserved to exist, making thoughtful trade-offs, shaping ideas into something coherent, and leaving enough reasoning behind that the next person can continue the work without needing a seance. Those responsibilities were always there. Writing code was simply the most visible expression of them.
 
-If there is a rebirth happening, I suspect that is what is being reborn.
+If there is a rebirth happening, I suspect it is not software engineering itself that is being reborn. It is our understanding of what it means to be a software engineer.
