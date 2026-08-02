@@ -86,13 +86,13 @@ This gives the builder a better brief by distinguishing intentional exclusions f
 
 That sounds obvious until you see how often an architectural diagram is really just a product decision wearing a technical hat and insisting that it is here for a quick technical discussion.
 
-## Ask the questions before the implementation hides them
+## Don't shoot first and ask questions later
 
-I have also started asking the planning agent to present decision impacts in an interactive Q&A format. Give the options. Explain what each one affects. State the recommended option and why. Be honest about what is not yet known.
+Fast implementation is seductive because it feels like progress. The ticket looks plausible, the first few files are obvious, and an AI can start producing a convincing diff before anyone has had time to notice that the target was never properly identified. At that point it is very easy to shoot first and ask questions later: write the code, make the tests pass, and only then discover that the business rule, platform limit, or architectural constraint pointed somewhere else.
 
-The aim is to catch the wrong turn early, rather than turn every change into a committee meeting with myself. One person and an AI can still somehow generate too much bureaucracy, including action items that require clarification before they can become action items.
+That is why I ask the planning agent to present decision impacts in an interactive Q&A format before building begins. It should give the options, explain what each one affects, state a recommendation and its reasoning, and be honest about what is not yet known. The aim is not to turn every change into a committee meeting with myself; one person and an AI can already generate plenty of bureaucracy, including action items that require clarification before they can become action items.
 
-The point is to catch the wrong turn early. Once a branch contains several hundred lines of plausible code, the architecture begins to feel more real than the decision that produced it, and people become reluctant to revisit the premise because the implementation already exists. AI is especially good at encouraging this feeling: it can make the next version cheaply, so we keep trying to rescue the current direction instead of asking whether it is the right one. An explicit decision stage creates a useful pause: the agent can investigate and recommend, while the human decides whether the trade-off is acceptable.
+The pause matters because implementation has a way of making its own premise appear correct. Once a branch contains several hundred lines of plausible code, the architecture begins to feel more real than the decision that produced it, and people become reluctant to revisit the direction because the work already exists. AI makes this worse by making the next version cheap, so we keep trying to rescue the current approach instead of asking whether it was the right one. Investigate first, recommend second, decide deliberately, and then build with a clearer target in view.
 
 ## Use the repository to preserve the reasoning
 
