@@ -1,5 +1,5 @@
 ---
-title: "AI Can Write the Code. Judgment Still Decides the Outcome."
+title: "AI Can Write the Code - Judgment Still Decides the Outcome"
 date: 2026-08-02T11:15:31+10:00
 draft: false
 summary: "AI can produce good code while following a confident but wrong line of reasoning. A better engineering workflow supplies the judgment it lacks."
