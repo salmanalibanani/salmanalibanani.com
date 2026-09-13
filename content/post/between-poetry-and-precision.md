@@ -6,182 +6,86 @@ summary: "AI is teaching millions of people to communicate with greater precisio
 tags: ["ai", "communication", "philosophy", "language"]
 ---
 
-Human beings have always had a strange relationship with communication. We spend an extraordinary amount of our lives trying to make ourselves understood, yet some of our most treasured forms of expression seem deliberately designed to resist complete understanding.
+Human beings have always had a slightly strange relationship with communication. We spend an extraordinary amount of our lives trying to make ourselves understood, and yet some of the forms of communication we value most seem deliberately designed to resist complete understanding. We want clarity when we are giving directions, writing a contract or proving a theorem, but we are perfectly happy to spend centuries arguing over what a poem means. In one context, ambiguity is a defect. In another, it is the whole point.
 
-A mathematical equation is valuable partly because it leaves so little room for interpretation. If the symbols are defined properly, two people separated by language, culture and centuries can arrive at essentially the same meaning. Logic works in much the same way. We define our terms, construct our premises and attempt to ensure that the conclusion follows from them. Ambiguity is treated almost as a defect.
+Mathematics probably represents one extreme. A mathematical statement is valuable partly because, once the symbols and assumptions have been agreed, there is very little room for personal interpretation. Two people separated by language, culture and centuries should still be able to arrive at essentially the same meaning. Logic works in much the same way. We define terms, state premises and try to remove enough ambiguity that the conclusion follows whether we happen to like it or not.
 
-Poetry works differently.
+Poetry sits somewhere near the other extreme. A poem can mean something slightly different to everyone who reads it, and sometimes something different to the same person at different stages of life. A line can remain with us for years precisely because we are not entirely sure why it matters. A painting does not normally come with a specification of the emotional response it is intended to produce, and music would be rather impoverished if every composition had to be accompanied by a paragraph explaining exactly what the listener was supposed to feel.
 
-A poem can mean something slightly different to every person who reads it. Sometimes it can mean something different to the same person at different points in their life. A sentence in a novel may stay with us precisely because we are not entirely certain what it means. A painting does not normally arrive with a specification describing the emotional response that it is intended to produce. Music certainly does not.
+This difference is interesting because both modes of communication came from the same human mind. We invented mathematics and poetry. We invented formal logic and metaphor. Apparently, we need both the ability to remove ambiguity and the ability to create it.
 
-In these forms of communication, ambiguity is not a failure of transmission. It is part of the transmission itself.
+## The things we mean, and the things we leave unsaid
 
-Perhaps this is because human beings do not merely communicate information. We communicate moods, intuitions, possibilities, memories, fears and things that we ourselves may not completely understand. Sometimes we want another person to know exactly what we mean. At other times, we want them to enter the space around what we mean and discover something there for themselves.
+Perhaps this is because human beings do not communicate only information. We communicate moods, intuitions, possibilities, memories, fears and things that we ourselves may not completely understand. Sometimes we want another person to know exactly what we mean. At other times, we want to create a space around what we mean and allow the other person to enter it.
 
-These are very different modes of communication, and we have lived with both of them for a very long time.
+This happens constantly in ordinary conversation. We speak differently to a lawyer than we do to a child, differently to a colleague than to an old friend, and differently again to somebody we love. Some situations reward precision, while others depend heavily on shared context, implication and things that remain unstated. A close friend can sometimes understand an entire paragraph from a raised eyebrow. It is a terribly inefficient communication protocol, but somehow it works.
 
-## The two languages of the human mind
+Humour may be one of the best examples. Any comedian will tell you that if a joke has to be explained, it is more or less dead on arrival. The joke often works because the listener makes the final connection. Timing matters, shared knowledge matters, and sometimes the funniest part is the thing that was never actually said. Once somebody starts explaining the reversal, the hidden assumption or the double meaning, the joke may become more understandable, but it usually becomes much less funny.
 
-There is something fascinating about the fact that the same human mind produced both mathematics and poetry.
+There is something particularly amusing, then, about the fact that I now occasionally find myself asking AI why a particular joke was funny. We have somehow reached a point where I can laugh at something, remain slightly uncertain about why I laughed, and then ask a machine to dissect the mechanism for me. The machine can often do a respectable job of it. It can identify the incongruity, explain the reference and tell me where the expectation was subverted. But by the end of the explanation the joke feels a little like a frog in a biology lesson: better understood, perhaps, but not obviously improved by the procedure.
 
-One tries to remove ambiguity. The other often depends upon it.
+That distinction between understanding and explanation is important. We often behave as if understanding something means being able to make it completely explicit, but human experience does not always work that way. We can understand a piece of music without being able to describe why it moves us. We can feel that a metaphor is exactly right without being able to replace it with a literal sentence. We can understand the sadness in somebody's voice even when the words themselves contain nothing sad at all.
 
-When a mathematician says that two plus two equals four, there is very little interest in how the reader personally experiences the statement. Its strength comes from its independence from interpretation. Assuming that we agree on the symbols and the underlying system, the statement means what it means.
+There are forms of meaning that become weaker when we make them too precise, and that is worth remembering as we begin communicating more and more of our intentions to machines.
 
-But if a poet writes about a road disappearing into the distance, the road may not really be about a road at all.
+## A new kind of listener
 
-It might be about time, regret, death, possibility, youth or something for which there is no convenient word. The reader participates in the creation of meaning. The ambiguity allows the words to travel further than their literal definition.
+For most of history, our ability to move between these different styles of communication was exercised mainly with other human beings. Computers were a very different matter. We have, of course, been communicating with computers for decades, but relatively few people had to do it directly, and those who did generally had to learn a language designed for the computer rather than the human.
 
-Neither way of communicating is superior. They serve different purposes.
+Programmers became accustomed to an unusually unforgiving listener. A misplaced character, an incorrect type or a badly formed expression could make an instruction mean something completely different, or nothing at all. The computer did not care what we intended. Intention had to be translated into something sufficiently precise for the machine to execute.
 
-Civilisation would struggle to build a bridge using poetry as the engineering specification. But a civilisation that could build bridges and no longer write poetry would have lost something considerably more important than an engineering technique.
+Most people were insulated from this. They used buttons, menus and forms, while software developers performed the difficult translation between human intention and machine instruction. The interface was deliberately constrained so that users did not have to think very much about how computers understood things.
 
-We have therefore learned to move, often without noticing, between these different modes. We become precise when precision matters and deliberately imprecise when it does not. We speak differently to a lawyer, a child, a colleague, a close friend and someone we love. Sometimes we explain. Sometimes we imply. Sometimes the most important part of a conversation is the thing nobody quite says.
+Artificial intelligence changes this relationship in a way that I think is much more significant than simply giving us a new generation of software tools. For perhaps the first time, an enormous portion of the population is having complicated conversations with computers in ordinary language. People who have never written a line of code are now asking machines to write, research, analyse, design, summarise, plan, explain and reason. They are not selecting one of five predetermined options from a menu. They are attempting to describe an intention, and describing an intention turns out to be surprisingly difficult.
 
-For most of history, this flexibility has mainly been exercised in communication between humans.
+We say, "Make this better," and the machine immediately exposes the problem hidden inside that apparently simple sentence. Better in what sense? Shorter? More accurate? More persuasive? More formal? More imaginative? We ask it to design something "clean" or make something "professional", and discover that those words were carrying a considerable amount of unstated meaning inside our own heads.
 
-That is beginning to change.
+This is not really a problem unique to AI. Anybody who has managed people, worked in a team or tried to explain a requirement to a software developer has experienced the same thing. We give what feels like a perfectly clear instruction, receive something completely different from what we imagined, and only then realise that half of the specification never left our head.
 
-## A new participant in human communication
+AI simply makes this experience unusually frequent. It gives us a listener that is patient enough to receive endless clarification and literal enough to expose our assumptions, while still being intelligent enough to fill in many of the gaps. The result is a strange new pressure on human beings to become more deliberate about how we communicate.
 
-We have, of course, been communicating with computers for decades.
+## Precision as a new mass skill
 
-But until recently, relatively few people had to think deeply about how to do it.
+People who become effective users of AI quickly start acquiring habits that resemble good engineering communication. They provide context. They state constraints. They give examples. They distinguish between what is required and what is merely preferred. They describe the desired output and, when the result is wrong, they try to identify where their instruction allowed the misunderstanding to occur. None of these are really "prompt engineering" tricks. They are communication skills, and the interesting difference now is scale.
 
-Programmers learned programming languages precisely because computers were extraordinarily unforgiving listeners. A missing semicolon, an incorrect type or a misplaced bracket could change the meaning of an instruction or prevent it from having any meaning at all.
+Software developers have been learning this kind of precision for decades because computers demanded it, but programmers were always a relatively small part of the population. Now teachers, lawyers, marketers, accountants, students, managers, designers, doctors and millions of other people are beginning to experience the same pressure. They are communicating with humans during one part of the day and with machines during another, sometimes using the same language but requiring quite different degrees of explicitness. Software developers have been learning this kind of precision for decades because computers demanded it, but programmers were always a relatively small part of the population. Now teachers, lawyers, marketers, accountants, students, managers, designers, doctors and millions of other people are beginning to experience the same pressure. They are communicating with humans during one part of the day and with machines during another, sometimes using the same language but requiring quite different degrees of explicitness.
 
-Humans were expected to adapt themselves to the machine.
+I suspect this may eventually change the way we communicate with one another as well. If you spend enough time learning to provide context to an AI, separate assumptions from requirements and explain exactly what you are asking for, perhaps some of that discipline follows you back into human conversations. Managers may become better at describing outcomes instead of assuming everybody shares their mental model. Developers may become better at making architectural assumptions explicit. Writers may notice more quickly when an argument depends on something they never actually said.
 
-Most other people were protected from this peculiar form of conversation. They clicked buttons, filled in forms and selected options from menus. The difficult translation between human intention and machine instruction had already been performed by the people who designed the software.
+That would probably be a good thing. Human communication is often remarkably inefficient. We are vague, we forget context, we assume knowledge the other person does not possess, and we routinely confuse what we said with what we intended to say. AI may turn out to be a very effective mirror for this particular weakness.
 
-Artificial intelligence changes this relationship in an interesting way.
+But there is a danger in learning any useful skill: we may start applying it where it does not belong.
 
-For perhaps the first time, enormous numbers of people are directly communicating complicated intentions to computers using ordinary language.
+## The cost of explaining everything
 
-We are asking machines to write, analyse, research, design, summarise, reason, generate software, explain ideas, plan journeys and help make decisions. Increasingly, the quality of the result depends not simply on what the machine can do, but on how effectively a human being can express what they actually want.
+The modern world already has a strong tendency to reward what can be made explicit. Objectives become metrics, experiences become ratings, conversations become action items and thoughts become bullet points. There are good reasons for all of this. Precision helps organisations function, engineers build things and societies coordinate increasingly complicated systems.
 
-And this turns out to be harder than it sounds.
+AI adds another incentive. The clearer we are about what we want, the more useful the machine often becomes. There is therefore a very practical reward for removing ambiguity from our language.
 
-We discover that what felt perfectly clear inside our own mind was not necessarily clear once expressed in words. We discover assumptions that we did not know we were making. We say, "Make this better," and are forced to confront the uncomfortable question: better in what way?
+What worries me slightly is the possibility that we may eventually confuse this with a general theory of good communication.
 
-Shorter? More accurate? More persuasive? More elegant? More conservative? More imaginative?
+Some things should be precise. If I am asking an AI to modify a financial calculation, write a piece of software or summarise a legal document, I would rather not rely on poetic ambiguity. I want assumptions stated and terms defined. But it does not follow that every valuable form of human expression improves as ambiguity decreases.
 
-The machine, by misunderstanding us, can sometimes reveal how poorly we understood our own intention.
+A poem is not a failed specification. A metaphor is not an inefficient equation. A joke is not incomplete merely because part of its meaning exists in the listener rather than in the words themselves.
 
-This is not entirely new. Anyone who has managed people has encountered the same phenomenon. You explain something, someone produces something completely different from what you imagined, and only then do you realise that half of the specification existed entirely inside your own head.
+In fact, much of what makes human communication beautiful may come from this incompleteness. The listener or reader participates in creating the meaning. We bring our own memory, culture, mood and experience to what is being said. This is why the same poem can mean something different at forty than it did at twenty, and why a song can suddenly acquire significance because of something that happened years after we first heard it.
 
-But AI makes this experience unusually frequent and unusually visible.
+Perfectly precise communication tries to eliminate that variability. For many purposes, that is exactly what we want. But art often depends on it.
 
-Millions of people are now encountering, perhaps for the first time, something software developers have known for decades: precision of thought and precision of communication are closely related.
+There is also something very human about implication. Sometimes we do not want to state everything directly. Not because we are being dishonest or careless, but because saying less can communicate more. A pause can matter. A badly timed joke can fail even if every word is technically correct. A sentence can be affectionate, threatening, sarcastic or sad without any of those properties appearing in its literal meaning. Human language carries a shadow around the words themselves, and we spend our lives learning how to read it.
 
-## The pressure to become more precise
+I would hate for us to become so impressed by our newfound ability to communicate efficiently with machines that we start treating that shadow as noise.
 
-This may have interesting consequences for the way we communicate with each other.
+## Learning when not to be precise
 
-To work effectively with AI, people are gradually learning habits that resemble good engineering communication. They provide context. They specify constraints. They give examples. They distinguish what is essential from what is merely preferred. They describe the output they expect. They correct misunderstandings and refine instructions.
+Perhaps the real communication skill of the AI age will not be precision itself, but the ability to move consciously between different kinds of precision.
 
-In other words, they are learning that communication is not simply the act of speaking. It is the act of constructing an understanding in another mind—or, increasingly, in another kind of intelligence.
+There will be situations in which we need the language of mathematics: definitions, assumptions, constraints, logic and clarity. AI is making that mode of thinking relevant to far more people than before, and I think that is largely a good development. Being forced to explain what we actually mean can expose unclear thinking, hidden assumptions and contradictions that would otherwise remain comfortably unnoticed.
 
-This requires a certain discipline.
+But there will also be times when this is exactly the wrong objective. We will still need stories in which the meaning is not stated, jokes that nobody explains, paintings that refuse to tell us what to think and poems that mean something slightly different every time we return to them.
 
-We have spent many years complaining that computers are too literal. Now we have computers that are remarkably capable of dealing with ordinary language, yet we still discover that ambiguity has consequences. The machine may fill the gaps in our instructions, but it may fill them differently from the way we expected.
+Human beings have spent thousands of years developing both traditions. We invented mathematics because the world sometimes demands precision, and we invented poetry because the human mind sometimes demands something else. One helps us remove ambiguity from reality so that we can reason about it. The other sometimes reintroduces ambiguity so that we can experience it differently.
 
-So we become more explicit.
+AI is now forcing an unprecedented number of people to practise the first of these skills. I suspect it will make many of us clearer thinkers and perhaps better communicators. I hope it does.
 
-And perhaps, after enough repetition, some of that behaviour transfers back into human communication.
-
-People may become better at explaining what they mean. Managers may become better at describing outcomes rather than assuming shared context. Developers may become better at articulating architectural decisions. Writers may become more aware of the assumptions hidden inside their arguments.
-
-This would be a useful development.
-
-Human communication is often remarkably inefficient. We are vague, we forget context, we assume knowledge that the other person does not possess, and we regularly confuse what we said with what we intended to say.
-
-AI places a mirror in front of this weakness.
-
-The interesting thing is that the machine itself is not necessarily teaching us communication in the traditional sense. It is simply creating an environment in which unclear thinking becomes expensive.
-
-## But ambiguity has a purpose
-
-There is, however, another possibility that worries me slightly.
-
-Once we discover the productivity of precision, we may begin to value it too much.
-
-The modern world already has a tendency to turn everything into something measurable. Objectives become metrics. Experiences become ratings. Conversations become action items. Thoughts become bullet points. If artificial intelligence further rewards explicit, structured, unambiguous language, we may gradually begin to believe that this is simply what good communication looks like.
-
-But some thoughts should not be converted into specifications.
-
-Humour is perhaps one of the clearest examples.
-
-Any comedian will tell you that if a joke has to be explained, it is more or less dead on arrival. The humour often exists precisely in the gap between what is said and what the listener understands. Timing matters. Context matters. Shared assumptions matter. Sometimes the joke depends on a reference that is never stated. Sometimes the funniest part is what everyone understands without anyone having to say it.
-
-And yet here we are, in this strange new world, occasionally asking an AI to explain why a particular joke was funny.
-
-I have done this myself.
-
-There is something slightly absurd about it. A joke produces a reaction before it produces an explanation. We laugh first, and only afterwards, if somebody insists, can we start dissecting the mechanism: the reversal, the incongruity, the hidden assumption, the unexpected interpretation.
-
-By the time we have finished explaining it, the joke has usually ceased to be funny.
-
-Perhaps this is because explanation and understanding are not always the same thing. We can explain the mechanics of humour without reproducing the experience of finding something funny, just as we can analyse the structure of a poem without recreating the feeling that the poem produced.
-
-There are things we understand partly because they have not been completely explained.
-
-When we read poetry, we do not normally demand that the poet clarify the acceptance criteria.
-
-When someone says that a particular song reminds them of home, we do not ask them to define home as a set of measurable attributes so that the statement can be reproduced consistently.
-
-Some forms of meaning collapse when examined too precisely.
-
-This may be one of the fundamental differences between information and experience.
-
-Information often becomes more useful as ambiguity decreases. Experience does not necessarily behave the same way. Sometimes the uncertainty is what allows an idea to connect with something already inside us.
-
-A metaphor works because it is not an equation.
-
-A joke works because we understand something that was not fully stated.
-
-A poem leaves space for the reader.
-
-A painting does not tell us what to think next.
-
-And perhaps human beings need that space.
-
-## Learning to speak two languages
-
-The challenge of the AI age may therefore be more interesting than simply learning how to write better prompts.
-
-We may need to become more conscious of the different ways in which humans communicate.
-
-There will be moments when we need the precision of mathematics: definitions, assumptions, constraints, logic and clarity. When we communicate with machines to produce real outcomes, that ability will become increasingly valuable.
-
-But there will also be moments when precision is exactly the wrong objective.
-
-The danger would be to allow the habits required for communicating with machines to become the standards by which we judge all communication.
-
-Perhaps the real skill will be knowing which language to use.
-
-To a computer, we may need to say exactly what we mean.
-
-To another human being, sometimes we need to do the opposite.
-
-Sometimes we need to tell a story and allow the listener to discover its meaning. Sometimes we need metaphor because literal language is too small for the thing we are trying to express. Sometimes we need silence. Sometimes we need a joke that nobody explains. Sometimes we need a sentence whose meaning cannot be reduced to a specification.
-
-Human beings have spent thousands of years developing both traditions.
-
-We invented logic, mathematics and formal language because the world sometimes demands precision.
-
-And we invented poetry, music, humour, mythology and art because the human mind sometimes demands something else.
-
-Artificial intelligence is now forcing an unprecedented number of people to practise the first of these skills. That may ultimately make us clearer thinkers and better communicators. It may even improve the way we speak to one another.
-
-I hope it does.
-
-But I also hope that, in learning how to make ourselves perfectly understood by machines, we do not begin to believe that being perfectly understood is always the purpose of language.
-
-Somewhere between what is said and what is understood lies interpretation, imagination and mystery.
-
-That space is inefficient.
-
-It is ambiguous.
-
-And it may also be where much of the beauty of being human lives.
+But I also hope that, in learning how to make ourselves perfectly understood by machines, we do not begin to believe that being perfectly understood is always the purpose of language. Somewhere between what is said and what is understood lies interpretation, imagination, humour, metaphor and mystery. It is an inefficient space, and no doubt a frustrating one if you are trying to write a specification, but it may also be where much of the beauty of being human lives.
