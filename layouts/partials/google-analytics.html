@@ -1,0 +1,15 @@
+{{- $netlifyContext := getenv "CONTEXT" -}}
+{{- if and (not .Site.IsServer) (eq hugo.Environment "production") (or (eq $netlifyContext "") (eq $netlifyContext "production")) -}}
+  {{- with .Site.Params.googleAnalyticsID -}}
+    {{- if not (findRE `^G-[A-Z0-9]+$` .) -}}
+      {{- errorf "params.googleAnalyticsID must be a GA4 measurement ID starting with G-" -}}
+    {{- end -}}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', {{ . }});
+</script>
+  {{- end -}}
+{{- end -}}

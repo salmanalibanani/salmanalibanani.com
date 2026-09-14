@@ -28,6 +28,7 @@ category = "categories"
 tag = "tags"
 
 [Params]
+  googleAnalyticsID = "G-5706BR7X2X" # GA4 measurement ID; blank disables tracking
   description = "<your site description>"
   opengraph = true
   twitter_cards = false
@@ -56,3 +57,6 @@ tag = "tags"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[security.funcs]
+  getenv = ['^HUGO_', '^CONTEXT$'] # Allow the Analytics partial to check Netlify's deploy context
