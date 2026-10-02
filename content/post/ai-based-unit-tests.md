@@ -1,6 +1,8 @@
 ---
-title: "Don't be ashmed of creating unit tests with ChatGPT"
+title: "Don't be ashamed of creating unit tests with ChatGPT"
 date: 2024-05-21T22:24:20+10:00
+# The post's address before its title typo was fixed; old links redirect here.
+aliases: ["/2024/05/21/dont-be-ashmed-of-creating-unit-tests-with-chatgpt/"]
 draft: false
 tags: ["AI", "test", "ChatGPT"]
 summary: "Why AI generated tests are valuable."
