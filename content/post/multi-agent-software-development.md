@@ -76,9 +76,7 @@ The structure looks like this:
                  GitHub is the source of truth
 ```
 
-The important part is that Steve and Jensen do not become an uncontrolled conversation.
-
-Steve does not directly dispatch Jensen. Jensen does not directly ask Steve to make changes. Their work is connected through Simon, and the durable record of the work is kept in GitHub.
+The important thing is that Steve and Jensen do not start coordinating with each other outside the agreed workflow. Steve does not dispatch Jensen directly, and Jensen does not ask Steve to make changes; Simon connects their work, while GitHub remains the durable record of what happened.
 
 As a hardware aside, Jensen is running on an old laptop with an NVIDIA chip. Steve is actually running on a refurbished M1 MacBook Pro. I am thinking of eventually renaming Steve to <a href="https://en.wikipedia.org/wiki/Alice_Huang_(executive)" target="_blank">Alice</a>, but for now we will go with Steve.
 
