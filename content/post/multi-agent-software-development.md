@@ -456,6 +456,4 @@ The same caution applies to the grander stories we tell about artificial intelli
 
 I still feel slightly strange giving them names. I still occasionally wonder whether I am helping to build my own replacement. And I still think Simon was a safer choice than HAL 9000.
 
-The names make the system easier for me to live with. The protocol keeps it honest.
-
-> Multi-agent development works best when the agents have less freedom to improvise about process, and more freedom to focus on the work they actually own.
+The names make the system easier for me to live with. The protocol keeps it honest. Multi-agent development works best when the agents have less freedom to improvise about process, and more freedom to focus on the work they actually own.
