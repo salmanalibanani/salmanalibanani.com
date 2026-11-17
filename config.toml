@@ -1,4 +1,4 @@
-baseURL = "https://salmanalibanani.netlify.app/"
+baseURL = "https://salmanalibanani.com/"
 languageCode = "en-us"
 title = "Salman Ali Banani"
 theme = "mainroad"
@@ -29,7 +29,7 @@ tag = "tags"
 
 [Params]
   googleAnalyticsID = "G-5706BR7X2X" # GA4 measurement ID; blank disables tracking
-  description = "<your site description>"
+  description = "Salman Ali Banani on software engineering, AI-assisted development, cloud, and the occasional story from working life."
   opengraph = true
   twitter_cards = false
   readmore = false # Show "Read more" button in list if true
